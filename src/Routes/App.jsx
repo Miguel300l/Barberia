@@ -5,7 +5,7 @@ import Inicio from "../landing/pages/Inicio";
 import Charla from "../landing/pages/SolicitudCharla";
 import Contactanos from "../landing/pages/Contactanos";
 import Cronograma from "../landing/pages/Cronograma";
-import Conocenos from "../landing/pages/Cononcenos";
+import Nosotros from "../landing/pages/Nosotros";
 //Profesional
 import NavbarProfesional from "../profesionales/componentes/Navbar";
 import InicioProfesional from "../profesionales/pages/Inicio";
@@ -35,7 +35,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navbar/>}>
           <Route index element={<Inicio />} />
-          <Route path="/conocenos" element={<Conocenos />} />
+          <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/charla" element={<Charla />} />
           <Route path="/contactanos" element={<Contactanos />} />
           <Route path="/cronograma" element={<Cronograma />} />

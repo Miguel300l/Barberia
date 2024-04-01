@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Horizontal from "../../assets/img/Horizontal.png";
+import Horizontal from "../../assets/img/Dog-Logo.png";
 import Favicon2 from "../../assets/img/favicon2.png";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
@@ -21,7 +21,7 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src={Horizontal} alt="Logo" className="img-logo" />
+            <img src={Horizontal} alt="Logo" className="img-logo"/>
             <img
               src={Favicon2}
               alt="Logo"
@@ -50,8 +50,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link className="nav-link active" to="/conocenos">
-                  CONOCENOS
+                <Link className="nav-link active" to="/nosotros">
+                  NOSOTROS
                 </Link>
               </li>
               <li className="nav-item  fs-6">
@@ -59,12 +59,17 @@ const Navbar = () => {
                   className="nav-link active"
                   to="/charla"
                 >
-                  CHARLA
+                  VETERINARIAS
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link className="nav-link active" to="/cronograma">
-                  CRONOGRAMA
+                <Link className="nav-link active" to="/cuidados">
+                  CUIDADOS
+                </Link>
+              </li>
+              <li className="nav-item  fs-6">
+                <Link className="nav-link active" to="/adopcion">
+                  ADOPCION
                 </Link>
               </li>
               <li className="nav-item   fs-6">

@@ -5,9 +5,16 @@ body {
 .img-logo {
   max-height: 5rem;
   display: flex;
+  margin-left: 14px;
+  
 }
-
-
+.nav-item{
+  padding: 36px;
+}
+.container-fluid {
+  margin-right: 10px;
+  height: 64px;
+}
 .bg-color-blue {
   background-color: #00324d;
 }

@@ -9,7 +9,7 @@ import Video from '../../assets/img/videos/Bienestar al Aprendiz SENA.mp4'
 import Centro from '../../assets/img/imgnav.jpg'
 
 
-const Conocenos = () => {
+const Nosotros = () => {
   return (
     <>
       {/* <!-- Inicio Section --> */}
@@ -64,5 +64,5 @@ const Conocenos = () => {
   );
 };
 
-export default Conocenos;
+export default Nosotros;
 

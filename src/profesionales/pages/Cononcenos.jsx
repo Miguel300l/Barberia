@@ -1,5 +1,5 @@
 import React from "react";
-import Conocenos from '../../landing/pages/Cononcenos'
+import Conocenos from '../../landing/pages/Nosotros'
 
 
 const ConocenosProfesional = () => {
