@@ -4,6 +4,7 @@ import Favicon2 from "../../assets/img/favicon2.png";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import BtnInicio from '../data/BtnInicioSesion'
+import "../../assets/css/links.css"
 // Modales
 import InicioSesion from '../modales/InicioSesion'
 import DatosAjustes from '../modales/Ajustes'
@@ -19,7 +20,7 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
-        <div className="container-fluid">
+        <div className="container-fluid" id="navbarr">
           <Link className="navbar-brand" to="/">
             <img src={Horizontal} alt="Logo" className="img-logo"/>
             <img
