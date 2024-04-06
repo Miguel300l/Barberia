@@ -43,11 +43,10 @@ body {
   
 }
 .active-green {
- background-color: #558d02 !important;
- color: white;
+background-color: #558d02 !important;
+color: white;
 }
 .card {
-  /* border-color: #39a900 !important; */
   border: 1px solid;
 }
 .card-img-top {
@@ -117,7 +116,7 @@ body {
   width: 100%;
   margin-left: -195px;
   height: 100px;
-  border-radius: 10px; /* Esto hace que el contenido del carousel sea redondo */
+  border-radius: 10px; 
 }
 .titulo{
 margin: -3px;
@@ -166,8 +165,8 @@ margin: -29px;
 }
 
 .notificacion-no-leida {
-  background-color: #38a90042; /* Color de fondo para notificación no leída */
-  font-weight: bold; /* Texto en negrita para notificación no leída */
+  background-color: #38a90042; 
+  font-weight: bold; 
   cursor: pointer;
 }
 /* CSS para menú hamburguesa en dispositivos móviles y enlaces centrados */
