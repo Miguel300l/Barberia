@@ -2,7 +2,7 @@ import React from "react";
 import Dogmision from '../../assets/img/dogmision.jpg'
 import Dogvision from '../../assets/img/Dog2.webp'
 import Historia from '../../assets/img/historia.jpg'
-import Video from '../../assets/img/videos/video de dog.mp4'
+import Video from '../../assets/img/videos/dog.mp4'
 import Centro from '../../assets/img/dognosotros.webp'
 
 
