@@ -57,7 +57,7 @@ const DatosAjustes = () => {
                                 <h4 className="modal-title w-100 text-center ">Perfil</h4>
                                 <button
                                     type="button"
-                                    className="btn-close"
+                                    className="btn-close bg-white"
                                     data-bs-dismiss="modal"
                                     aria-label="Close"
                                 ></button>

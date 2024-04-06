@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import Horizontal from "../../assets/img/Dog-Logo.png";
-import Favicon2 from "../../assets/img/favicon2.png";
+import Horizontal from "../../assets/img/Dog3.png";
+import Favicon2 from "../../assets/img/Dog3.png";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import BtnInicio from '../data/BtnInicioSesion'
-import "../../assets/css/links.css"
 // Modales
 import InicioSesion from '../modales/InicioSesion'
 import DatosAjustes from '../modales/Ajustes'
@@ -20,7 +19,7 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
-        <div className="container-fluid" id="navbarr">
+        <div className="container-fluid" id="img-slider">
           <Link className="navbar-brand" to="/">
             <img src={Horizontal} alt="Logo" className="img-logo"/>
             <img
@@ -58,9 +57,9 @@ const Navbar = () => {
               <li className="nav-item  fs-6">
                 <Link
                   className="nav-link active"
-                  to="/charla"
+                  to="/profesionales"
                 >
-                  VETERINARIAS
+                  PROFESIONALES
                 </Link>
               </li>
               <li className="nav-item  fs-6">
@@ -70,7 +69,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item  fs-6">
                 <Link className="nav-link active" to="/adopcion">
-                  ADOPCION
+                  ADOPCIÓN
                 </Link>
               </li>
               <li className="nav-item   fs-6">

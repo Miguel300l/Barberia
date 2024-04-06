@@ -1,4 +1,4 @@
-import Imgnav from "../../assets/img/imgnav.jpg";
+import Imgnav from "../../assets/img/historia.jpg";
 import Person from '../../assets/img/icons/person-lines-fill.svg'
 import { useEffect, useState } from "react";
 import { verUsuarios, inhabilitarUsu, habilitarUsu } from "../data/DataAdmin";
@@ -57,11 +57,11 @@ const Solicitudes = () => {
                   className=" bg-green-opacity p-2 rounded-2"
                 />
               </th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Identificacion</th>
-              <th scope="col">Ficha</th>
-              <th scope="col">Estado</th>
-              <th scope="col">Activar</th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">IDENTIFICACIÓN</th>
+              <th scope="col">PERSONA</th>
+              <th scope="col">ESTADO</th>
+              <th scope="col">ACTIVAR</th>
               {/* <th Roll scope="col text-center">Roll</th> */}
             </tr>
           </thead>

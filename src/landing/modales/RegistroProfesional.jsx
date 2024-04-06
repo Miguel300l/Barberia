@@ -137,10 +137,10 @@ const Registrase = () => {
                                             <label htmlFor="validationGenero" className="form-label">Profesion </label>
                                             <select className="form-select" id="Genero" aria-label="Default select example" onChange={(e) => setProfesion(e.target.value)} required>
                                                 <option disable="true" defaultValue="">Profesion...</option>
-                                                <option defaultValue="Psicologia">Psicologia</option>
-                                                <option defaultValue="Salud">Salud</option>
-                                                <option defaultValue="Deportes">Deportes</option>
-                                                <option defaultValue="Cultura">Cultura</option>
+                                                <option defaultValue="Psicologia">Etólogo</option>
+                                                <option defaultValue="Salud">Médico veterinario</option>
+                                                <option defaultValue="Deportes">Adiestrador</option>
+                                                <option defaultValue="Cultura">Cinólogo</option>
                                             </select>
                                         </div>
                                         <div className="col-12">

@@ -1,31 +1,30 @@
-import ImagenTitulo from '../../assets/img/imgnav.jpg';
-import React, { useState, useEffect } from 'react'
-import { datosInicio} from '../../administrador/data/DataAdmin'
-import ActualizarEvento from '../modales/ActualizarEvento'
+import ImagenTitulo from '../../assets/img/dogsalud.jpg';
+import React, { useState, useEffect } from 'react';
+import { datosInicio, eliminarEvento } from '../../administrador/data/DataAdmin';
+import ActualizarEvento from '../modales/ActualizarEvento';
+import handleDelete from '../handles/Handledelete';
 import FechaNotificacion from '../../assets/js/FechaNotificacion';
-import Swal from 'sweetalert2'
-
+import Swal from 'sweetalert2';
 
 const Inicio = () => {
     const [dataInicio, setDataInicio] = useState([]);
-    const [dataEvento, setDataEvento] = useState("")
-   
+    const [dataEvento, setDataEvento] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
             const data = await datosInicio(1);
             setDataInicio(data.reverse());
         }
-        setTimeout(function() {
+        setTimeout(function () {
             localStorage.clear();
             Swal.fire({
-              title: "Por tu seguridad se ha cerrado sesión",
-              icon: "success"
+                title: "Por tu seguridad se ha cerrado sesión",
+                icon: "success"
             }).then(() => {
-              Swal.clickConfirm(location.reload());
+                Swal.clickConfirm(location.reload());
             });
-          }, 3600000);
-          
+        }, 3600000);
+
         fetchData()
     }, []);
 
@@ -43,18 +42,18 @@ const Inicio = () => {
         setDataInicio(data.reverse());
         loading.close()
     }
+
     const dataEventos = (_id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo) => {
         const data = { _id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo };
         setDataEvento(data)
     }
-
 
     return (
         <>
             <div className="col-12 ">
                 <div className="position-relative d-inline-block w-100" >
                     <img src={ImagenTitulo} className="w-100 img-titulo-fondo" alt="" />
-                    <h1 className="text-titulo position-absolute text-center  w-100">EVENTOS
+                    <h1 className="text-titulo position-absolute text-center  w-100">ADOPCIONES
                         <div className=" d-flex justify-content-around ">
                             <div className="bg-green p-1 w-25" ></div>
                             <div className="bg-green p-1 w-25" ></div>
@@ -63,7 +62,6 @@ const Inicio = () => {
                 </div>
                 <div className="filter-container mb-sm-0 mb-4">
                     <div className='d-flex justify-content-end'>
-
                         <select
                             id="filtro-eventos"
                             className="form-select w-25  me-5 mt-4"
@@ -74,13 +72,10 @@ const Inicio = () => {
                                 Filtrar por...
                             </option>
                             <option value="destacado">Destacados</option>
-                            <option value="noticia">Noticias</option>
+                            <option value="noticia">Adopción</option>
                         </select>
                     </div>
                 </div>
-
-
-
 
                 <div className="card-group d-flex mt-0  flex-wrap justify-content-around">
                     {dataInicio.map((data) => (
@@ -90,35 +85,28 @@ const Inicio = () => {
                                 <h5 className="card-title text-uppercase text-center mb-3">
                                     {data.titulo}
                                 </h5>
-                                <p className="card-text">{
-                                    data.descripcion
-                                }
+                                <p className="card-text">
+                                    {data.descripcion}
                                 </p>
                                 {data.pdf.urlPdf ? <p>
                                     <a href={data.pdf.urlPdf} target="_blank" rel="noopener noreferrer">Ver documento</a>
-                                </p>:""}
-                               
-
+                                </p> : ""}
                             </div>
                             <div className="card-footer bg-green">
-                                <small className="text-muted1 d-flex justify-content-between pt-0">Ultima actualización {data.updatedAt?FechaNotificacion(data.updatedAt):""}
+                                <small className="text-muted1 d-flex justify-content-between pt-0">Ultima actualización {data.updatedAt ? FechaNotificacion(data.updatedAt) : ""}
                                     <div className="">
                                         <button className='btn btn-sm btn-secondary' data-bs-toggle="modal" data-bs-target="#actualizarEvento" onClick={() => dataEventos(data._id, data.descripcion, data.fecha_inicio, data.fecha_final, data.imagen.idImg, data.imagen.urlImg, data.lugar, data.tipo, data.titulo)}>Actualizar</button>
+                                        <button className='btn btn-sm btn-danger ms-2' onClick={() => handleDelete(data._id)}>Eliminar</button>
                                     </div>
                                 </small>
                             </div>
                         </div>
-                    ))
-
-                    }
-
-
+                    ))}
                 </div>
             </div>
-
             <ActualizarEvento data={dataEvento} />
         </>
-    )
+    );
 }
 
 export default Inicio;

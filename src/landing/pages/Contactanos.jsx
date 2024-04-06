@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Imgnav from "../../assets/img/imgnav.jpg";
+import Contacto from "../../assets/img/dogcontacto.webp";
 import Phone from "../../assets/img/icons/phone.svg";
 import House from "../../assets/img/icons/house.svg";
 import Chat from "../../assets/img/icons/chat-dots.svg";
@@ -12,11 +12,15 @@ const Contactanos = () => {
   const [tipoPqrs, setTipoPqrs] = useState("")
   const [motivo, setMotivo] = useState("")
 
-  const handleSubmit = (e) => {
+  const validarToken = (e) => {
+    const tokenApre = localStorage.getItem("Token-Aprendiz")
+    const tokenPro = localStorage.getItem("Token-Profesional")
+    const tokenAdmin = localStorage.getItem("Token-Administrador")
+    const token = tokenApre || tokenPro || tokenAdmin
     e.preventDefault();
 
-    const tokenApre = localStorage.getItem("Token-Aprendiz")
-    if (!tokenApre) {
+    if (!token) {
+
 
       Swal.fire({
         title: "Debes Iniciar Sesion Primero",
@@ -25,10 +29,23 @@ const Contactanos = () => {
         confirmButtonText: `<i  className="btn btn-green"    data-bs-toggle="modal"    data-bs-target="#exampleModal1" >  Iniciar sesion</i>`,
 
       })
+
+
     }
-    else if (tokenApre) {
-      const { id } = jwt_decoded(tokenApre);
-      formPqrs(id, tipoPqrs, motivo)
+    else if (token) {
+      if (tokenApre) {
+
+        const { id } = jwt_decoded(tokenApre);
+        formPqrs(id, tipoPqrs, motivo)
+  
+      } else {
+        Swal.fire({
+          title: "Eres profesional",
+          icon: "warning",
+
+
+        })
+      }
     }
   }
 
@@ -36,7 +53,7 @@ const Contactanos = () => {
     <>
       {/* <!-- Titulo --> */}
       <div className="position-relative d-inline-block w-100">
-        <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
+        <img src={Contacto} className="w-100 img-titulo-fondo" alt="" />
         <h1 className="text-titulo position-absolute text-center  w-100">
           CONTACTANOS
           <div className=" d-flex justify-content-around pt-2">
@@ -53,29 +70,33 @@ const Contactanos = () => {
         <div className="d-flex flex-wrap justify-content-around">
           <div className="bg-green py-4 mt-5 rounded-4 text-center shadow-black align-items-stretch contenedor-icons-contact">
             <img src={Phone} alt="" />
-            <p className="text-white fs-5 mt-5">+57 321 0908 000</p>
-            <p className="text-white fs-5">+57 321 0908 000</p>
+            <p className="text-white fs-5 mt-5">+57 321 9560879</p>
+            <p className="text-white fs-5">+57 321 0918 083</p>
           </div>
           <div className="bg-green py-4 mt-5 rounded-4 text-center shadow-black align-items-stretch contenedor-icons-contact">
             <img src={House} alt="" />
-            <p className="text-white fs-5 mt-5"> a 3-111, Cra. 3 #3-1</p>
+            <p className="text-white fs-5 mt-5">Vereda San Vicente</p>
             <p className="text-white fs-5">Popayán, Cauca</p>
           </div>
           <div className="bg-green py-4 mt-5 rounded-4 text-center  shadow-black align-items-stretch contenedor-icons-contact">
             <img src={Chat} alt="" />
-            <p className="text-white fs-5 mt-5">soysena@sena.edu.co</p>
-            <p className="text-white fs-5">baprendiz@sena.edu.co</p>
+            <p className="text-white fs-5 mt-5">mascotas@gmail.com</p>
+            <p className="text-white fs-5">info@gmail.com</p>
           </div>
         </div>
 
-        <div className="text-center d-flex flex-column justify-content-center align-items-center mt-5">
-          <h1 className="mb-4"> Ponte en contacto</h1>
-          <h6>
-            Si tiene alguna pregunta, solo complete el formulario de contacto y{" "}
-            <br /> le responderemos a la brevedad.
-          </h6>
+        <div className="text-center text-justify d-flex flex-column justify-content-center align-items-center mt-5">
+        <div className="text-justify">
+  <h1 className="mb-4">MÁNDANOS UN MENSAJE</h1>
+  <p className="fs-5" style={{ textAlign: 'justify' }}>
+    ¡Estamos aquí para ayudarte! Contáctanos hoy mismo para brindarte el mejor cuidado
+    y atención para tu mascota. <br></br> Juntos, podemos garantizar una vida feliz
+    y saludable para tu compañero peludo. ¡Esperamos escucharte pronto!
+  </p>
+</div>
 
-          <form className="needs-validation p-4" onSubmit={handleSubmit} >
+
+          <form className="needs-validation p-4" onSubmit={validarToken} >
             <div className="row g-2 my-2">
 
 
@@ -83,8 +104,8 @@ const Contactanos = () => {
                 <div className="col-md-12">
                   <select className="form-select col-md-12 border-green" id="validationCustom04" onChange={(e) => setTipoPqrs(e.target.value)} defaultValue="">
                     <option disabled value="" key={0}>Motivo mensaje...</option>
-                    <option value="Felicitacion" key={1}>Felicitacion</option>
-                    <option value="Peticion" key={2}>Peticion</option>
+                    <option value="Felicitacion" key={1}>Felicitación</option>
+                    <option value="Peticion" key={2}>Petición</option>
                     <option value="Queja" key={3}>Queja</option>
                     <option value="Reclamo" key={4}>Reclamo</option>
                     <option value="Sugerencia" key={5}>Sugerencia</option>

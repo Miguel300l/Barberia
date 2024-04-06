@@ -39,14 +39,13 @@ const Fotter = () => {
               <div className="mx-4 te">
                 <p className="text-white fs-4 fw-semibold text-center">
                   <img src={People} className="me-3" alt="iconnosotros" />
-                  ACERCA DE NOSOTROS
+                  ¿QUE HACE MASCOTAS?
                 </p>
                 <hr className="text-white" />
-                <p className="text-muted1 fs-6">
-                  Es una estrategia institucional para contribuir en la
-                  permanencia y el desempeño exitoso de los aprendices de la
-                  entidad en su proceso formativo con enfoque territorial y
-                  diferencial.
+                <p className="text-muted1 fs-6" style={{ textAlign: 'justify' }}>
+                En mascotas, nos dedicamos a cambiar vidas de perritos y personas por igual.
+                Trabajamos incansablemente para rescatar, rehabilitar y encontrar hogares amorosos
+                para mascotas necesitadas.
                 </p>
               </div>
             </div>
@@ -61,17 +60,17 @@ const Fotter = () => {
                 <Link className="nav-link" aria-current="page" to="/">
                   INICIO
                 </Link>
-                <Link className="nav-link" to="/conocenos" >
-                  CONOCENOS
+                <Link className="nav-link" to="/nosotros" >
+                  NOSOTROS
                 </Link>
-                <Link className="nav-link" to="/charla">
-                  CHARLA
-                </Link>
-                <Link className="nav-link" to="/cronograma" >
-                  CRONOGRAMA
+                <Link className="nav-link" to="/profesionales">
+                  PROFESIONALES
                 </Link>
                 <Link className="nav-link" to="/contactanos" >
                   CONTACTANOS
+                </Link>
+                <Link className="nav-link" to="/adopcion" >
+                  ADOPCION
                 </Link>
               </div>
             
@@ -87,15 +86,16 @@ const Fotter = () => {
                 <p className="d-flex justify-content-between text-muted1 fs-6">
                   Lunes a Viernes:
                   <span>
-                    8:00 AM A 12:00 AM <br />
-                    2:00 PM A 9:00 PM
+                    8:00 AM A 4:00 PM 
                   </span>
                 </p>
                 <br />
-                <p className="text-muted1 fs-6">
-                  No se atiende fines de semana y festivos
+                <p className="d-flex justify-content-between text-muted1 fs-6">
+                  Sabados y Domingos:
+                  <span>
+                    10:00 AM A 4:00 PM
+                  </span>
                 </p>
-
                 <a className="float-end btn btn-green w-75"  id="btn-inicio-admin"  data-bs-toggle="modal"    data-bs-target="#inicioSesionAdmin">Iniciar sesion administrador</a>
               </div>
             </div>
@@ -104,27 +104,27 @@ const Fotter = () => {
           <hr className="text-white mt-4" />
           <div className="d-flex flex-wrap justify-content-center pb-3">
             <a
-              href="https://www.facebook.com/CTPISENACauca" target="_blank"
+              href="https://www.facebook.com/groups/2772755296109525/?ref=share&mibextid=NSMWBT" target="_blank"
               className="text-decoration-none"
             >
               <img src={Facebook} className="me-2 icon" alt="logofacebook" />
             </a>
 
             <a
-              href="https://twitter.com/CTPIsenacauca" target="_blank"
+              href="https://m.twitch.tv/isaylosdogs" target="_blank"
               className="ms-4 text-decoration-none"
             >
               <img src={Twitter} className="me-2 icon" alt="logotwiter" />
             </a>
 
             <a
-              href="https://instagram.com/ctpisenacauca?igshid=YmMyMTA2M2Y=" target="_blank"
+              href="https://www.instagram.com/comedogpopayan/?hl=es" target="_blank"
               className="ms-4 text-decoration-none"
             >
               <img src={Instagram} className="me-2 icon" alt="logoinstagram" />
             </a>
 
-            <a href="https://wa.link/mtgdag" target="_blank" className="ms-4 text-decoration-none ">
+            <a href="https://chat.whatsapp.com/GIDEP3wMElmLLRSJcqyW6u" target="_blank" className="ms-4 text-decoration-none ">
               <img src={Whatsapp} className="me-2 icon" alt="logoWhatsaap" />
             </a>
             

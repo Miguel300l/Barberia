@@ -150,8 +150,8 @@ const ActualizarEvento = ({ data }) => {
                     <div className="modal-content bg-color-blue text-white">
 
                         <div className="modal-header">
-                            <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">ACTUALIZAR EVENTO</h3>
-                            <button type="button" className="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">ACTUALIZAR ADOPCIÓN</h3>
+                            <button type="button" className="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <div className="modal-body mt-2" >
@@ -186,7 +186,7 @@ const ActualizarEvento = ({ data }) => {
                                         </div>
                                 {/* Tipo de evento */}
                                 <div className="col-12 mt-0" style={{ padding: "0 50px" }}>
-                                    <label htmlFor="exampleFormControlSelect1" className="form-label">CATEGORIA EVENTO</label>
+                                    <label htmlFor="exampleFormControlSelect1" className="form-label">CATEGORIA ADOPCIÓN</label>
                                     <select value={tipoEvento} className="form-control" id="exampleFormControlSelect1" onChange={(e) => { selectFuncion(e.target.value); }}>
                                         <option value="1">Seleccionar...</option>
                                         <option value="destacado">Destacado</option>
@@ -196,11 +196,11 @@ const ActualizarEvento = ({ data }) => {
                                 </div>
                                 {/* Nombre del evento */}
                                 <div className="col-12 mt-0 mt-4" style={{ padding: "0 50px" }}>
-                                    <label htmlFor="validationCustom01" className="form-label">TITULO DEL EVENTO</label>
+                                    <label htmlFor="validationCustom01" className="form-label">TITULO DE ADOPCIÓN</label>
                                     <input type="text" className="form-control" placeholder='Titulo' id="validationCustom01" value={evento} onChange={(e) => (setEvento(e.target.value))} />
                                 </div>
                                 <div className="col-12 mt-0 mt-4" id='con-lugar' style={{ padding: "0 50px" }}>
-                                    <label htmlFor="validationCustom01" className="form-label">LUGAR EVENTO</label>
+                                    <label htmlFor="validationCustom01" className="form-label">LUGAR DE ADOPCIÓN</label>
                                     <input type="text" className="form-control" placeholder='Lugar evento' id="validationCustom01" value={lugar} onChange={(e) => (setLugar(e.target.value))} />
                                 </div>
 
@@ -213,9 +213,7 @@ const ActualizarEvento = ({ data }) => {
                                 <div className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
                                     <label htmlFor="validationCustom03" className="form-label">FECHA Y HORA FINAL</label>
                                     <input type="datetime-local" className="form-control" min={fechaInicial} id="validationCustom03" value={fechaFinal} onChange={(e) => setFechaFinal(e.target.value)} />
-                                </div>
-
-                               
+                                </div> 
                                 <div id='con-pdf' className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
                                     <label htmlFor="validationCustom01" className="form-label">ADJUNTAR PDF (Opcional)</label>
                                     <input type="file" className="form-control" id="validationCustom01" accept="application/pdf"  onChange={(e) => setPdf(e.target.files[0])} />

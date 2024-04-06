@@ -340,6 +340,39 @@ export const verUsuarios = async () => {
     console.log(error.response);
   }
 }
+
+
+export const eliminarEvento = async (id) => {
+  try {
+    const tokenAdmin = localStorage.getItem("Token-Administrador");
+    const headers = {
+      "acceso-token": tokenAdmin,
+    };
+
+    const response = await axios.delete(`/eliminarEvento/${id}`, { headers });
+
+    if (response.status === 200) {
+      Swal.fire({
+        title: response.data,
+        icon: 'success',
+        timer: 2000,
+      }).then(() => {
+        location.reload();
+      });
+    }
+  } catch (error) {
+    console.log(error);
+    Swal.fire({
+      icon: 'error',
+      title: error.response.data,
+      timer: 2000
+    });
+  }
+};
+
+
+
+
 export const actualizarEvento = async (id, data) => {
   try {
     const tokenAdmin = localStorage.getItem("Token-Administrador");
@@ -388,7 +421,7 @@ export const agregarPrograma = async (data) => {
     };
 
     const loading = Swal.fire({
-      title: 'Agregando ficha',
+      title: 'Agregando Edad',
       text: 'Espere un momento por favor...',
       allowOutsideClick: false,
       showConfirmButton: false,

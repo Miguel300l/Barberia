@@ -1,4 +1,4 @@
-import Imgnav from "../../assets/img/imgnav.jpg";
+import Imgnav from "../../assets/img/dogcontacto.webp";
 import ModalCharla from '../modales/ModalCharla';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ const Charlas = () => {
       <div className="position-relative d-inline-block w-100">
         <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
         <h1 className="text-titulo position-absolute text-center w-100">
-          CHARLAS
+          CONTACTO PROFESIONAL
           <div className="d-flex justify-content-around ">
             <div className="bg-green p-1 w-25"></div>
             <div className="bg-green p-1 w-25"></div>
@@ -41,8 +41,8 @@ const Charlas = () => {
           <table className="table table-hover table-sm border-green">
             <thead className="border-1">
               <tr className="table-active bg-color-blue text-white">
-                <th>APRENDIZ</th>
-                <th>FICHA</th>
+                <th>USUARIO</th>
+                <th>PERSONA</th>
                 <th>MOTIVO</th>
                 <th>ESTADO</th>
                 <th>OPCIONES</th>

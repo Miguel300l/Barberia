@@ -159,9 +159,9 @@ const Registrase = () => {
                                             </select>
                                         </div>
                                         <div className="form_group col-12">
-                                            <label htmlFor="validationGenero" className="form-label">Programa</label>
+                                            <label htmlFor="validationGenero" className="form-label">Rango de edad</label>
                                             <select className="form-select" id="validationGenero" aria-label="Default select example" onChange={(e) => { setPrograma(e.target.value) }}>
-                                                <option disable="true" >Elija su programa..</option>
+                                                <option disable="true" >Elija su rango de edad..</option>
                                                 {options.map((data) => (
                                                     <option value={data._id} key={data._id}>{data.nombre}-{data.ficha}</option>
                                                 ))

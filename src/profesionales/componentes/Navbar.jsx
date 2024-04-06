@@ -1,6 +1,6 @@
 import React from "react";
-import Horizontal from "../../assets/img/Horizontal.png";
-import Favicon2 from "../../assets/img/favicon2.png";
+import Horizontal from "../../assets/img/Dog3.png";
+import Favicon2 from "../../assets/img/Dog3.png";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../componentes/Footer";
 import BtnInicio from '../../landing/data/BtnInicioSesion'
@@ -15,11 +15,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
+     <nav
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
-        <div className="container-fluid">
+        <div className="container-fluid" id="navbarr">
           <Link className="navbar-brand" to="/">
             <img src={Horizontal} alt="Logo" className="img-logo" />
             <img
@@ -43,39 +43,37 @@ const Navbar = () => {
             className="collapse navbar-collapse opciones-navbar"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item fs-6 ">
-                <Link className="nav-link active" aria-current="page" to="/profesional">
+                <Link className="nav-link active" aria-current="page" to="/">
                   INICIO
                 </Link>
               </li>
-              <li className="nav-item fs-6">
-                <Link className="nav-link " to="/profesional/conocenos">
-                  CONOCENOS
+              <li className="nav-item  fs-6">
+                <Link className="nav-link active" to="/nosotros">
+                  NOSOTROS
                 </Link>
               </li>
-              <li className="nav-item fs-6">
+              <li className="nav-item  fs-6">
                 <Link
-                  className="nav-link"
-                  to="/profesional/charla"
+                  className="nav-link active"
+                  to="/profesionales"
                 >
-                  CHARLA
+                  PROFESIONALES
                 </Link>
               </li>
-              <li className="nav-item fs-6">
-                <Link className="nav-link" to="/profesional/cronograma">
-                  CRONOGRAMA
+              <li className="nav-item  fs-6">
+                <Link className="nav-link active" to="/cuidados">
+                  CUIDADOS
                 </Link>
               </li>
-              <li className="nav-item fs-6">
-
-                <Link className="nav-link" to="/profesional/evento">
-                  EVENTO
+              <li className="nav-item  fs-6">
+                <Link className="nav-link active" to="/adopcion">
+                  ADOPCIÓN
                 </Link>
-
               </li>
-              <li className="nav-item fs-6">
-                <Link className="nav-link" to="/profesional/contactanos">
+              <li className="nav-item   fs-6">
+                <Link className="nav-link active" to="/contactanos">
                   CONTACTANOS
                 </Link>
               </li>

@@ -1,9 +1,7 @@
 import ModalProfesional from '../modales/ModalProfesional';
 import MotivoRecProf from '../modales/MotivoRecProf'
-import Imgnav from "../../assets/img/imgnav.jpg";
+import Imgnav from "../../assets/img/Dog1.webp";
 import { verPro } from '../../landing/data/DataInicioSesion'
-// import users from "../../assets/img/users.png";
-import search from '../../assets/img/icons/search.svg';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { solicitudesRechazadasProfesional, solicitudesprofesional, habilitarPro, inhabilitarPro } from '../data/DataAdmin';
@@ -78,7 +76,7 @@ const Profesional = () => {
               <tr className="table-active bg-color-blue text-white">
                 <th>NOMBRE</th>
                 <th>NIT</th>
-                <th>PROFESION</th>
+                <th>PROFESIÓN</th>
                 <th>ESTADO</th>
                 <th>OPCIONES</th>
               </tr>
@@ -139,7 +137,7 @@ const Profesional = () => {
               <tr className="table-active bg-color-blue text-white">
                 <th>NOMBRE</th>
                 <th>NIT</th>
-                <th>PROFESION</th>
+                <th>PROFESIÓN</th>
                 <th>OPCIONES</th>
                 <th>ACTIVAR</th>
               </tr>

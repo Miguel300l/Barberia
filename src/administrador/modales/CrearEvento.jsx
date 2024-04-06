@@ -58,29 +58,30 @@ const CrearEvento = () => {
         <div className="modal-dialog">
           <div className="modal-content bg-color-blue text-white">
             <div className="modal-header">
-              <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">CREAR EVENTO</h3>
-              <button type="button" className="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">CREAR ADOPCIÓN</h3>
+              <button type="button" className="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
             </div>
             <div className="modal-body mt-4">
               <form className="row g-2 needs-validation" onSubmit={handleSubmit}>
                 {/* Tipo de evento */}
                 <div className="col-12 mt-0" style={{ padding: "0 50px" }}>
-                  <label htmlFor="exampleFormControlSelect1" className="form-label">CATEGORIA EVENTO</label>
+                  <label htmlFor="exampleFormControlSelect1" className="form-label">CATEGORIA ADOPCIÓN</label>
                   <select value={tipoEvento} className="form-control" id="exampleFormControlSelect1" onChange={(e) => { selectFuncion(e.target.value); }}>
                     <option value="">Seleccionar...</option>
                     <option value="destacado">Destacado</option>
-                    <option value="noticia">Noticia</option>
-                    <option value="cronograma">Cronograma</option>
+                    <option value="noticia">Adopción</option>
+                    <option value="cronograma">Salud canina</option>
                   </select>
                 </div>
                 {/* Nombre del evento */}
                 <div className="col-12 mt-0 mt-4" style={{ padding: "0 50px" }}>
-                  <label htmlFor="validationCustom01" className="form-label">TITULO DEL EVENTO</label>
+                  <label htmlFor="validationCustom01" className="form-label">TITULO DE ADOPCIÓN</label>
                   <input type="text" className="form-control" placeholder='Titulo' id="validationCustom01" value={evento} onChange={(e) => setEvento(e.target.value)} />
                 </div>
                 <div className="col-12 mt-0 mt-4" id='div-lugar' style={{ padding: "0 50px" }}>
-                  <label htmlFor="validationCustom01" className="form-label">LUGAR EVENTO</label>
-                  <input type="text" className="form-control" placeholder='Lugar evento' id="validationCustom01" value={lugar} onChange={(e) => setLugar(e.target.value)} />
+                  <label htmlFor="validationCustom01" className="form-label">LUGAR DE ADOPCIÓN</label>
+                  <input type="text" className="form-control" placeholder='Lugar adopción' id="validationCustom01" value={lugar} onChange={(e) => setLugar(e.target.value)} />
                 </div>
                 {/* Fecha y hora de inicio */}
                 <div className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
@@ -96,10 +97,7 @@ const CrearEvento = () => {
                   <label htmlFor="validationCustom01" className="form-label">ADJUNTAR IMAGEN</label>
                   <input type="file" className="form-control" placeholder='Ingresar descripcion' accept="image/*" id="validationCustom01" onChange={(e) => setImagenes(e.target.files[0])} />
                 </div>
-                <div id='div-pdf' className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
-                  <label htmlFor="validationCustom01" className="form-label">ADJUNTAR PDF (Opcional)</label>
-                  <input type="file" className="form-control" id="validationCustom01" accept="application/pdf" onChange={(e) => setPdf(e.target.files[0])} />
-                </div>
+          
                 {/* Descripcion */}
                 <div className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
                   <label htmlFor="validationCustom01" className="form-label">DESCRIPCION</label>

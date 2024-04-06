@@ -43,20 +43,20 @@ const Fotter = () => {
                 <Link className="nav-link" aria-current="page" to="/">
                   INICIO
                 </Link>
-                <Link className="nav-link" to="/conocenos" >
-                  CONOCENOS
+                <Link className="nav-link" to="/nosotros" >
+                  NOSOTROS
                 </Link>
-                <Link className="nav-link" to="/charla">
-                  CHARLA
-                </Link>
-                <Link className="nav-link" to="/cronograma" >
-                  CRONOGRAMA
-                </Link>
-                <Link className="nav-link" to="/eventos" >
-                  EVENTOS
+                <Link className="nav-link" to="/profesionales">
+                  PROFESIONALES
                 </Link>
                 <Link className="nav-link" to="/contactanos" >
                   CONTACTANOS
+                </Link>
+                <Link className="nav-link" to="/adopcion" >
+                  ADOPCION
+                </Link>
+                <Link className="nav-link" to="/cuidados" >
+                  CUIDADOS
                 </Link>
               </div>
             

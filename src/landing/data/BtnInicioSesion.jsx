@@ -149,7 +149,7 @@ const BtnInicioSesion = () => {
               </Link>
               <ul
                 className="dropdown-menu dropdown-menu-end bg-green border-green"
-                style={{backgroundColor: "#00324d" }}
+                style={{backgroundColor: "#000000" }}
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>

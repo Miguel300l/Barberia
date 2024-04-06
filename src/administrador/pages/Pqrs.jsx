@@ -1,7 +1,6 @@
-import Imgnav from '../../assets/img/imgnav.jpg'
+import Imgnav from '../../assets/img/dognosotros.webp'
 import Person from '../../assets/img/icons/person-lines-fill.svg'
 import Pencil from '../../assets/img/icons/pencil-square.svg'
-import search from '../../assets/img/icons/search.svg'
 import {  useState,useEffect } from 'react'
 import { datosPqrs } from '../data/DataAdmin'
 import ResponderPqrs from '../modales/ResponderPqrs'
@@ -53,13 +52,13 @@ setdataModalPqrs(datos)
 
           <table className="table caption-top w-100">
             <thead>
-              <tr className='text-white' style={{ backgroundColor: '#00324d' }} >
+              <tr className='text-white' style={{ backgroundColor: '#000000' }} >
 
                 <th className='col-1'><img src={Person} alt="" className="ms-2 bg-green-opacity p-2 rounded-2" /></th>
-                <th className='col-3'>Nombres</th>
-                <th className='col-2'>Ficha</th>
-                <th className='col-2'>Tipo</th>
-                <th className=' col-5' >Pqrs</th>
+                <th className='col-3'>NOMBRES</th>
+                <th className='col-2'>PERSONA</th>
+                <th className='col-2'>TIPO</th>
+                <th className=' col-5' >PQRS</th>
                 <th className='col-1 '><img src={Pencil} alt="" className=" bg-green-opacity p-2 rounded-2" /></th>
               </tr>
             </thead>

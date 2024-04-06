@@ -48,9 +48,9 @@ const Slider = () => {
                 className="d-block w-100 img-slider mx-auto y-auto   mb-5"
                 alt="Slide"
               />
-              <div className="carousel-caption d-none d-md-block bg-color-blue w-75 mx-auto">
-                <h5 className="fs-2">{data.titulo}</h5>
-                <p className="fs-5">{data.descripcion}</p>
+              <div className="carousel-caption d-none d-md-block bg-color-blue" id="carousel">
+                <h5 className="titulo">{data.titulo}</h5>
+                <p className="" >{data.descripcion}</p>
               </div>
             </div>
           ))}

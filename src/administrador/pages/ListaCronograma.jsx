@@ -1,4 +1,4 @@
-import Imgnav from "../../assets/img/imgnav.jpg";
+import Imgnav from "../../assets/img/profesional.webp";
 import { datosCronograma } from "../data/DataAdmin";
 import { useState,useEffect} from "react";
 import ActualizarCronograma from '../modales/ActualizarCronograma';
@@ -31,7 +31,7 @@ const dataEventos = (_id, descripcion, fecha_inicio, fecha_final, idImg, urlImg,
             <div className="position-relative d-inline-block w-100">
               <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
               <h1 className="text-titulo position-absolute text-center  w-100">
-                CRONOGRAMA
+                SALUD CANINA
                 <div className=" d-flex justify-content-around ">
                   <div className="bg-green p-1 w-25"></div>
                   <div className="bg-green p-1 w-25"></div>

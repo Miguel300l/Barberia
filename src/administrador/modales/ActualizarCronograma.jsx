@@ -145,7 +145,7 @@ const ActualizarEvento = ({ data }) => {
 
                         <div className="modal-header">
                             <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">ACTUALIZAR EVENTO</h3>
-                            <button type="button" className="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
                         <div className="modal-body mt-2" >

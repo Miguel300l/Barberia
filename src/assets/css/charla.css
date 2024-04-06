@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
 }
+.img-charla1{
+  height: 100%;
+  width: 340px;
+}
 
 .contenedor {
   margin: 0 auto;
@@ -14,17 +18,18 @@
 .color-charla{
   width: 100%;
   height: 100%;
-  background-color: #00324d;
+  background-color: #000000;
   opacity: 50%;
 }
 
 .img_charla {
-  background-image: url(../img/charla.jpg);
   background-color: black;
   background-position: center center;
   background-size: cover;
   flex: 0 0 calc(70%);
   margin: 0 auto;
+  height: 100%;
+  width: 400px;
 }
 
 .charla1 {
@@ -44,5 +49,5 @@
 .formulario {
   flex: 0 0 calc(70%);
   padding: 30px;
-  background-color: #00324d;
+  background-color: #000000;
 }

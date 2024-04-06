@@ -1,4 +1,4 @@
-import SolicitudCharla from '../../landing/pages/SolicitudCharla'
+import SolicitudCharla from '../../landing/pages/Profesionales'
 const Charla = () => {
 
   return (

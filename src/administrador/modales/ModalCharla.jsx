@@ -31,15 +31,15 @@ charlaAceptada(props.dataAprendiz.idCharla);
                                 </div>
                                 <div className="col-4">
                                     <div className=" d-flex">
-                                        <p className=" fw-bold">Aprendiz: </p>
+                                        <p className=" fw-bold">Usuario: </p>
                                         <p className="ms-2">{props.dataAprendiz.nombre}{" "}{props.dataAprendiz.apellidos}</p>
                                     </div>
                                     <div className=" d-flex">
-                                        <p className=" fw-bold">Ficha: </p>
+                                        <p className=" fw-bold">Mascota: </p>
                                         <p className="ms-2">{props.dataAprendiz.ficha}</p>
                                     </div>
                                     <div className=" d-flex">
-                                        <p className=" fw-bold">Jornada: </p>
+                                        <p className=" fw-bold">Diversidad canina: </p>
                                         <p className="ms-2">{props.dataAprendiz.jornada}</p>
                                     </div>
                                     <div className=" d-flex">

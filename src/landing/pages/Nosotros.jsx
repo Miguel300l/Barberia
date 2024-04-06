@@ -1,12 +1,9 @@
 import React from "react";
-import Zyro from '../../assets/img/zyro-image.png'
-import Bullseye from '../../assets/img/icons/bullseye.svg'
-import Circle1 from '../../assets/img/icons/1-circle.svg'
-import Circle2 from '../../assets/img/icons/2-circle.svg'
-import Circle3 from '../../assets/img/icons/3-circle.svg'
-import Opjetivo from '../../assets/img/bienestar1.png'
-import Video from '../../assets/img/videos/Bienestar al Aprendiz SENA.mp4'
-import Centro from '../../assets/img/imgnav.jpg'
+import Dogmision from '../../assets/img/dogmision.jpg'
+import Dogvision from '../../assets/img/Dog2.webp'
+import Historia from '../../assets/img/historia.jpg'
+import Video from '../../assets/img/videos/video de dog.mp4'
+import Centro from '../../assets/img/dognosotros.webp'
 
 
 const Nosotros = () => {
@@ -15,26 +12,39 @@ const Nosotros = () => {
       {/* <!-- Inicio Section --> */}
       <section className="">
         <img src={Centro} className="titulo-objetivo" alt="" />
-        <div className="px-5 py-5">
-          <p className="fs-3 fw-semibold"><img src={Bullseye} alt="" className="pe-3" /> OBJETIVOS</p>
-          <hr className="w-25" />
-          <div className="row">
-            <div className="col-lg-6 col-md-12">
-              <div className="">
-                <p className="fs-5 fw-semibold"> <img src={Circle1} className="me-3" alt="" />Objetivo</p>
-                <p>Implementar estrategias de acompañamiento para el desarrollo integral del aprendiz en su proceso formativo.</p>
-                <p className="fs-5 fw-semibold"><img src={Circle2} className="me-3" alt="" />Objetivo </p>
-                <p>Incentivar al aprendiz en su proceso de formación profesional integral mediante la implementación de un programa de estímulos.</p>
-                <p className="fs-5 fw-semibold"> <img src={Circle3} className="me-3" alt="" />Objetivo </p>
-                <p>Entregar con oportunidad y calidad los servicios de bienestar al aprendiz documentando procedimientos que soporten una operación ágil y flexible.</p>
-              </div>
-            </div>
-            <div className="col-lg-5 col-md-12">
-              <img src={Opjetivo} className="img-obj" alt="" />
-            </div>
-          </div>
-        </div>
+        <section className="container-fluid py-5">
+  <div className="row d-flex flex-wrap justify-content-center align-items-center">
+    <div className="col-md-6">
+      <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
+        <h5 className="fw-bold fs-4 titulos text-center">MISIÓN</h5>
+        <p>
+          En mascotas, nuestra misión es unir corazones peludos con hogares amorosos. 
+          Nos comprometemos a ser un puente confiable entre las mascotas que necesitan un lugar donde ser amadas y cuidadas, 
+          y las personas que anhelan la compañía y la alegría que solo un compañero peludo puede brindar.
+        </p>
+      </div>
+    </div>
+      <img src={Dogmision} className="img-fluid img-nosotros" alt="" />
+  </div>
+</section>
+
       </section>
+      <section className="container-fluid py-5">
+  <div className="row d-flex flex-wrap justify-content-center align-items-center">
+      <img src={Dogvision} className="img-fluid img-nosotros" alt="" />
+    <div className="col-md-6">
+      <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
+        <h5 className="fw-bold fs-4 titulos text-center">VISIÓN</h5>
+        <p>
+          En un mundo donde todas las mascotas encuentren su lugar en un hogar lleno de amor, 
+          en mascotas trabajamos incansablemente para hacer realidad esta visión.
+          Nos esforzamos por ser un recurso accesible y compasivo para aquellos que desean adoptar, 
+          fomentando una cultura de adopción responsable y cuidado amoroso para todas las criaturas peludas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* <!-- Fin section --> */}
 
@@ -42,7 +52,7 @@ const Nosotros = () => {
 
       <section className="video d-flexr align-items-center justify-content-center">
         <p className="fs-1 fw-semibold text-center titulos">
-          VIDEO PRESENTACION
+          RECUERDOS CON TU MASCOTA
         </p>
         <video src={Video} className="w-75 border border-1 border-secondary rounded" style={{ height: "auto" }} controls></video>
       </section>
@@ -51,14 +61,28 @@ const Nosotros = () => {
 
       {/* <!-- Fin Video --> */}
 
-      <div className="text-center py-5 d-flex justify-content-center">
-        <div className="w-75">
-
-          <h1>¿Quiénes pueden acceder al Plan de Bienestar al Aprendiz?</h1>
-          <p className="mt-4">Aprendices matriculados en formación Laboral y Formación tecnológica, de todos los niveles y jornadas, en sus diferentes modalidades: presencial, virtual o a distancia.
-            Los Centros de Formación Profesional Integral incorporarán estrategias para la inclusión de aprendices pertenecientes a las comunidades minoritarias y vulnerables</p>
-        </div>
+      <section className="container-fluid py-5">
+  <div className="row d-flex flex-wrap justify-content-center align-items-center">
+    <div className="col-md-6">
+      <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
+        <h5 className="fw-bold fs-4 titulos text-center">HISTORIA</h5>
+        <p>
+          La historia de mascotas: Un refugio de amor y esperanza para nuestras amadas mascotas.
+          Hace varios años, un grupo de amantes de los animales se unió con un propósito común: 
+          proporcionar un hogar seguro y amoroso para las mascotas que habían sido abandonadas,
+          maltratadas o simplemente habían perdido su camino. Con este objetivo en mente, 
+          nació mascotas.
+          Desde ese momento, hemos trabajado incansablemente para rescatar a los animales más necesitados,
+          brindándoles atención médica, alimentación y, lo más importante, cariño y afecto. 
+          Cada animal que llega a nuestras puertas tiene una historia única, 
+          pero todos comparten el deseo de encontrar un hogar donde puedan ser amados y cuidados como se merecen.
+        </p>
       </div>
+    </div>
+      <img src={Historia} className="img-historia" alt="" />
+  </div>
+</section>
+
 
     </>
   );

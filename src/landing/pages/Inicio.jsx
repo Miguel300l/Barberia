@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import IconPregunta from '../../assets/img/biene.jpg'
+import IconPregunta from '../../assets/img/Dog1.webp'
 import { Link } from 'react-router-dom'
 import Slider from '../componentes/SliderInicioSesion'
 import { datosInicio, verPro, verProfesionales } from "../data/DataInicioSesion";
@@ -59,38 +59,41 @@ const Contenido = () => {
       }
     </div>
     <div>
-      <section className="container-fluid py-5 ">
-        <div className=" d-flex flex-wrap justify-content-center">
-          <img src={IconPregunta} className="" alt="" />
-          <div className="w-50 d-flex flex-column my-auto fs-5 ms-5 nosotros">
-            <p className="fw-bold fs-4 titulos">QUE HACE BIENESTAR AL APRENDIZ ?</p>
-            Hacen acciones de acompañamiento a los aprendices en temas
-            relacionados con: cultura, a las prácticas de prevención de la
-            enfermedad y promoción de la salud, al desarrollo de habilidades
-            blandas, al deporte, la actividad física, el aprovechamiento del
-            tiempo libre y el arte.
-            <Link
-              to="/conocenos"
-              className="btn btn-green btn-md w-50 mt-5 "
-            >
-              Conoce mas...
-            </Link>
+    <section className="container-fluid py-5">
+  <div className="row d-flex flex-wrap justify-content-center align-items-center">
+      <img src={IconPregunta} className="img-dog" alt="" />
+    <div className="col-md-6">
+      <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
+        <p className="fw-bold fs-4 titulos text-center">¿QUE HACE MASCOTAS?</p>
+        <p>
+          En mascotas, nos dedicamos a cambiar vidas de perritos y personas por igual.
+          Trabajamos incansablemente para rescatar, rehabilitar y encontrar hogares amorosos para mascotas necesitadas.
+          Nuestra pasión es brindar una segunda oportunidad a cada animal que cruza nuestro camino,
+          asegurando que reciban el cuidado, la atención y el amor que merecen.
+        </p>
+        <Link
+          to="/nosotros"
+          className="btn btn-green btn-md w-50 mt-5 "
+        >
+          Conoce más...
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
-          </div>
-        </div>
-      </section>
 
       <section className="py-5">
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center" style={{ textAlign: 'justify' }}>
           <div className=" w-75">
             <h4 className="fw-bold text-center fs-2 mb-3 pb-3 titulos">
-              SOLICITA TU CHARLA
+              CONTACTA UN PROFESIONAL
             </h4>
-            <p className="text-center fs-5">
-              Promover espacios en los que se afiancen las habilidades sociales,
-              emocionales y académicas en pro de favorecer la adaptación
-              universitaria y la mejora de la calidad de vida de los estudiantes
-              y colaboradores del Politécnico Gran Colombiano.
+            <p className="fs-5">
+            Las mascotas son más que simples compañeros; son parte de nuestra familia. 
+            Al igual que nosotros, requieren cuidado, atención y, en ocasiones, 
+            ayuda especializada. Contactar a un profesional en mascotas no solo garantiza el bienestar de nuestros amigos peludos,
+            sino que también proporciona la tranquilidad de saber que están en manos expertas.
             </p>
           </div>
         </div>
@@ -113,8 +116,8 @@ const Contenido = () => {
                           </p>
                         </div>
                         <div>
-                          <button onClick={() => navigate("/charla", { replace: true })} className="btn btn-green mt-3">
-                            Solicitar charla
+                          <button onClick={() => navigate("/profesionales", { replace: true })} className="btn btn-green mt-3">
+                            Contactar profesional
                           </button>
                         </div>
                       </div>
