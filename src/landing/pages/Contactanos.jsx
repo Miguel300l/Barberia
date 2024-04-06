@@ -86,14 +86,15 @@ const Contactanos = () => {
         </div>
 
         <div className="text-center text-justify d-flex flex-column justify-content-center align-items-center mt-5">
-        <div className="text-justify">
+        <div className="text-justify col-sm-8 px-4">
   <h1 className="mb-4">MÁNDANOS UN MENSAJE</h1>
   <p className="fs-5" style={{ textAlign: 'justify' }}>
     ¡Estamos aquí para ayudarte! Contáctanos hoy mismo para brindarte el mejor cuidado
-    y atención para tu mascota. <br></br> Juntos, podemos garantizar una vida feliz
+    y atención para tu mascota. Juntos, podemos garantizar una vida feliz
     y saludable para tu compañero peludo. ¡Esperamos escucharte pronto!
   </p>
 </div>
+
 
 
           <form className="needs-validation p-4" onSubmit={validarToken} >
