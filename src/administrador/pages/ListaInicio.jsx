@@ -2,7 +2,7 @@ import ImagenTitulo from '../../assets/img/dogsalud.jpg';
 import React, { useState, useEffect } from 'react';
 import { datosInicio, eliminarEvento } from '../../administrador/data/DataAdmin';
 import ActualizarEvento from '../modales/ActualizarEvento';
-import handleDelete from '../handles/Handledelete';
+import handleDelete from '../../assets/js/Handledelete';
 import FechaNotificacion from '../../assets/js/FechaNotificacion';
 import Swal from 'sweetalert2';
 
