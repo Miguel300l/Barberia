@@ -75,7 +75,7 @@ const Profesional = () => {
             <thead className="border-1">
               <tr className="table-active bg-color-blue text-white">
                 <th>NOMBRE</th>
-                <th>NIT</th>
+                <th>CC</th>
                 <th>PROFESIÓN</th>
                 <th>ESTADO</th>
                 <th>OPCIONES</th>
@@ -136,7 +136,7 @@ const Profesional = () => {
             <thead className="border-1">
               <tr className="table-active bg-color-blue text-white">
                 <th>NOMBRE</th>
-                <th>NIT</th>
+                <th>CC</th>
                 <th>PROFESIÓN</th>
                 <th>OPCIONES</th>
                 <th>ACTIVAR</th>

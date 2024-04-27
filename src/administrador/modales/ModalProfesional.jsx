@@ -46,7 +46,7 @@ const ModalProfesional = ({dataProfesional}) => {
                     <p className="ms-2">{dataProfesional.nombre}{" "}{dataProfesional.apellido}</p>
                   </div>
                   <div className=" d-flex">
-                    <p className=" fw-bold">Nit: </p>
+                    <p className=" fw-bold">Documento: </p>
                     <p className="ms-2">{dataProfesional.tipoDoc}{" "}{dataProfesional.numDoc}</p>
                   </div>
                   <div className=" d-flex">
