@@ -15,8 +15,8 @@ import SatisfechoText from '../componentes/SatisfechoText'
 import SatisfechoLorem from '../componentes/SatisfechoLorem'
 import HistoriaBarberia from '../componentes/HistoriaBarberia'
 import CircleStat from '../componentes/CirculoEstadistico'
-import barberSatisfechoN from '../../assets/img/barberSatisfechoN.jpg'
-import { Container, Row, Col } from 'react-bootstrap';
+import BarberSatisfechoN from '../../assets/img/BarberSatisfechoN.jpg'
+import { Row, Col } from 'react-bootstrap';
 import '../../assets/css/card.css'
 
 const Nosotros = () => {
@@ -97,11 +97,11 @@ const Nosotros = () => {
               </div>
 
               <p className="text-start" style={{ fontSize: '16px', fontFamily: 'Lato, sans-serif', }}>
-              En Barbershop nos apasiona realzar tu estilo con precisión y autenticidad. Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor. Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
-<br /><br />
-Contamos con un equipo de profesionales dedicados a brindar un servicio excepcional. Desde el primer saludo hasta el toque final del peine, cada paso importa. Tu imagen es nuestra prioridad.
-<br /><br />
-Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad y atención personalizada. Ven, relájate y déjanos cuidar de tu estilo con pasión y experiencia.
+                En Barbershop nos apasiona realzar tu estilo con precisión y autenticidad. Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor. Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
+                <br /><br />
+                Contamos con un equipo de profesionales dedicados a brindar un servicio excepcional. Desde el primer saludo hasta el toque final del peine, cada paso importa. Tu imagen es nuestra prioridad.
+                <br /><br />
+                Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad y atención personalizada. Ven, relájate y déjanos cuidar de tu estilo con pasión y experiencia.
               </p>
             </div>
           </div>
@@ -321,9 +321,9 @@ Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad 
 
       <div className="py-3 position-relative">
         <img
-          src={barberSatisfechoN}
+          src={BarberSatisfechoN}
           className="d-block w-100 object-fit-cover"
-          alt="barberSatisfechoN"
+          alt="BarberSatisfechoN"
           style={{ height: '660px', objectFit: 'cover' }}
         />
         {/* Capa oscura */}
@@ -372,7 +372,7 @@ Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad 
               </div>
 
               <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
-              Barbershop nació con la idea de recuperar la esencia de la barbería tradicional, combinándola con un enfoque moderno. Desde nuestros inicios, buscamos crear un espacio donde cada cliente se sienta escuchado, cómodo y bien atendido.
+                Barbershop nació con la idea de recuperar la esencia de la barbería tradicional, combinándola con un enfoque moderno. Desde nuestros inicios, buscamos crear un espacio donde cada cliente se sienta escuchado, cómodo y bien atendido.
               </p>
             </div>
           </div>
