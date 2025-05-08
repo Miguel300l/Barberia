@@ -1,6 +1,8 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bebas Neue", "Lato", "Segoe UI", Tahoma, Geneva, Verdana, "Helvetica", Arial, "Lucida", sans-serif;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 .img-logo {
   max-height: 5rem;

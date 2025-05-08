@@ -1,81 +1,93 @@
-import React, { useEffect, useState } from "react";
-import axios from 'axios';
+import React from 'react';
+import house1 from '../../assets/img/barberCarrucel.jpeg';
+import house2 from '../../assets/img/barberCarrucel2.jpeg';
 
 const Slider = () => {
-  const [dataInicio, setDataInicio] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const URL = "/verEventos";
-      const { data } = await axios.get(URL);
-      // Filtrar los eventos que tengan el tipo "destacado"
-      const destacados = data.filter(evento => evento.tipo === "destacado");
-
-      setDataInicio(destacados);
-    };
-
-    fetchData();
-  }, []);
 
   return (
-    <div>
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-indicators">
-          {dataInicio.map((data, i) => (
-            <button
-              key={i}
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to={i}
-              className={i === 0 ? "active" : ""}
-              aria-label={`Slide ${i}`}
-            ></button>
-          ))}
-        </div>
+    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-inner">
 
-        <div className="carousel-inner">
-          {dataInicio.map((data, i) => (
-            <div
-              className={i === 0 ? "carousel-item active" : "carousel-item"}
-              key={i}
+        {/* Primera imagen con texto encima */}
+        <div className="carousel-item active position-relative" style={{ height: '790px' }}>
+          <img src={house1} className="d-block w-100 h-100 object-fit-cover carousel-image" alt="House 1" />
+          {/* Capa oscura encima de la imagen */}
+          <div
+            className="position-absolute start-0 top-0 w-100"
+            style={{
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              height: '790px',
+
+            }}
+          ></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-black" style={{ opacity: 0.4 }}></div>
+
+          <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h2 className="fw-bold beb-font" style={{ fontSize: '50px', verticalAlign: 'inherit', textTransform: 'uppercase' }}>MEN'S HAIRCUT</h2>
+
+            <p style={{ fontFamily: 'Lato, sans-serif', fontSize: '20px' }}>
+              Ofrecemos servicios de barbería clásica con estilos.
+            </p>
+            <a
+              href="tel:3106785269"
+              className="btn mt-1"
+              style={{
+                fontSize: '16px',
+                textTransform: 'uppercase',
+                backgroundColor: '#D5B981',
+                color: 'white',
+                border: 'none',
+                padding: '10px 30px',
+                borderRadius: '20px',
+                display: 'inline-block',
+                textDecoration: 'none'
+              }}
             >
-              <img
-                src={data.imagen.urlImg}
-                className="d-block w-100 img-slider mx-auto y-auto   mb-5"
-                alt="Slide"
-              />
-              <div className="carousel-caption d-none d-md-block bg-color-blue" id="carousel">
-                <h5 className="titulo">{data.titulo}</h5>
-                <p className="" >{data.descripcion}</p>
-              </div>
-            </div>
-          ))}
+              Agendar Corte
+            </a>
+          </div>
         </div>
 
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Anterior</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Siguiente</span>
-        </button>
+        {/* Segunda imagen con texto encima */}
+        <div className="carousel-item position-relative" style={{ height: '790px' }}>
+          <img src={house2} className="d-block w-100 h-100 object-fit-cover carousel-image" alt="House 2" />
+          <div
+            className="position-absolute start-0 top-0 w-100"
+            style={{
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              height: '790px',
+            }}
+          ></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-black" style={{ opacity: 0.4 }}></div>
+
+          <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+            <h2 className="fw-bold beb-font" style={{ fontSize: '50px', verticalAlign: 'inherit', textTransform: 'uppercase' }}>MEN'S HAIRCUT</h2>
+            <p style={{ fontFamily: 'Lato, sans-serif', fontSize: '20px' }}>
+              Ofrecemos servicios de barbería clásica con estilos.
+            </p>
+            <a
+              href="tel:3106785269"
+              className="btn mt-1"
+              style={{
+                fontSize: '16px',
+                textTransform: 'uppercase',
+                backgroundColor: '#D5B981',
+                color: 'white',
+                border: 'none',
+                padding: '10px 30px',
+                borderRadius: '20px',
+                display: 'inline-block',
+                textDecoration: 'none'
+              }}
+            >
+              Agendar Corte
+            </a>
+
+          </div>
+        </div>
       </div>
     </div>
+
   );
 };
 

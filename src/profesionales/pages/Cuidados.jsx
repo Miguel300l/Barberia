@@ -1,4 +1,4 @@
-import Cuidados from '../../landing/pages/Cuidados'
+import Cuidados from '../../landing/pages/Galeria'
 const Cuidadosprofesional = () => {
  
   return (

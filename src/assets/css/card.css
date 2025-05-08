@@ -1,0 +1,115 @@
+.card-container {
+    perspective: 1000px;
+    /* Añadimos perspectiva para que el giro se vea 3D */
+}
+
+.card {
+    width: 18rem;
+    height: 30rem;
+    /* Ajusta la altura según tus necesidades */
+    transition: transform 0.6s;
+    /* Transición suave */
+    transform-style: preserve-3d;
+    /* Necesario para el efecto 3D */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    /* Al pasar el mouse, la tarjeta gira */
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Oculta la parte posterior al girar */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo oscuro */
+    color: white;
+    /* Color del texto blanco */
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    /* Coloca la cara trasera al revés */
+}
+
+.box-nosotros .btn-agendar {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box-nosotros:hover .btn-agendar {
+    opacity: 1;
+}
+
+/* Estilo por defecto para la caja */
+.box-nosotros {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.box-nosotros::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    z-index: 0;
+}
+
+.box-nosotros:hover::after {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box-nosotros .btn-agendar {
+    z-index: 2;
+}
+  
+
+
+
+
+
+
+
+.grid-dense {
+    display: grid;
+    /* tantas columnas como quepan, mínimo 150px, máximo 1fr cada una */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 150px;           /* altura base de cada fila */
+    gap: 1rem;                       /* espacio entre items */
+    /* El truco: rellena huecos automáticamente */
+    grid-auto-flow: dense;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Ajustes responsivos: reduce la base para pantallas más chicas */
+  @media (max-width: 992px) {
+    .grid-dense {
+      grid-auto-rows: 130px;
+    }
+  }
+  @media (max-width: 768px) {
+    .grid-dense {
+      grid-auto-rows: 110px;
+    }
+  }
+  @media (max-width: 576px) {
+    .grid-dense {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-auto-rows: 100px;
+    }
+  }

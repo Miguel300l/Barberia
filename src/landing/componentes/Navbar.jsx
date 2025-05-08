@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import Horizontal from "../../assets/img/Dog3.png";
-import Favicon2 from "../../assets/img/Dog3.png";
+import React, { useState, useEffect, useRef } from 'react';
+import Horizontal from "../../assets/img/barberLogo.png";
+import Favicon2 from "../../assets/img/barberLogo.png";
+import "../../assets/css/navbar.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import BtnInicio from '../data/BtnInicioSesion'
 // Modales
 import InicioSesion from '../modales/InicioSesion'
 import DatosAjustes from '../modales/Ajustes'
@@ -13,15 +13,42 @@ import RegistroProfesional from '../modales/RegistroProfesional'
 
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const collapseRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    const collapseElement = document.getElementById("navbarSupportedContent");
+    const bsCollapse = new window.bootstrap.Collapse(collapseElement, {
+      toggle: false,
+    });
+    bsCollapse.hide();
+  };
+
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
+        className={`navbar navbar-expand-lg navbar-dark fixed-top ${isScrolled ? 'bg-custom' : 'bg-transparent'}`}
         id="menu"
+
       >
         <div className="container-fluid" id="img-slider">
           <Link className="navbar-brand" to="/">
-            <img src={Horizontal} alt="Logo" className="img-logo"/>
+            <img src={Horizontal} alt="Logo" className="img-logo" />
             <img
               src={Favicon2}
               alt="Logo"
@@ -45,43 +72,32 @@ const Navbar = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item fs-6 ">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link custom-link" aria-current="page" to="/" onClick={handleLinkClick}>
                   INICIO
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link className="nav-link active" to="/nosotros">
+                <Link className="nav-link custom-link" to="/nosotros" onClick={handleLinkClick}>
                   NOSOTROS
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link
-                  className="nav-link active"
-                  to="/profesionales"
-                >
-                  PROFESIONALES
+                <Link className="nav-link custom-link" to="/servicios" onClick={handleLinkClick}>
+                  SERVICIOS
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link className="nav-link active" to="/cuidados">
-                  CUIDADOS
+                <Link className="nav-link custom-link" to="/galeria" onClick={handleLinkClick}>
+                  GALERIA
                 </Link>
               </li>
               <li className="nav-item  fs-6">
-                <Link className="nav-link active" to="/adopcion">
-                  ADOPCIÓN
+                <Link className="nav-link custom-link" to="/precios" onClick={handleLinkClick}>
+                  PRECIOS
                 </Link>
               </li>
-              <li className="nav-item   fs-6">
-                <Link className="nav-link active" to="/contactanos">
-                  CONTACTANOS
-                </Link>
-              </li>
+           
             </ul>
-            
-            <BtnInicio />
-
-
           </div>
         </div>
       </nav>
@@ -92,7 +108,7 @@ const Navbar = () => {
       <DatosAjustes />
       <NotificacionAseptar />
       <RegistroAprendiz />
-      <RegistroProfesional/>
+      <RegistroProfesional />
 
       <Outlet />
       <Footer />

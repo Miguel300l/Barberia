@@ -1,0 +1,92 @@
+.navbar-collapse.show {
+  left: 0;
+}
+
+.bg-custom {
+  background-color: #020a10 !important;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 260px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://i.pinimg.com/736x/2c/62/0d/2c620da8095c9ba046ed13b2f685bc39.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: left 0.3s ease-in-out;
+    z-index: 5;
+    overflow: hidden;
+  }
+  
+  .navbar-collapse::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-top: -20px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 240px;
+    background-image: url('../../assets/img/barberLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 6;
+  }
+  
+  .navbar-collapse.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    height: 100vh;       
+    gap: 30px;             
+    transform: translateX(0); 
+    transition: transform 0.3s ease-in-out;
+    margin-top: 30px;               
+    padding: 0;            
+  }
+  
+}
+
+.custom-link {
+  color: white !important;
+  font-size: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  position: relative;
+  transition: color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.custom-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #C59D5F;
+  transition: width 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #C59D5F !important;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+}
