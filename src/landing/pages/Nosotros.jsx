@@ -9,7 +9,7 @@ import barbero from '../../assets/img/barbero.jpg';
 import barbero2 from '../../assets/img/barbero2.jpg';
 import barbero3 from '../../assets/img/barbero3.jpeg';
 import barbero4 from '../../assets/img/barbero4.jpeg';
-import NosotrosBarber from '../../assets/img/NosotrosBarber.jpg'
+import nosotrosBarber from '../../assets/img/nosotrosBarber.jpg'
 import circuloEstadistica from '../../assets/img/circuloEstadistica.jpg'
 import SatisfechoText from '../componentes/SatisfechoText'
 import SatisfechoLorem from '../componentes/SatisfechoLorem'
@@ -25,9 +25,9 @@ const Nosotros = () => {
       <div className="position-relative w-100" style={{ height: '750px' }}>
         {/* Imagen de fondo */}
         <img
-          src={NosotrosBarber}
+          src={nosotrosBarber}
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          alt="NosotrosBarber"
+          alt="nosotrosBarber"
           style={{ objectFit: 'cover' }}
         />
 
@@ -42,7 +42,7 @@ const Nosotros = () => {
           className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
           style={{
             fontFamily: 'Lato, sans-serif',
-            fontSize: 'clamp(24px, 5vw, 50px)', // responsivo: mínimo 24px, máximo 50px
+            fontSize: 'clamp(24px, 5vw, 50px)',
             zIndex: 2,
           }}
         >
