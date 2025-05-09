@@ -24,12 +24,10 @@
 }
 
 
-
-
 .services-section {
     background: #f8f9fa;
   }
-  /* Ancho y márgenes responsivos para la imagen del servicio */
+
   .service-img {
     width: 22rem;
     height: auto;
@@ -58,7 +56,6 @@
     }
   }
   
-  /* Alinear filas en columna y centrar contenido en pantallas pequeñas */
   @media (max-width: 576px) {
     .service-row {
       flex-direction: column;

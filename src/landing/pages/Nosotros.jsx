@@ -37,7 +37,6 @@ const Nosotros = () => {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
         ></div>
 
-        {/* Texto centrado */}
         <div
           className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
           style={{
@@ -118,7 +117,6 @@ const Nosotros = () => {
         </div>
       </section>
 
-
       <div className="p-5"></div>
       <CarouselInfinito />
 
@@ -126,7 +124,7 @@ const Nosotros = () => {
         <div className="row d-flex flex-wrap justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
-              <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 4vw, 40px)', textTransform: 'uppercase', }}>El equipo</p>
+              <p className="fw-bold text-center" style={{ fontSize: 'clamp(23px, 5vw, 40px)', textTransform: 'uppercase', }}>El equipo</p>
 
               <div className="d-flex justify-content-center">
                 <img
@@ -348,7 +346,6 @@ const Nosotros = () => {
           }}
         ></div>
 
-        {/* Contenedor para centrar el texto encima de todo */}
         <div
           className="position-absolute top-50 start-50 translate-middle w-100 text-center"
           style={{
@@ -357,7 +354,6 @@ const Nosotros = () => {
             padding: '0 15px',
           }}
         >
-          {/* Texto responsivo */}
           <div className="fs-2 fs-md-3 fs-lg-4">
             <SatisfechoText />
           </div>
@@ -413,7 +409,6 @@ const Nosotros = () => {
           className="position-relative w-100 d-flex flex-column justify-content-center align-items-center text-center px-3 py-5"
           style={{ zIndex: 2 }}
         >
-          {/* Texto principal */}
           <div className="text-white mb-4" style={{ maxWidth: '600px' }}>
             <p
               className="fw-bold text-uppercase mb-2"

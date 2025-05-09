@@ -8,10 +8,9 @@ const Slider = () => {
     <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
 
-        {/* Primera imagen con texto encima */}
         <div className="carousel-item active position-relative" style={{ height: '790px' }}>
           <img src={house1} className="d-block w-100 h-100 object-fit-cover carousel-image" alt="House 1" />
-          {/* Capa oscura encima de la imagen */}
+          {/* Capa oscura */}
           <div
             className="position-absolute start-0 top-0 w-100"
             style={{

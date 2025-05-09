@@ -156,22 +156,17 @@ input[type="radio"] {
 
     50% {
         transform: translateY(-5px);
-        /* Subir ligeramente */
     }
 
     100% {
         transform: translateY(0);
-        /* Regresar a su posición inicial */
     }
 }
 
-/* Aplicar animación a las imágenes */
 .image-hover {
     animation: moveImage 3s ease-in-out infinite;
-    /* Movimiento suave de 3 segundos */
 }
 
-/* Efecto hover en la tarjeta */
 .card-hover {
     transition: transform 0.3s ease-in-out;
 }
@@ -181,35 +176,28 @@ input[type="radio"] {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-
 .carousel-inner {
     overflow: hidden;
-    /* Oculta las imágenes fuera de la vista */
     position: relative;
     margin-top: -60px;
 }
 
 .carousel-content {
     display: flex;
-    /* Alinea las imágenes horizontalmente */
     animation: slide 30s linear infinite;
-    /* Animación para mover las imágenes */
 }
 
 .image-set {
     display: flex;
-    /* Alinea las imágenes de una serie en una fila */
 }
 
 @keyframes slide {
     0% {
         transform: translateX(0);
-        /* Comienza en la posición inicial */
     }
 
     100% {
         transform: translateX(-50%);
-        /* Desplaza las imágenes hasta la mitad del contenedor */
     }
 }
 

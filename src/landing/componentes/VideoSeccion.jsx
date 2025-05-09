@@ -9,7 +9,7 @@ const VideoSection = () => {
       className="container-fluid p-5 position-relative video-section text-white"
       style={{ backgroundImage: `url(${fondoVideo})`, marginTop: '-40px' }}
     >
-      {/* Capa oscura encima de la imagen, responsiva */}
+      {/* Capa oscura */}
       <div className="position-absolute start-0 top-0 w-100 h-100 overlay"></div>
 
       <div className="row d-flex flex-wrap justify-content-center align-items-center position-relative" style={{ zIndex: 2 }}>

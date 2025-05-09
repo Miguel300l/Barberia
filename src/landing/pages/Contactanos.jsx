@@ -37,7 +37,7 @@ const Contactanos = () => {
 
         const { id } = jwt_decoded(tokenApre);
         formPqrs(id, tipoPqrs, motivo)
-  
+
       } else {
         Swal.fire({
           title: "Eres profesional",
@@ -51,7 +51,6 @@ const Contactanos = () => {
 
   return (
     <>
-      {/* <!-- Titulo --> */}
       <div className="position-relative d-inline-block w-100">
         <img src={Contacto} className="w-100 img-titulo-fondo" alt="" />
         <h1 className="text-titulo position-absolute text-center  w-100">
@@ -62,10 +61,7 @@ const Contactanos = () => {
           </div>
         </h1>
       </div>
-      {/* <!-- Fin Titulo --> */}
 
-
-      {/* <!--CONTACT STAR--> */}
       <main className="my-5">
         <div className="d-flex flex-wrap justify-content-around">
           <div className="bg-green py-4 mt-5 rounded-4 text-center shadow-black align-items-stretch contenedor-icons-contact">
@@ -86,21 +82,17 @@ const Contactanos = () => {
         </div>
 
         <div className="text-center text-justify d-flex flex-column justify-content-center align-items-center mt-5">
-        <div className="text-justify col-sm-8 px-4">
-  <h1 className="mb-4">MÁNDANOS UN MENSAJE</h1>
-  <p className="fs-5" style={{ textAlign: 'justify' }}>
-    ¡Estamos aquí para ayudarte! Contáctanos hoy mismo para brindarte el mejor cuidado
-    y atención para tu mascota. Juntos, podemos garantizar una vida feliz
-    y saludable para tu compañero peludo. ¡Esperamos escucharte pronto!
-  </p>
-</div>
-
-
+          <div className="text-justify col-sm-8 px-4">
+            <h1 className="mb-4">MÁNDANOS UN MENSAJE</h1>
+            <p className="fs-5" style={{ textAlign: 'justify' }}>
+              ¡Estamos aquí para ayudarte! Contáctanos hoy mismo para brindarte el mejor cuidado
+              y atención para tu mascota. Juntos, podemos garantizar una vida feliz
+              y saludable para tu compañero peludo. ¡Esperamos escucharte pronto!
+            </p>
+          </div>
 
           <form className="needs-validation p-4" onSubmit={validarToken} >
             <div className="row g-2 my-2">
-
-
               <div className="col-sm-12 mt-md-5">
                 <div className="col-md-12">
                   <select className="form-select col-md-12 border-green" id="validationCustom04" onChange={(e) => setTipoPqrs(e.target.value)} defaultValue="">
@@ -139,12 +131,6 @@ const Contactanos = () => {
           </form>
         </div>
       </main>
-
-      {/* <!--CONTACT END--> */}
-
-
-
-
 
     </>
   );

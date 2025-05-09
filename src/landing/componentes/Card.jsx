@@ -42,7 +42,7 @@ const CardGiro = () => {
                   fontSize: '15px',
                   whiteSpace: 'normal',
                 }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  Especialista en cortes tradicionales y afeitados a navaja. Detallista y perfeccionista, ideal para quienes buscan elegancia atemporal.
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ const CardGiro = () => {
                   fontSize: '15px',
                   whiteSpace: 'normal',
                 }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  Apasionado por los estilos modernos y cortes urbanos. Siempre actualizado con las últimas tendencias en barbería.
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const CardGiro = () => {
                   fontSize: '15px',
                   whiteSpace: 'normal',
                 }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  Reconocido por su pulso firme y acabados impecables. Ideal para fades y delineados definidos.
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@ const CardGiro = () => {
                   fontSize: '15px',
                   whiteSpace: 'normal',
                 }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                  Maestro en el arte del arreglo de barba. Diseños personalizados y tratamientos para resaltar tu estilo único.
                 </div>
               </div>
             </div>

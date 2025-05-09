@@ -21,12 +21,11 @@ const Cuidados = () => {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
         ></div>
 
-        {/* Texto centrado */}
         <div
           className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
           style={{
             fontFamily: 'Lato, sans-serif',
-            fontSize: 'clamp(24px, 5vw, 50px)', // responsivo: mínimo 24px, máximo 50px
+            fontSize: 'clamp(24px, 5vw, 50px)',
             zIndex: 2,
           }}
         >
@@ -35,7 +34,6 @@ const Cuidados = () => {
       </div>
 
       <Galeria />
-
       <div className='' style={{ marginTop: '160px' }}></div>
       <LogoProducto />
       <div className='' style={{marginTop: '100px'}}></div>

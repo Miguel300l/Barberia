@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import IconPregunta from '../../assets/img/Dog1.webp'
-import { Link } from 'react-router-dom'
+import React from "react";
 import Slider from '../componentes/SliderInicioSesion'
 import ListaPrecios from '../componentes/ListaPrecios'
 import CarouselInfinito from '../componentes/CarouselInfinito'

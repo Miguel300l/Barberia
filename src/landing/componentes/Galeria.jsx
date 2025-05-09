@@ -15,7 +15,6 @@ import '../../assets/css/card.css'
 
 const Galeria = () => {
 
- // cuántas columnas y filas ocupan las imagenes
  const items = [
     { src: clienteSatisfecho,  cols: 2, rows: 1 },
     { src: barbero2,           cols: 1, rows: 1 },

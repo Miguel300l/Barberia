@@ -22,7 +22,6 @@ const Contenido = () => {
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
       ></div>
 
-      {/* Texto centrado */}
       <div
         className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
         style={{

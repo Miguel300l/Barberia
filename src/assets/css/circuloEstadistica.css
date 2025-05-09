@@ -38,7 +38,6 @@
 
 /* css de precios corte */
 
-/* Envuelve todo el contenido y asegura que no se desborde en ningún dispositivo */
 .services-wrapper {
   max-width: 900px;
   width: 100%;
@@ -65,12 +64,10 @@
   width: 100%;
 }
 
-/* Efecto hover en desktop */
 .service-item:hover {
   transform: translateY(-4px);
 }
 
-/* Cabecera del servicio */
 .service-header {
   display: flex;
   align-items: center;
@@ -81,14 +78,12 @@
   width: 100%;
 }
 
-/* Icono */
 .service-icon {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
 }
 
-/* Título */
 .service-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
@@ -97,7 +92,6 @@
   white-space: nowrap;
 }
 
-/* Línea de puntos */
 .dots {
   flex-grow: 1;
   border-bottom: 1px dotted #b08b4f;
@@ -106,14 +100,12 @@
   min-width: 30px;
 }
 
-/* Precio */
 .service-price {
   font-size: 1.1rem;
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* Descripción */
 .service-desc {
   font-family: 'Lato', sans-serif;
   font-size: 15px;

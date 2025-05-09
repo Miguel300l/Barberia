@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-
+import React from "react";
 import Facebook from "../../assets/img/facebook.png";
 import Instagram from "../../assets/img/instagram1.png";
 import Twitter from "../../assets/img/twitter.png";
@@ -10,13 +9,8 @@ import { Link } from "react-router-dom";
 
 const Fotter = () => {
 
-
-
-
   return (
     <div>
-
-
       <footer>
         <div className="container-fluid bg-color-blue px-5 pt-5" style={{ marginTop: '-100px' }}>
           <div className="row" style={{ marginTop: '80px' }}>
@@ -95,26 +89,24 @@ const Fotter = () => {
             </div>
           </div>
 
-
-
           <hr className="text-white mt-4" />
           <div className="d-flex flex-wrap justify-content-center pb-3">
             <a
-              href="https://www.facebook.com/groups/2772755296109525/?ref=share&mibextid=NSMWBT" target="_blank"
+              href="https://www.facebook.com/p/Blesseds-Barber-shop-61556304573102/" target="_blank"
               className="text-decoration-none"
             >
               <img src={Facebook} className="me-2 icon" alt="logofacebook" style={{ width: '24px', height: '24px' }} />
             </a>
 
             <a
-              href="https://m.twitch.tv/isaylosdogs" target="_blank"
+              href="https://x.com/hashtag/barbershopcolombia?src=hashtag_click" target="_blank"
               className="ms-4 text-decoration-none"
             >
               <img src={Twitter} className="me-2 icon" alt="logotwiter" style={{ width: '24px', height: '24px' }} />
             </a>
 
             <a
-              href="https://www.instagram.com/comedogpopayan/?hl=es"
+              href="https://www.instagram.com/elitebarbershop8/?hl=es"
               target="_blank"
               className="ms-4 text-decoration-none"
             >
@@ -126,7 +118,7 @@ const Fotter = () => {
               />
             </a>
 
-            <a href="https://chat.whatsapp.com/GIDEP3wMElmLLRSJcqyW6u" target="_blank" className="ms-4 text-decoration-none ">
+            <a href="https://barbershop.com.co/tienda/" target="_blank" className="ms-4 text-decoration-none ">
               <img src={Whatsapp} className="me-2 icon" alt="logoWhatsaap" style={{ width: '24px', height: '24px' }} />
             </a>
 

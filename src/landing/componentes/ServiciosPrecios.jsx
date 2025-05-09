@@ -7,10 +7,8 @@ import servicioCorte4 from '../../assets/img/servicioCorte4.jpeg';
 import servicioCorte2 from '../../assets/img/servicioCorte2.jpeg';
 import separador from '../../assets/img/separador.svg';
 
-// Componente genérico para cada servicio
 const ServiceItem = ({ icon, title, price, description, image, reverse }) => (
   <div className={`row g-4 align-items-center my-5 ${reverse ? 'flex-md-row-reverse' : ''}`}>
-    {/* Icono y texto */}
     <div className="col-md-6 d-flex flex-column flex-md-row align-items-center text-center text-md-start">
       <div className="me-md-4 mb-3 mb-md-0">
         <img src={icon} alt="" style={{ width: '70px', height: '70px' }} />
@@ -28,14 +26,12 @@ const ServiceItem = ({ icon, title, price, description, image, reverse }) => (
       </div>
     </div>
 
-    {/* Imagen */}
     <div className="col-md-6 text-center">
       <img src={image} alt={title} className="img-fluid rounded" style={{ maxWidth: '460px', width: '100%' }} />
     </div>
   </div>
 );
 
-// Componente principal
 const Services = () => (
   <div className="container py-5" style={{ marginTop: '-160px' }}>
     {/* Cabecera */}

@@ -13,7 +13,7 @@ const EstadisticaBarberia = () => {
                 style={{ height: '460px', objectFit: 'cover' }}
             />
 
-            {/* Capa oscura encima de la imagen */}
+            {/* Capa oscura*/}
             <div
                 className="position-absolute start-0 top-0 w-100"
                 style={{
@@ -23,7 +23,6 @@ const EstadisticaBarberia = () => {
                 }}
             ></div>
 
-            {/* Contenedor de columnas arriba de la imagen */}
             <div
                 className="container position-absolute top-50 start-50 translate-middle"
                 style={{ width: '100%' }}

@@ -49,7 +49,7 @@ const CardHover = () => {
                             <div className="card-body d-flex flex-column align-items-center text-center">
                                 <h5
                                     className="card-title"
-                                    style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '16px'  }}
+                                    style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '16px' }}
                                 >
                                     {card.title}
                                 </h5>
@@ -65,7 +65,6 @@ const CardHover = () => {
                 ))}
             </div>
         </div>
-
     );
 };
 
