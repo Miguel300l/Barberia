@@ -65,18 +65,21 @@ const ListaPrecios = () => {
                                     },
                                     {
                                         titulo: 'Corte de cabello', precio: '23.000',
-                                        descripcion: 'Un corte de cabello personalizado para que luzcas fresco y a la moda.'
+                                        descripcion: 'Un corte de cabello personalizado para que luzcas fresco.'
                                     },
                                     {
                                         titulo: 'Afeitado clásico', precio: '20.000',
-                                        descripcion: 'Un afeitado tradicional, que deja tu piel fresca y perfectamente afeitada.'
+                                        descripcion: 'Afeitado que deja tu piel fresca y perfectamente afeitada.'
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
+                                        <div style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontFamily: 'Bebas Neue' }}>
                                         <strong>{item.titulo}</strong>
                                         <span className="puntosPrecio mx-2">................................</span>
                                         <span>{item.precio}</span>
-                                        <div className="text-white">{item.descripcion}</div>
+                                        </div>
+                                     
+                                        <div className="text-white" style={{ fontSize: 'clamp(12px, 3.5vw, 14px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
                                     </div>
 
                                 ))}
@@ -86,22 +89,25 @@ const ListaPrecios = () => {
                                 {[
                                     {
                                         titulo: 'Arreglo de la barba', precio: '12.000',
-                                        descripcion: 'Un corte de barba detallado para darle forma y resaltar tu estilo.'
+                                        descripcion: 'Corte de barba para darle forma y resaltar tu estilo.'
                                     },
                                     {
                                         titulo: 'Corte cabello largo', precio: '24.000',
-                                        descripcion: 'Un corte especializado para cabellos largos, dándole forma y estilo.'
+                                        descripcion: 'Corte especializado para cabellos largos, dándole forma.'
                                     },
                                     {
                                         titulo: 'Lavado de cabello', precio: '12.000',
-                                        descripcion: 'Un lavado refrescante y revitalizante, utilizando productos de calidad.'
+                                        descripcion: 'Un lavado refrescante, utilizando productos de calidad.'
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <strong>{item.titulo}</strong>
-                                        <span className="puntosPrecio mx-2">................................</span>
-                                        <span>{item.precio}</span>
-                                        <div className="text-white">{item.descripcion}</div>
+
+                                        <div style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontFamily: 'Bebas Neue' }}>
+                                            <strong>{item.titulo}</strong>
+                                            <span className="puntosPrecio mx-2">................................</span>
+                                            <span>{item.precio}</span>
+                                        </div>
+                                        <div className="text-white" style={{ fontSize: 'clamp(12px, 3.5vw, 14px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
                                     </div>
 
                                 ))}

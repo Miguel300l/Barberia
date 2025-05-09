@@ -33,7 +33,7 @@ const services = [
   },
   {
     icon: sillaIcon,
-    title: 'MASAJE DE CABEZA Y CUELLO',
+    title: 'MASAJE DE CABEZA',
     price: '12.000',
     description: 'Disfruta de un masaje relajante que alivia las tensiones acumuladas en el cuello y cabeza.',
   },
@@ -54,7 +54,7 @@ export default function ServicesList() {
                 <div className="dots flex-grow-1 mx-3"></div>
                 <span className="service-price">{service.price}</span>
               </div>
-              <p className="service-desc mt-2 mb-0">{service.description}</p>
+              <p className="service-desc mt-2 mb-0 text-center">{service.description}</p>
             </li>
           ))}
         </ul>
