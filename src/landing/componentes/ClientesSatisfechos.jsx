@@ -40,7 +40,7 @@ const ClientesSatisfechos = () => {
                         <div className="card-body text-center" style={{ marginTop: '6px' }}>
                             <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase' }}>Corte barba</h5>
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                            El corte de barba es ideal para mantener un estilo prolijo y definido. Con máquina o tijera, se perfila según la forma del rostro.
+                            El corte de barba ideal para mantener un estilo definido. Con máquina o tijera, se perfila según la forma del rostro.
                             </p>
                             <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px' }}>
                                 AGENDAR CORTE
@@ -60,7 +60,7 @@ const ClientesSatisfechos = () => {
                         <div className="card-body text-center" style={{ marginTop: '6px' }}>
                             <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase' }}>Corte tijera</h5>
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                                El corte con tijera ofrece mayor precisión y estilo personalizado. Ideal para quienes buscan un acabado natural y detallado.
+                                El corte con tijera ofrece mayor precisión. Ideal para quienes buscan un acabado natural y detallado.
                             </p>
                             <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px', }}>
                                 AGENDAR CORTE
