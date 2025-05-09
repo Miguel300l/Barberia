@@ -73,13 +73,13 @@ const ListaPrecios = () => {
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(16px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
+                                        <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
                                         <strong>{item.titulo}</strong>
                                         <span className="puntosPrecio mx-2">................................</span>
                                         <span>{item.precio}</span>
                                         </div>
                                      
-                                        <div className="text-white" style={{ fontSize: 'clamp(14px, 3.5vw, 16px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
+                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
                                     </div>
 
                                 ))}
@@ -102,12 +102,12 @@ const ListaPrecios = () => {
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
 
-                                        <div style={{ fontSize: 'clamp(16px, 4vw, 18px)', fontFamily: 'Bebas Neue' }}>
+                                        <div style={{ fontSize: 'clamp(15px, 4vw, 18px)', fontFamily: 'Bebas Neue' }}>
                                             <strong>{item.titulo}</strong>
                                             <span className="puntosPrecio mx-2">................................</span>
                                             <span>{item.precio}</span>
                                         </div>
-                                        <div className="text-white" style={{ fontSize: 'clamp(14px, 3.5vw, 16px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
+                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>{item.descripcion}</div>
                                     </div>
 
                                 ))}
