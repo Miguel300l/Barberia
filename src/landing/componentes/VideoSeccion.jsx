@@ -27,7 +27,7 @@ const VideoSection = () => {
         {/* Text Column */}
         <div className="col-md-6">
           <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
-            <p className="fw-bold text-center text-uppercase mb-3" style={{fontSize: 'clamp(20px, 5vw, 40px)'}}>El peluquero</p>
+            <p className="fw-bold text-center text-uppercase mb-3" style={{fontSize: 'clamp(20px, 4vw, 40px)'}}>El peluquero</p>
             <div className="d-flex justify-content-center mb-3">
               <img
                 src={separador}
@@ -35,7 +35,7 @@ const VideoSection = () => {
                 style={{ width: '120px', height: 'auto' }}
               />
             </div>
-            <p className="text-center px-3">
+            <p className="text-center px-3" style={{fontSize: '15px', fontFamily: 'Lato',}}>
             El peluquero es un profesional dedicado a crear el estilo que mejor se adapta a ti. Con experiencia y atención al detalle, se encarga de resaltar tu mejor versión, guiándote en cada elección para un look único y personalizado.
             </p>
           </div>

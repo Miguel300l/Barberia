@@ -18,7 +18,7 @@ const ServiceItem = ({ icon, title, price, description, image, reverse }) => (
       <div className="w-100">
         <h4
           className="d-flex align-items-center justify-content-center justify-content-md-start mb-3"
-          style={{ fontSize: '24px', fontFamily: '"Bebas Neue", sans-serif' }}
+          style={{ fontSize: 'clamp(20px, 4vw, 22px)', fontFamily: '"Bebas Neue", sans-serif' }}
         >
           <span className="me-2 text-uppercase fw-bold">{title}</span>
           <span className="d-none d-md-block flex-grow-1 border-bottom border-2 border-dotted"></span>
@@ -40,13 +40,13 @@ const Services = () => (
   <div className="container py-5" style={{ marginTop: '-160px' }}>
     {/* Cabecera */}
     <section className="text-center mb-5">
-      <h2 className="fw-bold text-uppercase" style={{ fontSize: 'clamp(24px, 5vw, 50px)' }}>
+      <h2 className="fw-bold text-uppercase" style={{ fontSize: 'clamp(20px, 4vw, 40px)' }}>
         Precio Cortes
       </h2>
       <div className="d-flex justify-content-center my-3">
         <img src={separador} alt="separador" style={{ width: '120px', height: 'auto' }} />
       </div>
-      <p className="mx-auto" style={{ maxWidth: '600px', fontSize: '16px' }}>
+      <p className="mx-auto" style={{ maxWidth: '600px', fontSize: '15px' }}>
       Ofrecemos una variedad de cortes adaptados a tus necesidades y estilo. Consulta nuestros precios y elige el servicio que más se ajuste a ti, con la garantía de calidad y atención personalizada.
       </p>
     </section>

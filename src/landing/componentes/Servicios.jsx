@@ -39,7 +39,7 @@ const ServiciosBarberia = () => {
         <div className="row d-flex flex-wrap justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
-              <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 5vw, 40px)', textTransform: 'uppercase', }}>Qué hacemos</p>
+              <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 4vw, 40px)', textTransform: 'uppercase', }}>Qué hacemos</p>
 
               <div className="d-flex justify-content-center">
                 <img
@@ -69,10 +69,10 @@ const ServiciosBarberia = () => {
             <div className="d-flex align-items-start mb-4" key={idx}>
               <img src={servicio.icon} alt={servicio.titulo} className="me-3" style={{ width: '50px', height: '50px' }} />
               <div>
-                <h5 style={{ fontSize: '24px', fontFamily: 'Bebas Neue', marginBottom: '4px' }}>
+                <h5 style={{ fontSize: 'clamp(18px, 4vw, 20px)', fontFamily: 'Bebas Neue', marginBottom: '4px' }}>
                   {servicio.titulo}
                 </h5>
-                <p style={{ fontSize: '15px', fontFamily: 'Lato', margin: 0 }} className="text-muted">
+                <p style={{ fontSize: '14px', fontFamily: 'Lato', margin: 0 }} className="text-muted">
                   {servicio.descripcion}
                 </p>
               </div>
