@@ -126,7 +126,7 @@ const Nosotros = () => {
         <div className="row d-flex flex-wrap justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
-              <p className="fw-bold fs-1 text-center" style={{ fontSize: 'clamp(20px, 4vw, 40px)', textTransform: 'uppercase', }}>El equipo</p>
+              <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 4vw, 40px)', textTransform: 'uppercase', }}>El equipo</p>
 
               <div className="d-flex justify-content-center">
                 <img

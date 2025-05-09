@@ -18,7 +18,7 @@ const ServiceItem = ({ icon, title, price, description, image, reverse }) => (
       <div className="w-100">
         <h4
           className="d-flex align-items-center justify-content-center justify-content-md-start mb-3"
-          style={{ fontSize: 'clamp(20px, 4vw, 22px)', fontFamily: '"Bebas Neue", sans-serif' }}
+          style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontFamily: '"Bebas Neue", sans-serif' }}
         >
           <span className="me-2 text-uppercase fw-bold">{title}</span>
           <span className="d-none d-md-block flex-grow-1 border-bottom border-2 border-dotted"></span>

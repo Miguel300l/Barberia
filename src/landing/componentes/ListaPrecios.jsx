@@ -24,7 +24,7 @@ const ListaPrecios = () => {
                     src={barberPrecio}
                     className="img-fluid w-100"
                     alt="barberPrecio"
-                    style={{ height: '600px', objectFit: 'cover' }}
+                    style={{ height: '560px', objectFit: 'cover' }}
                 />
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100"
@@ -84,7 +84,7 @@ const ListaPrecios = () => {
                                 ))}
                             </div>
 
-                            {/* Pantallas md: solo 4 servicios */}
+                            {/* Pantallas md: solo 3 servicios */}
                             <div className="col-12 d-none d-md-block d-lg-none">
                                 {[
                                     {
@@ -101,11 +101,6 @@ const ListaPrecios = () => {
                                         titulo: 'Afeitado clásico',
                                         precio: '20.000',
                                         descripcion: 'Afeitado que deja tu piel fresca y perfectamente afeitada.',
-                                    },
-                                    {
-                                        titulo: 'Arreglo de la barba',
-                                        precio: '12.000',
-                                        descripcion: 'Corte de barba para darle forma y resaltar tu estilo.',
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
