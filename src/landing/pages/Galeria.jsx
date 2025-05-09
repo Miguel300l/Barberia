@@ -1,11 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import Salud from "../../assets/img/dogsalud.jpg";
-import Calentdar2 from '../../assets/img/icons/calendar2-week.svg'
-import Check from '../../assets/img/icons/check-circle.svg'
-import { format, subDays } from 'date-fns';
-import { es } from 'date-fns/locale';
-import { datosCronograma } from '../data/DataInicioSesion';
-import { horaLocal } from '../../assets/js/FormatoHora';
+import React from 'react'
 import galeriaBar from '../../assets/img/galeriaBar.jpeg'
 import Galeria from '../componentes/Galeria';
 import LogoProducto from '../componentes/GaleriaProductos';

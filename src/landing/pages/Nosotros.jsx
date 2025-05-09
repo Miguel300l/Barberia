@@ -53,42 +53,41 @@ const Nosotros = () => {
       <section className="container py-5" style={{ marginTop: '40px' }}>
         <div
           className="row gx-5 justify-content-center align-items-center mx-auto"
-          style={{ maxWidth: '1140px' }} // Controla el ancho máximo como container-lg
+          style={{ maxWidth: '1140px' }}
         >
-          {/* Imagen izquierda */}
-          <div className="col-lg-6 d-flex justify-content-end mb-4 mb-lg-0">
+          {/* Imagen izquierda (abajo en móviles) */}
+          <div className="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end mb-4 mb-lg-0">
             <img
               src={BarberoNosotros}
               alt="BarberoNosotros"
               className="img-fluid"
               style={{
-                width: '400px',
-                maxWidth: '100%',
+                width: '100%',
+                maxWidth: '400px',
                 height: 'auto',
                 objectFit: 'cover',
               }}
             />
           </div>
 
-          {/* Texto a la derecha */}
-          <div className="col-lg-6">
-            <div className="d-flex flex-column justify-content-center h-100 px-2">
+          {/* Texto a la derecha (arriba en móviles) */}
+          <div className="col-12 col-lg-6">
+            <div className="d-flex flex-column justify-content-center h-100 px-2 text-center text-lg-start">
               <p
-                className="fw-bold text-start"
+                className="fw-bold"
                 style={{
-                  fontSize: 'clamp(25px, 5vw, 35px)',
+                  fontSize: 'clamp(20px, 5vw, 35px)',
                   textTransform: 'uppercase',
                   fontFamily: '"Bebas Neue", sans-serif',
                   margin: 0,
                   padding: 0,
-                  whiteSpace: 'nowrap',
+                  whiteSpace: 'normal',
                 }}
               >
                 Acerca de Barbershop
               </p>
 
-              {/* Separador centrado */}
-              <div className="d-flex justify-content-center mb-3">
+              <div className="d-flex justify-content-center justify-content-lg-start mb-3">
                 <img
                   src={separador}
                   alt="separador"
@@ -96,17 +95,29 @@ const Nosotros = () => {
                 />
               </div>
 
-              <p className="text-start" style={{ fontSize: '16px', fontFamily: 'Lato, sans-serif', }}>
-                En Barbershop nos apasiona realzar tu estilo con precisión y autenticidad. Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor. Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
+              <p
+                style={{
+                  fontSize: 'clamp(14px, 4vw, 16px)',
+                  fontFamily: 'Lato, sans-serif',
+                  lineHeight: '1.6',
+                }}
+              >
+                En Barbershop nos apasiona realzar tu estilo con precisión y autenticidad.
+                Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor.
+                Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
                 <br /><br />
-                Contamos con un equipo de profesionales dedicados a brindar un servicio excepcional. Desde el primer saludo hasta el toque final del peine, cada paso importa. Tu imagen es nuestra prioridad.
+                Contamos con un equipo de profesionales dedicados a brindar un servicio excepcional.
+                Desde el primer saludo hasta el toque final del peine, cada paso importa.
+                Tu imagen es nuestra prioridad.
                 <br /><br />
-                Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad y atención personalizada. Ven, relájate y déjanos cuidar de tu estilo con pasión y experiencia.
+                Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad y atención personalizada.
+                Ven, relájate y déjanos cuidar de tu estilo con pasión y experiencia.
               </p>
             </div>
           </div>
         </div>
       </section>
+
 
       <div className="p-5"></div>
       <CarouselInfinito />
