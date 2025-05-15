@@ -1,4 +1,4 @@
-import ImagenTitulo from '../../assets/img/dogsalud.jpg';
+import ImagenTitulo from '../../assets/img/fondoAdmin.webp';
 import React, { useState, useEffect } from 'react';
 import { datosInicio, eliminarEvento } from '../../administrador/data/DataAdmin';
 import ActualizarEvento from '../modales/ActualizarEvento';
@@ -17,7 +17,8 @@ const Inicio = () => {
         urlImg: "",
         lugar: "",
         tipo: "",
-        titulo: ""
+        titulo: "",
+        video: ""
     });
 
     const [filtroSeleccionado, setFiltroSeleccionado] = useState("");
@@ -55,8 +56,8 @@ const Inicio = () => {
         loading.close()
     }
 
-    const dataEventos = (_id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo) => {
-        const data = { _id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo };
+    const dataEventos = (_id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo, video) => {
+        const data = { _id, descripcion, fecha_inicio, fecha_final, idImg, urlImg, lugar, tipo, titulo, video };
         setDataEvento(data)
     }
 
@@ -66,7 +67,7 @@ const Inicio = () => {
                 <div className="position-relative w-100">
                     <img src={ImagenTitulo} className="w-100 img-titulo-fondo" alt="" />
                     <h1 className="text-titulo position-absolute text-center w-100">
-                        ADOPCIONES
+                        EVENTOS
                         <div className="d-flex justify-content-around mt-2">
                             <div className="bg-green p-1 w-25"></div>
                             <div className="bg-green p-1 w-25"></div>
@@ -186,7 +187,8 @@ const Inicio = () => {
                                                             data.imagen.urlImg,
                                                             data.lugar,
                                                             data.tipo,
-                                                            data.titulo
+                                                            data.titulo,
+                                                            data.video
                                                         )
                                                     }
                                                 >

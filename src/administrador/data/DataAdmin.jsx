@@ -95,7 +95,7 @@ export const aplazarCharlaData = async (
         title: response.data,
         icon: "success",
         timer: 2000,
-      }).then(()=>{
+      }).then(() => {
         location.reload()
       });
     }
@@ -169,7 +169,7 @@ export const charlaAceptada = async (id) => {
         title: response.data,
         icon: "success",
         timer: 2000,
-      }).then(()=>{
+      }).then(() => {
         location.reload()
       });
     }
@@ -197,7 +197,7 @@ export const aceptarProfesional = async (id) => {
         title: response.data,
         icon: "success",
         timer: 2000,
-      }).then(()=>{
+      }).then(() => {
         location.reload()
       });
     }
@@ -227,7 +227,7 @@ export const rechazarProfesional = async (motivoRechazo, id) => {
         title: response.data,
         icon: "success",
         timer: 2000,
-      }).then(()=>{
+      }).then(() => {
         location.reload()
       });
     }
@@ -258,7 +258,7 @@ export const responderPqrs = async (respuesta, id) => {
         title: response.data,
         icon: "success",
         timer: 2000,
-      }).then(()=>{
+      }).then(() => {
         location.reload()
       });
     }
@@ -371,8 +371,6 @@ export const eliminarEvento = async (id) => {
 };
 
 
-
-
 export const actualizarEvento = async (id, data) => {
   try {
     const tokenAdmin = localStorage.getItem("Token-Administrador");
@@ -399,7 +397,7 @@ export const actualizarEvento = async (id, data) => {
       showConfirmButton: false,
       timer: 2000,
     })
-      .then(()=>{
+      .then(() => {
         location.reload()
       })
 
@@ -412,6 +410,46 @@ export const actualizarEvento = async (id, data) => {
 
   }
 }
+
+export const actualizarAdministrador = async (id, data) => {
+  try {
+    const tokenAdmin = localStorage.getItem("Token-Administrador");
+
+    const headers = {
+      "acceso-token": tokenAdmin,
+    };
+    const loading = Swal.fire({
+      title: 'Actualizando administrador',
+      text: 'Espere un momento por favor...',
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    const response = await axios.put(`/actualizarAdministrador/${id}`, data, { headers });
+    loading.close();
+
+    Swal.fire({
+      title: response.data,
+      icon: "success",
+      showConfirmButton: false,
+      timer: 2000,
+    })
+      .then(() => {
+        location.reload();
+      });
+
+  } catch (error) {
+    Swal.fire({
+      icon: "error",
+      title: error.response.data || "Error al actualizar el administrador",
+    });
+  }
+};
+
+
 export const agregarPrograma = async (data) => {
   try {
     const tokenAdmin = localStorage.getItem("Token-Administrador");
@@ -439,7 +477,7 @@ export const agregarPrograma = async (data) => {
       showConfirmButton: false,
       timer: 2000,
     })
-      .then(()=>{
+      .then(() => {
         location.reload()
       })
 
@@ -452,7 +490,7 @@ export const agregarPrograma = async (data) => {
 
   }
 }
-  
+
 export const inhabilitarUsu = async (id) => {
 
   try {

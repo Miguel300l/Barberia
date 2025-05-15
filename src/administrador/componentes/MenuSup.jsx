@@ -98,16 +98,6 @@ function MenuSup() {
                 <li>
                   <Link
                     className="dropdown-item text-white"
-                    data-bs-toggle="modal"
-                    data-bs-target="#agregarFicha"
-                  >
-                    <img src={plus_circle} className="me-3" alt="icon-plus" />
-                    Agregar Edad
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item text-white"
                     onClick={() => {
                       localStorage.clear();
                       location.reload();
