@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { datosInicio } from "../data/DataInicioSesion";
 import FechaNotificacion from "../../assets/js/FechaNotificacion";
-import nosotrosBarber from '../../assets/img/nosotrosBarber.jpg'
+import barberTutorial from '../../assets/img/barberTutorial.jpeg'
 
 const Contactanos = () => {
   const [dataInicio, setDataInicio] = useState([]);
@@ -27,9 +27,9 @@ const Contactanos = () => {
       <div className="position-relative w-100" style={{ height: '750px' }}>
         {/* Imagen de fondo */}
         <img
-          src={nosotrosBarber}
+          src={barberTutorial}
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          alt="nosotrosBarber"
+          alt="barberTutorial"
           style={{ objectFit: 'cover' }}
         />
 
@@ -50,31 +50,38 @@ const Contactanos = () => {
           TUTORIALES
         </div>
       </div>
-      <div className="row gx-3 justify-content-center" style={{ marginTop: '40px' }}>
+      <div className="row gx-3 justify-content-center mx-3 mx-md-4" style={{ marginTop: '40px' }}>
         {dataInicio.map((data) => (
           <div
             key={data._id}
-            className="col-auto d-flex justify-content-center mx-5 mb-4"
+            className="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-4"
           >
             <div
-              className="box border rounded-0 d-flex flex-column"
+              className="box border rounded-0 d-flex flex-column w-100 h-100"
               style={{
-                width: '100%',
-                maxWidth: '400px',
-                minWidth: '16rem', // Compacto en móviles
                 boxShadow: "0 0 8px rgba(0,0,0,0.1)",
-                display: "flex",
-                flexDirection: "column",
-                backgroundColor: "#fff"
+                backgroundColor: "#fff",
               }}
             >
               {/* Video */}
-              <div style={{ width: "100%", aspectRatio: "16/9", flexShrink: 0 }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  paddingTop: "56.25%", // 16:9 Aspect Ratio
+                  overflow: "hidden",
+                }}
+              >
                 <video
-                  width="100%"
-                  height="100%"
                   controls
-                  style={{ objectFit: "cover", display: "block" }}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
                 >
                   <source src={data.video} type="video/mp4" />
                   Tu navegador no soporta la reproducción de video.
@@ -82,12 +89,12 @@ const Contactanos = () => {
               </div>
 
               {/* Contenido principal */}
-              <div className="mx-3 my-2 d-flex flex-column" style={{ flexGrow: 1 }}>
+              <div className="mx-3 my-2 d-flex flex-column flex-grow-1">
                 <h5
                   className="text-uppercase text-center mb-2"
                   style={{
                     fontSize: "16px",
-                    fontFamily: "'Bebas Neue', sans-serif"
+                    fontFamily: "'Bebas Neue', sans-serif",
                   }}
                 >
                   {data.titulo}
@@ -97,12 +104,11 @@ const Contactanos = () => {
                   className="text-body"
                   style={{
                     fontSize: "14px",
-                    fontFamily: "'Lato', sans-serif"
+                    fontFamily: "'Lato', sans-serif",
                   }}
                 >
                   {data.descripcion}
                 </p>
-
               </div>
 
               {/* Footer */}
@@ -115,10 +121,8 @@ const Contactanos = () => {
           </div>
         ))}
       </div>
-
-
-
       <div className="p-5"></div>
+      <div className="p-3"></div>
     </>
   );
 };
