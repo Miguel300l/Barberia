@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { crearEvento } from '../data/DataAdmin';
 
 
@@ -13,6 +13,9 @@ const CrearEvento = () => {
   const [video, setVideo] = useState(null);
   const [pdf, setPdf] = useState(null);
   const [descripcion, setDescripcion] = useState("");
+  const [videoKey, setVideoKey] = useState(0);
+
+  const videoWidgetRef = useRef(null);
 
   const fechaActual = new Date();
   fechaActual.setHours(fechaActual.getHours() - 5);
@@ -47,27 +50,26 @@ const CrearEvento = () => {
   useEffect(() => {
     if (!window.cloudinary) return;
 
-    window.myVideoWidget = window.cloudinary.createUploadWidget(
+    // Crear widget de Cloudinary para video (solo en creación)
+    videoWidgetRef.current = window.cloudinary.createUploadWidget(
       {
         cloud_name: 'dmzhkgiwu',
-        uploadPreset: "ml_default",
-        folder: "videos",
-        resourceType: "video",
-        sources: ["local", "camera", "url"],
+        uploadPreset: 'ml_default',
+        folder: 'videos',
+        resourceType: 'video',
+        sources: ['local', 'camera', 'url'],
       },
       (error, result) => {
         if (!error && result.event === "success") {
-          console.log("Video subido:", result.info);
           setVideo(result.info.secure_url);
+          setVideoKey((prev) => prev + 1);
         }
       }
     );
   }, []);
 
   const abrirWidgetVideo = () => {
-    if (window.myVideoWidget) {
-      window.myVideoWidget.open();
-    }
+    videoWidgetRef.current.open();
   };
 
   return (
@@ -95,7 +97,7 @@ const CrearEvento = () => {
                 {/* Nombre del evento */}
                 <div className="col-12 mt-0 mt-4" style={{ padding: "0 50px" }}>
                   <label htmlFor="validationCustom01" className="form-label">TITULO</label>
-                  <input type="text" className="form-control" placeholder="Titulo" id="validationCustom01" value={evento} onChange={(e) => setEvento(e.target.value)} />
+                  <input type="text" className="form-control" placeholder="Titulo" id="validationCustom03" value={evento} onChange={(e) => setEvento(e.target.value)} />
                 </div>
 
                 {tipoEvento === "noticia" && (
@@ -105,7 +107,7 @@ const CrearEvento = () => {
                       type="text"
                       className="form-control"
                       placeholder="Lugar adopción"
-                      id="validationCustom01"
+                      id="validationCustom04"
                       value={lugar}
                       onChange={(e) => setLugar(e.target.value)}
                     />
@@ -129,20 +131,24 @@ const CrearEvento = () => {
                 )}
 
                 {/* Adjuntar Video (solo para 'destacado') */}
-                {tipoEvento === "destacado" && (
-                  <div className="col-12 mt-4" style={{ padding: "0 50px 0 50px" }}>
+                {tipoEvento === 'destacado' && (
+                  <div className="col-12 mt-4" style={{ padding: '0 50px' }}>
                     <label className="form-label">ADJUNTAR VIDEO</label>
                     <button
                       type="button"
-                      onClick={abrirWidgetVideo}
                       className="btn btn-light w-100"
+                      onClick={abrirWidgetVideo}
                     >
                       SUBIR VIDEO
                     </button>
-
                     {video && (
-                      <div className="mt-2">
-                        <video controls width="100%">
+                      <div className="mt-3">
+                        <video
+                          controls
+                          key={videoKey}
+                          width="100%"
+                          style={{ borderRadius: '5px', border: '1px solid #ccc' }}
+                        >
                           <source src={video} type="video/mp4" />
                           Tu navegador no soporta la reproducción de video.
                         </video>
