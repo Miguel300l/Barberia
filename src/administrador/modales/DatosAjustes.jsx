@@ -9,7 +9,6 @@ const DatosAjustes = () => {
         apellidos: "",
         correo: "",
         genero: "",
-        numTelefono: "",
         password: ""
     });
 
@@ -176,11 +175,11 @@ const DatosAjustes = () => {
                                     style={{
                                         backgroundColor: '#000000',
                                         fontFamily: "'Bebas Neue', sans-serif",
-                                        fontSize: "clamp(12px, 1.5vw, 16px)",
+                                        fontSize: "clamp(16px, 1.5vw, 16px)",
                                         color:'white'
                                     }}
                                 >
-                                    Actualizar cambios
+                                    ACTUALIZAR CAMBIOS
                                 </button>
                             </div>
 
