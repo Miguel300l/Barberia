@@ -46,7 +46,7 @@ function MenuSup() {
                 backgroundColor: "#000000",
                 color: "white",
                 fontFamily: "'Bebas Neue', sans-serif",
-                fontSize: "clamp(12px, 1.5vw, 16px)",
+                fontSize: "clamp(14px, 1.5vw, 15px)",
                 padding: "0.5rem 1rem",
                 minWidth: "150px",
                 maxWidth: "100%",
@@ -54,7 +54,7 @@ function MenuSup() {
               data-bs-toggle="modal"
               data-bs-target="#exampleModalIN"
             >
-              + Crear evento
+              + CREAR EVENTO
             </button>
           </div>
 
