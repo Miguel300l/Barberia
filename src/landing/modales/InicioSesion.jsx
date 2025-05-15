@@ -9,7 +9,14 @@ import Email from "../../assets/img/icons/email.svg";
 import Lock from "../../assets/img/icons/lock.svg";
 import Pass from "../../assets/img/icons/pass.svg";
 
+
+
 const InicioSesion = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
   //Login Aprendiz
   const [correoAprendiz, setCorreoAprendiz] = useState("");
   const [contrasenaAprendiz, setContrasenaAprendiz] = useState("");
@@ -73,6 +80,8 @@ const InicioSesion = () => {
         .classList.toggle("active-green");
     }
   }, [btnActive]);
+
+
 
   return (
     <>
@@ -293,6 +302,10 @@ const InicioSesion = () => {
               <h1
                 className="modal-title fs-5 w-100 text-center"
                 id="exampleModalLabel"
+                style={{
+                  fontFamily: 'Bebas Neue',
+                  fontSize: '20px'
+                }}
               >
                 Inicia Sesión
               </h1>
@@ -303,14 +316,24 @@ const InicioSesion = () => {
                 aria-label="Close"
               ></button>
             </div>
+
             <div className="modal-body">
               <form
                 className="row pt-2 g-2 needs-validation"
                 onSubmit={handleSumbitAdmin}
               >
                 <div className="text-center w-100">
-                  <h2 className="mb-5">Administrador</h2>
+                  <h2
+                    className="mb-5"
+                    style={{
+                      fontFamily: 'Bebas Neue',
+                      fontSize: '30px'
+                    }}
+                  >
+                    Administrador
+                  </h2>
                 </div>
+
                 <div className="form__group" style={{ padding: "0 70px" }}>
                   <span className="icon_login">
                     <img src={Email} className="mail" alt="" />
@@ -323,21 +346,34 @@ const InicioSesion = () => {
                     value={correoAdmin}
                     onChange={(e) => setCorreoAdmin(e.target.value)}
                   />
-                  <label htmlFor="validationCustom01" className="form__label">
+                  <label
+                    htmlFor="validationCustom01"
+                    className="form__label"
+                    style={{
+                      fontFamily: 'Lato',
+                      fontSize: '20px'
+                    }}
+                  >
                     Usuario
                   </label>
+
                 </div>
                 <div className="form__group" style={{ padding: "0 70px" }}>
-                  <span className="icon_login">
-                    <img src={Pass} className="mail" alt="" />
+                  <span className="icon_login" onClick={togglePasswordVisibility} style={{ cursor: "pointer" }}>
+                    <img
+                      src={Pass}
+                      className="mail"
+                      alt="icon"
+                    />
                   </span>
                   <input
-                    type="password"
+                    type={isPasswordVisible ? "text" : "password"}
                     className="form__input"
                     placeholder=" "
                     id="validationCustom02"
                     value={contrasenaAdmin}
                     onChange={(e) => setContrasenaAdmin(e.target.value)}
+                    style={{ fontFamily: "Lato", fontSize: "20px" }}
                   />
                   <label htmlFor="validationCustom02" className="form__label">
                     Contraseña
@@ -346,12 +382,19 @@ const InicioSesion = () => {
 
                 <div className="w-100 pt-2 d-flex justify-content-center">
                   <button
-                    className="col-12 mb-2 btn btn-green w-50"
+                    className="col-12 mb-2 btn w-50"
                     type="submit"
+                    style={{
+                      backgroundColor: '#1E1E1E',
+                      color: 'white',
+                      fontFamily: 'Lato',
+                      borderRadius: '10px'
+                    }}
                   >
                     Iniciar Sesión
                   </button>
                 </div>
+
               </form>
             </div>
           </div>

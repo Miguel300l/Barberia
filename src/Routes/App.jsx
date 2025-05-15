@@ -4,7 +4,7 @@ import Navbar from "../landing/componentes/Navbar";
 import ScrollTop from "../landing/componentes/ScrollTop";
 import Inicio from "../landing/pages/Inicio";
 import Servicios from "../landing/pages/Servicios";
-import Contactanos from "../landing/pages/Contactanos";
+import Tutoriales from "../landing/pages/Tutoriales";
 import Galeria from "../landing/pages/Galeria";
 import Precios from "../landing/pages/Precios";
 import Nosotros from "../landing/pages/Nosotros";
@@ -40,7 +40,7 @@ const App = () => {
           <Route index element={<Inicio />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/servicios" element={<Servicios />} />
-          <Route path="/contactanos" element={<Contactanos />} />
+          <Route path="/tutoriales" element={<Tutoriales />} />
           <Route path="/precios" element={<Precios />} />
           <Route path="/galeria" element={<Galeria />} />
         </Route>

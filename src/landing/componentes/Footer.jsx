@@ -87,7 +87,29 @@ const Fotter = () => {
                 PRECIOS
               </Link>
             </div>
+            <div className="col-12 my-2">
+              <a
+                className="btn btn"
+                id="btn-inicio-admin"
+                data-bs-toggle="modal"
+                data-bs-target="#inicioSesionAdmin"
+                style={{
+                  marginTop: '-6px',
+                  fontFamily: 'Lato',
+                  backgroundColor: '#1E1E1E',
+                  color: 'white',
+                  borderRadius: '14px',
+                  width: '280px',
+                  padding: '8px 0',
+                  fontSize: '16px',
+                  textAlign: 'center'
+                }}
+              >
+                INICIAR SESIÓN ADMINISTRADOR
+              </a>
+            </div>
           </div>
+
 
           <hr className="text-white mt-4" />
           <div className="d-flex flex-wrap justify-content-center pb-3">

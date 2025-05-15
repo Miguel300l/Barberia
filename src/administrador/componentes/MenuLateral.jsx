@@ -43,38 +43,8 @@ function Menulateral() {
               <ul className="navbar-nav flex-column mb-sm-auto mt-4 align-items-sm-start w-100" id="menu" style={{ overflowY: "scroll", maxHeight: "64vh", scrollbarWidth: "none" }}>
                 <li className="nav-item w-100 rounded-1 shadow-lg">
                   <Link to="/admin" className="nav-link pt-3 ps-2">
-                    <img src={house1} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">INICIO</span>
-                  </Link>
-                </li>
-                <li className="nav-item w-100 rounded-4 shadow-lg">
-                  <Link to="/admin/cronograma" className="nav-link pt-4 ps-2">
-                    <img src={calendar3} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">SALUD CANINA</span>
-                  </Link>
-                </li>
-                <li className="nav-item w-100 rounded-4 shadow-lg">
-                  <Link to="/admin/charlas" className="nav-link pt-4 ps-2 d-inline-flex">
-                    <img src={chatdots} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">CONTACTO PROFESIONAL</span>
-                  </Link>
-                </li>
-                <li className="nav-item w-100 rounded-4 shadow-lg">
-                  <Link to="/admin/profesional" className="nav-link pt-4 ps-2">
-                    <img src={badgde} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">SOLICITUD PROFESIONAL</span>
-                  </Link>
-                </li>
-                <li className="nav-item w-100 rounded-4 shadow-lg">
-                  <Link to="/admin/solicitudes" className="nav-link pt-4 ps-2">
-                    <img src={linesfi} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">USUARIOS</span>
-                  </Link>
-                </li>
-                <li ref={pqrsRef} className="nav-item w-100 rounded-4 shadow-lg">
-                  <Link to="/admin/usuarios" className="nav-link pt-4 ps-2">
-                    <img src={envelopef} alt="" className="bg-green-opacity p-2 rounded-2" />
-                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">PQRS</span>
+                    <img src={house1} alt="" className="bg-black p-2 rounded-2" />
+                    <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">EVENTOS</span>
                   </Link>
                 </li>
               </ul>

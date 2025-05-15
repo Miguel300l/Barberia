@@ -1,10 +1,10 @@
-import Contactanos from '../../landing/pages/Contactanos';
-const Contactanosprofesional = () => {
+import Tutoriales from '../../landing/pages/Tutoriales';
+const Tutorialesprofesional = () => {
   return (
 <>
-<Contactanos/>
+<Tutoriales/>
 </>
   );
 };
 
-export default Contactanosprofesional;
+export default Tutorialesprofesional;
