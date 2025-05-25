@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-     <nav
+      <nav
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
@@ -43,7 +43,7 @@ const Navbar = () => {
             className="collapse navbar-collapse opciones-navbar"
             id="navbarSupportedContent"
           >
-             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item fs-6 ">
                 <Link className="nav-link active" aria-current="page" to="/">
                   INICIO
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-<BtnInicio/>
+            <BtnInicio />
 
 
           </div>
@@ -86,12 +86,12 @@ const Navbar = () => {
       </nav>
 
 
-                    {/* Modales */}
-                    <InicioSesion/>
-                    <DatosAjustes/>
-                    <NotificacionAseptar/>
-                    <RegistroAprendiz/>
-                    <RegistroProfesional/>
+      {/* Modales */}
+      <InicioSesion />
+      <DatosAjustes />
+      <NotificacionAseptar />
+      <RegistroAprendiz />
+      <RegistroProfesional />
 
       <Outlet />
       <Footer />
