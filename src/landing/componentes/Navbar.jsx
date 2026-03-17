@@ -31,14 +31,16 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleLinkClick = () => {
-    const collapseElement = document.getElementById("navbarSupportedContent");
-    const bsCollapse = new window.bootstrap.Collapse(collapseElement, {
-      toggle: false,
-    });
-    bsCollapse.hide();
+  const closeMenu = () => {
+    const menu = document.getElementById('navbarSupportedContent');
+
+    if (menu) {
+      menu.classList.remove('show');
+    }
   };
 
+  const handleLinkClick = () => closeMenu();
+  const handleCloseMenu = () => closeMenu();
   return (
     <>
       <nav
@@ -70,6 +72,13 @@ const Navbar = () => {
             className="collapse navbar-collapse opciones-navbar"
             id="navbarSupportedContent"
           >
+            {/* BOTÓN X */}
+            <button
+              className="btn-close-menu"
+              onClick={handleCloseMenu}
+            >
+              &times;
+            </button>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item fs-6 ">
                 <Link className="nav-link custom-link" aria-current="page" to="/" onClick={handleLinkClick}>
