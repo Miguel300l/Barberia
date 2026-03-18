@@ -1,7 +1,3 @@
-.navbar-collapse.show {
-  left: 0;
-}
-
 .bg-custom {
   background-color: #020a10 !important;
 }
@@ -30,13 +26,16 @@
     left: -250px;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: left 0.3s ease-in-out;
     z-index: 5;
     overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
   }
 
   .navbar-collapse::before {
@@ -46,7 +45,8 @@
     margin-top: -20px;
     transform: translateX(-50%);
     width: 200px;
-    height: 240px;
+    height: 170px;
+    background-image: url('../../assets/img/barberLogo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
