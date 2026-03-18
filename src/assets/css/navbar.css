@@ -25,7 +25,11 @@
     top: 0;
     left: -250px;
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
+    align-items: center;
+    display: flex;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -40,17 +44,14 @@
 
   .navbar-collapse::before {
     content: '';
-    position: absolute;
-    left: 50%;
-    margin-top: -20px;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 240px;
+    display: block;
+    width: 100%;
     background-image: url('../../assets/img/barberLogo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 6;
+    height: clamp(100px, 15vh, 160px);
+    margin-bottom: clamp(20px, 5vh, 40px);
   }
 
   .navbar-collapse.show .navbar-nav {
@@ -58,12 +59,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 30px;
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 30px;
+    gap: clamp(20px, 4vh, 40px);
     padding: 0;
+    margin-left: 0 !important;
   }
 
 }
