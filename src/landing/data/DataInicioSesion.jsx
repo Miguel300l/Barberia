@@ -3,23 +3,23 @@ import axios from 'axios'
 
 
 export const datosInicio = async () => {
-      
-  const {data} = await axios.get("/verEventos");
+
+  const { data } = await axios.get("/verEventos");
   // Filtrar los eventos que tengan el tipo "destacado"
-  // const destacados = data.filter(evento => evento.tipo === "destacado");
-  
+  const destacados = data.filter(evento => evento.tipo === "destacado");
+
   return data;
 }
-export const datosCronograma= async () => {
-      
-  const {data} = await axios.get("/verEventos");
+export const datosCronograma = async () => {
+
+  const { data } = await axios.get("/verEventos");
   // Filtrar los eventos que tengan el tipo "cronograma"
   const cronograma = data.filter(evento => evento.tipo === "cronograma");
-  
+
   return cronograma;
 }
 
-export const loginAprendiz= async (correo, contrasena) => {
+export const loginAprendiz = async (correo, contrasena) => {
 
   const URL = "/loginAprendiz";
 
@@ -29,21 +29,21 @@ export const loginAprendiz= async (correo, contrasena) => {
     allowOutsideClick: false,
     showConfirmButton: false,
     didOpen: () => {
-        Swal.showLoading();
+      Swal.showLoading();
     },
-});
+  });
   try {
     const response = await axios.post(URL, {
       correo,
       contrasena,
     });
-loading.close();
+    loading.close();
 
     if (response.status === 200 && response.data.token) {
       Swal.fire({
         title: response.data.messagge,
         icon: "success",
-        text:"! Bienvenido ¡",
+        text: "! Bienvenido ¡",
         showConfirmButton: false,
         timer: 2000
       }).then(() => {
@@ -66,7 +66,7 @@ loading.close();
   }
 }
 
-export const loginProfesional= async (correo, contrasena) => {
+export const loginProfesional = async (correo, contrasena) => {
 
   const URL = "/loginProfesional";
   const loading = Swal.fire({
@@ -75,9 +75,9 @@ export const loginProfesional= async (correo, contrasena) => {
     allowOutsideClick: false,
     showConfirmButton: false,
     didOpen: () => {
-        Swal.showLoading();
+      Swal.showLoading();
     },
-});
+  });
   try {
     const response = await axios.post(URL, {
       correo,
@@ -89,7 +89,7 @@ export const loginProfesional= async (correo, contrasena) => {
       Swal.fire({
         title: response.data.messagge,
         icon: "success",
-        text:"! Bienvenido ¡",
+        text: "! Bienvenido ¡",
         showConfirmButton: false,
         timer: 2000
       }).then(() => {
@@ -111,7 +111,7 @@ export const loginProfesional= async (correo, contrasena) => {
 
   }
 }
-export const loginAdmin= async (correo, contrasena) => {
+export const loginAdmin = async (correo, contrasena) => {
 
   const URL = "/loginAdministrador";
   const loading = Swal.fire({
@@ -120,9 +120,9 @@ export const loginAdmin= async (correo, contrasena) => {
     allowOutsideClick: false,
     showConfirmButton: false,
     didOpen: () => {
-        Swal.showLoading();
+      Swal.showLoading();
     },
-});
+  });
   try {
     const response = await axios.post(URL, {
       correo,
@@ -134,12 +134,12 @@ export const loginAdmin= async (correo, contrasena) => {
       Swal.fire({
         title: response.data.messagge,
         icon: "success",
-        text:"! Bienvenido ¡",
+        text: "! Bienvenido ¡",
         showConfirmButton: false,
         timer: 2000
       }).then(() => {
         localStorage.setItem("Token-Administrador", response.data.token)
-     
+
       }).then(() => {
         location.replace("/admin")
 
@@ -157,7 +157,7 @@ export const loginAdmin= async (correo, contrasena) => {
 
   }
 }
-export const formPqrs = async (id_usuario,tipo,motivo)=>{
+export const formPqrs = async (id_usuario, tipo, motivo) => {
   try {
 
     const token = localStorage.getItem("Token-Aprendiz");
@@ -171,59 +171,60 @@ export const formPqrs = async (id_usuario,tipo,motivo)=>{
       allowOutsideClick: false,
       showConfirmButton: false,
       didOpen: () => {
-          Swal.showLoading();
+        Swal.showLoading();
       },
-  });
+    });
 
-    const pqrs = {id_usuario,tipo,motivo}
-    const response = await axios.post(`/crearPqrs`,pqrs,{headers})
+    const pqrs = { id_usuario, tipo, motivo }
+    const response = await axios.post(`/crearPqrs`, pqrs, { headers })
     loading.close()
 
 
 
     if (response.status === 200) {
-        Swal.fire({
-          title: response.data,
-          icon: "success",
-          timer: 2000
-        })
-    .then((
-      location.reload()
-    ))}
+      Swal.fire({
+        title: response.data,
+        icon: "success",
+        timer: 2000
+      })
+        .then((
+          location.reload()
+        ))
+    }
   } catch (error) {
     if (error.response.status === 400) {
       Swal.fire({
         icon: "error",
         title: error.response.data
       });
+    }
   }
 }
-}
 
-export const notificacionVista = async (id)=>{
+export const notificacionVista = async (id) => {
   try {
-    const data= await axios.put(`/notificacionVista/${id}`)
-    
+    const data = await axios.put(`/notificacionVista/${id}`)
+
   } catch (error) {
-  console.error(error.data)
+    console.error(error.data)
   }
-}  
+}
 
-export const verPro = async () =>{
+export const verPro = async () => {
   try {
-    const {data}= await axios.get(`/verProfesionales`);
+    const { data } = await axios.get(`/verProfesionales`);
     return data
   } catch (error) {
-  console.error(error.data)
+    console.error(error.data)
   }
-}  
+}
 
-export const verProfesionales = async ()=>{
+export const verProfesionales = async () => {
   try {
-    const {data}= await axios.get(`/verUsuariosProfesionales`);
+    const { data } = await axios.get(`/verUsuariosProfesionales`);
     console.log(data)
     return data
   } catch (error) {
-  console.error(error.data)
+    console.error(error.data)
   }
 }  

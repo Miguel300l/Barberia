@@ -105,12 +105,16 @@ const Navbar = () => {
                   PRECIOS
                 </Link>
               </li>
-              {/* <li className="nav-item  fs-6">
+              <li className="nav-item  fs-6">
                 <Link className="nav-link custom-link" to="/tutoriales" onClick={handleLinkClick}>
                   TUTORIALES
                 </Link>
-              </li> */}
-
+              </li>
+              <li className="nav-item  fs-6">
+                <Link className="nav-link custom-link" to="/productos" onClick={handleLinkClick}>
+                  PRODUCTOS
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
