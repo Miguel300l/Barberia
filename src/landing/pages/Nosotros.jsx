@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import Dogmision from '../../assets/img/dogmision.jpg'
 import BarberoNosotros from '../../assets/img/barberoNosotros.jpg'
 import CarouselInfinito from '../../landing/componentes/CarouselInfinito'
-import Historia from '../../assets/img/historia.jpg'
 import separador from '../../assets/img/separador.svg';
 import Video from '../../assets/img/videos/dog.mp4'
 import barbero from '../../assets/img/barbero.jpg';
@@ -16,10 +15,27 @@ import SatisfechoLorem from '../componentes/SatisfechoLorem'
 import HistoriaBarberia from '../componentes/HistoriaBarberia'
 import CircleStat from '../componentes/CirculoEstadistico'
 import BarberSatisfechoN from '../../assets/img/BarberSatisfechoN.jpg'
+import music from "../../assets/img/videos/musica_fondo.mp3";
 import { Row, Col } from 'react-bootstrap';
 import '../../assets/css/card.css'
 
 const Nosotros = () => {
+  const audioRef = useRef(null);
+
+  const startMusic = () => {
+
+    if (audioRef.current) {
+      audioRef.current.volume = 0.15;
+      audioRef.current.play().catch(() => { });
+    }
+
+    window.removeEventListener("click", startMusic);
+    window.removeEventListener("scroll", startMusic);
+
+  };
+
+  window.addEventListener("click", startMusic);
+  window.addEventListener("scroll", startMusic);
   return (
     <>
       <div className="position-relative w-100 hero-nosotros" style={{ height: "750px" }}>

@@ -48,6 +48,7 @@ const Slider = () => {
     window.addEventListener("scroll", startMusic);
 
   }, []);
+
   return (
     <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel">
       {/* audio */}
@@ -73,11 +74,11 @@ const Slider = () => {
             <div className="slider-content text-white text-center">
 
               <h2 className="fw-bold beb-font slider-title">
-                MEN'S HAIRCUT
+                BARBERSTYLE
               </h2>
 
               <p className="slider-text">
-                Ofrecemos servicios de barbería clásica con estilos.
+                Ofrecemos cursos y servicios de barbería con estilo.
               </p>
 
               <a
