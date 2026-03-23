@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Horizontal from "../../assets/img/barberLogo.png";
-import Favicon2 from "../../assets/img/barberLogo.png";
+import Horizontal from "../../assets/img/logo_barber.png";
+import Favicon2 from "../../assets/img/logo_barber.png";
 import "../../assets/css/navbar.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
@@ -118,11 +118,11 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav >
 
 
       {/* Modales */}
-      <InicioSesion />
+      < InicioSesion />
       <DatosAjustes />
       <NotificacionAseptar />
       <RegistroAprendiz />

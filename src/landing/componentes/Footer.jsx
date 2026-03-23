@@ -3,7 +3,7 @@ import Facebook from "../../assets/img/facebook.png";
 import Instagram from "../../assets/img/instagram1.png";
 import Twitter from "../../assets/img/twitter.png";
 import Whatsapp from "../../assets/img/whatsapp.png";
-import barberLogo from "../../assets/img/barberLogo.png";
+import barberLogo from "../../assets/img/logo_barber.png";
 import { Link } from "react-router-dom";
 
 
@@ -139,7 +139,7 @@ const Fotter = () => {
               />
             </a>
 
-            <a href="https://barbershop.com.co/tienda/" target="_blank" className="ms-4 text-decoration-none ">
+            <a href="https://wa.me/573103669753" target="_blank" className="ms-4 text-decoration-none ">
               <img src={Whatsapp} className="me-2 icon" alt="logoWhatsaap" style={{ width: '24px', height: '24px' }} />
             </a>
 

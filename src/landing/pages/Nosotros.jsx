@@ -9,7 +9,7 @@ import barbero from '../../assets/img/barbero.jpg';
 import barbero2 from '../../assets/img/barbero2.jpg';
 import barbero3 from '../../assets/img/barbero3.jpeg';
 import barbero4 from '../../assets/img/barbero4.jpeg';
-import nosotrosBarber from '../../assets/img/nosotrosBarber.jpg'
+import nosotrosBarber from '../../assets/img/carrusel_nosotros.jpeg'
 import circuloEstadistica from '../../assets/img/circuloEstadistica.jpg'
 import SatisfechoText from '../componentes/SatisfechoText'
 import SatisfechoLorem from '../componentes/SatisfechoLorem'
@@ -22,31 +22,23 @@ import '../../assets/css/card.css'
 const Nosotros = () => {
   return (
     <>
-      <div className="position-relative w-100" style={{ height: '750px' }}>
+      <div className="position-relative w-100 hero-nosotros" style={{ height: "750px" }}>
+
         {/* Imagen de fondo */}
         <img
           src={nosotrosBarber}
-          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          className="position-absolute top-0 start-0 w-100 h-100 img-fade"
           alt="nosotrosBarber"
-          style={{ objectFit: 'cover' }}
         />
 
         {/* Capa oscura */}
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
-        ></div>
+        <div className="position-absolute top-0 start-0 w-100 h-100 overlay-dark"></div>
 
-        <div
-          className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
-          style={{
-            fontFamily: 'Lato, sans-serif',
-            fontSize: 'clamp(24px, 5vw, 50px)',
-            zIndex: 2,
-          }}
-        >
+        {/* Texto */}
+        <div className="position-absolute top-50 start-50 translate-middle text-white text-center px-3 titulo-nosotros">
           SOBRE NOSOTROS
         </div>
+
       </div>
 
       <section className="container py-5" style={{ marginTop: '40px' }}>
@@ -155,7 +147,7 @@ const Nosotros = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
               <a
-                href="tel:3106785269"
+                href="https://wa.me/573103669753"
                 className="btn-agendar"
                 style={{
                   position: 'absolute',
@@ -168,7 +160,7 @@ const Nosotros = () => {
                   color: 'white',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
-                  backgroundColor: '#D5B981',
+                  backgroundColor: '#C59D5F',
                   borderRadius: '20px',
                 }}
               >
@@ -200,7 +192,7 @@ const Nosotros = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
               <a
-                href="tel:3106785269"
+                href="https://wa.me/573103669753"
                 className="btn-agendar"
                 style={{
                   position: 'absolute',
@@ -213,7 +205,7 @@ const Nosotros = () => {
                   color: 'white',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
-                  backgroundColor: '#D5B981',
+                  backgroundColor: '#C59D5F',
                   borderRadius: '20px',
                 }}
               >
@@ -245,7 +237,7 @@ const Nosotros = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
               <a
-                href="tel:3106785269"
+                href="https://wa.me/573103669753"
                 className="btn-agendar"
                 style={{
                   position: 'absolute',
@@ -258,7 +250,7 @@ const Nosotros = () => {
                   color: 'white',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
-                  backgroundColor: '#D5B981',
+                  backgroundColor: '#C59D5F',
                   borderRadius: '20px',
                 }}
               >
@@ -290,7 +282,7 @@ const Nosotros = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
               <a
-                href="tel:3106785269"
+                href="https://wa.me/573103669753"
                 className="btn-agendar"
                 style={{
                   position: 'absolute',
@@ -303,7 +295,7 @@ const Nosotros = () => {
                   color: 'white',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
-                  backgroundColor: '#D5B981',
+                  backgroundColor: '#C59D5F',
                   borderRadius: '20px',
                 }}
               >

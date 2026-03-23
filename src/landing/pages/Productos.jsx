@@ -31,7 +31,7 @@ const Productos = () => {
                 {/* Capa oscura */}
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100"
-                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.45)' }}
                 ></div>
 
                 <div

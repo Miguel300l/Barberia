@@ -1,5 +1,5 @@
 import React from 'react'
-import Horizontal from '../../assets/img/barberLogo.png'
+import Horizontal from '../../assets/img/logo_barber.png'
 import gear from '../../assets/img/icons/gear.svg'
 import box_arrow from '../../assets/img/icons/box-arrow-right.svg'
 import plus_circle from '../../assets/img/icons/plus-circle.svg'

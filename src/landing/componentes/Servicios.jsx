@@ -3,7 +3,6 @@ import tijera from '../../assets/img/tijera.svg';
 import maquina from '../../assets/img/maquina.svg';
 import estiloCorte from '../../assets/img/estiloCorte.svg';
 import cuchilla from '../../assets/img/cuchilla.svg';
-import sillaIcon from '../../assets/img/sillaIcon.svg';
 import tijeraGrande from '../../assets/img/tijeraGrande.png';
 import separador from '../../assets/img/separador.svg';
 

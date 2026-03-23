@@ -50,12 +50,12 @@ const AgendarCita = () => {
                             {/* Botón personalizado */}
                             <div className="d-flex justify-content-center mt-2">
                                 <a
-                                    href="tel:3106785269"
+                                    href="https://wa.me/573103669753"
                                     className="btn btn"
                                     style={{
                                         marginTop: '-6px',
                                         fontFamily: 'Lato',
-                                        backgroundColor: '#D5B981',
+                                        backgroundColor: '#C59D5F',
                                         color: 'white',
                                         padding: '10px 25px',
                                         fontSize: '16px',

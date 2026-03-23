@@ -22,7 +22,7 @@ const ClientesSatisfechos = () => {
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
                                 El corte con máquina es un estilo práctico y moderno, ideal para quienes buscan comodidad y frescura.
                             </p>
-                            <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px' }}>
+                            <a href="https://wa.me/573103669753" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#C59D5F', color: 'white', borderRadius: '20px' }}>
                                 AGENDAR CORTE
                             </a>
                         </div>
@@ -40,9 +40,9 @@ const ClientesSatisfechos = () => {
                         <div className="card-body text-center" style={{ marginTop: '6px' }}>
                             <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase' }}>Corte barba</h5>
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                            El corte de barba ideal para mantener un estilo definido. Con máquina o tijera, se perfila según la forma del rostro.
+                                El corte de barba ideal para mantener un estilo definido. Con máquina o tijera, se perfila según la forma del rostro.
                             </p>
-                            <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px' }}>
+                            <a href="https://wa.me/573103669753" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#C59D5F', color: 'white', borderRadius: '20px' }}>
                                 AGENDAR CORTE
                             </a>
                         </div>
@@ -62,7 +62,7 @@ const ClientesSatisfechos = () => {
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
                                 El corte con tijera ofrece mayor precisión. Ideal para quienes buscan un acabado natural y detallado.
                             </p>
-                            <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px', }}>
+                            <a href="https://wa.me/573103669753" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#C59D5F', color: 'white', borderRadius: '20px', }}>
                                 AGENDAR CORTE
                             </a>
                         </div>
@@ -90,9 +90,9 @@ const ClientesSatisfechos = () => {
                         <div className="card-body text-center" style={{ marginTop: '6px' }}>
                             <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase' }}>Estilo corte</h5>
                             <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                            El estilo de corte refleja tu personalidad y se adapta a tus gustos. Ya sea un look clásico, moderno o urbano.
+                                El estilo de corte refleja tu personalidad y se adapta a tus gustos. Ya sea un look clásico, moderno o urbano.
                             </p>
-                            <a href="tel:3106785269" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#D5B981', color: 'white', borderRadius: '20px', }}>
+                            <a href="https://wa.me/573103669753" className="btn btn" style={{ marginTop: '-6px', fontFamily: 'Lato', backgroundColor: '#C59D5F', color: 'white', borderRadius: '20px', }}>
                                 AGENDAR CORTE
                             </a>
                         </div>

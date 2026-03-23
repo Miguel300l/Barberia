@@ -1,89 +1,97 @@
-import React from 'react';
-import house1 from '../../assets/img/barberCarrucel.jpeg';
-import house2 from '../../assets/img/barberCarrucel2.jpeg';
+import React, { useEffect, useRef } from "react";
+import { Carousel } from "bootstrap";
+
+import barbershop from "../../assets/img/barbershop.jpeg";
+import barbershop2 from "../../assets/img/barbershop2.jpeg";
+import barbershop3 from "../../assets/img/barbershop3.jpeg";
+import barbershop4 from "../../assets/img/barbershop4.jpeg";
+import barbershop5 from "../../assets/img/barbershop5.jpeg";
+import music from "../../assets/img/videos/musica_fondo.mp3";
+
+const images = [
+  barbershop,
+  barbershop2,
+  barbershop3,
+  barbershop4,
+  barbershop5
+];
 
 const Slider = () => {
+  const audioRef = useRef(null);
 
+  useEffect(() => {
+
+    const carouselElement = document.querySelector("#carouselExampleSlidesOnly");
+
+    if (carouselElement) {
+      new Carousel(carouselElement, {
+        interval: 6000,
+        ride: "carousel",
+        pause: false,
+        wrap: true
+      });
+    }
+
+    const startMusic = () => {
+
+      if (audioRef.current) {
+        audioRef.current.volume = 0.15;
+        audioRef.current.play().catch(() => { });
+      }
+
+      window.removeEventListener("click", startMusic);
+      window.removeEventListener("scroll", startMusic);
+
+    };
+
+    window.addEventListener("click", startMusic);
+    window.addEventListener("scroll", startMusic);
+
+  }, []);
   return (
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" className="carousel slide carousel-fade" data-bs-ride="carousel">
+      {/* audio */}
+      <audio ref={audioRef} loop>
+        <source src={music} type="audio/mp3" />
+      </audio>
       <div className="carousel-inner">
 
-        <div className="carousel-item active position-relative" style={{ height: '790px' }}>
-          <img src={house1} className="d-block w-100 h-100 object-fit-cover carousel-image" alt="House 1" />
-          {/* Capa oscura */}
+        {images.map((img, index) => (
           <div
-            className="position-absolute start-0 top-0 w-100"
-            style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.3)',
-              height: '790px',
+            key={index}
+            className={`carousel-item position-relative slider-item ${index === 0 ? "active" : ""}`}
+          >
 
-            }}
-          ></div>
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-black" style={{ opacity: 0.4 }}></div>
+            <img
+              src={img}
+              className="carousel-image"
+              alt={`barbershop-${index}`}
+            />
 
-          <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
-            <h2 className="fw-bold beb-font" style={{ fontSize: '50px', verticalAlign: 'inherit', textTransform: 'uppercase' }}>MEN'S HAIRCUT</h2>
+            <div className="overlay-dark"></div>
 
-            <p style={{ fontFamily: 'Lato, sans-serif', fontSize: '20px' }}>
-              Ofrecemos servicios de barbería clásica con estilos.
-            </p>
-            <a
-              href="tel:3106785269"
-              className="btn mt-1"
-              style={{
-                fontSize: '16px',
-                textTransform: 'uppercase',
-                backgroundColor: '#D5B981',
-                color: 'white',
-                border: 'none',
-                padding: '10px 30px',
-                borderRadius: '20px',
-                display: 'inline-block',
-                textDecoration: 'none'
-              }}
-            >
-              Agendar Corte
-            </a>
-          </div>
-        </div>
+            <div className="slider-content text-white text-center">
 
-        {/* Segunda imagen con texto encima */}
-        <div className="carousel-item position-relative" style={{ height: '790px' }}>
-          <img src={house2} className="d-block w-100 h-100 object-fit-cover carousel-image" alt="House 2" />
-          <div
-            className="position-absolute start-0 top-0 w-100"
-            style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.3)',
-              height: '790px',
-            }}
-          ></div>
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-black" style={{ opacity: 0.4 }}></div>
+              <h2 className="fw-bold beb-font slider-title">
+                MEN'S HAIRCUT
+              </h2>
 
-          <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
-            <h2 className="fw-bold beb-font" style={{ fontSize: '50px', verticalAlign: 'inherit', textTransform: 'uppercase' }}>MEN'S HAIRCUT</h2>
-            <p style={{ fontFamily: 'Lato, sans-serif', fontSize: '20px' }}>
-              Ofrecemos servicios de barbería clásica con estilos.
-            </p>
-            <a
-              href="tel:3106785269"
-              className="btn mt-1"
-              style={{
-                fontSize: '16px',
-                textTransform: 'uppercase',
-                backgroundColor: '#D5B981',
-                color: 'white',
-                border: 'none',
-                padding: '10px 30px',
-                borderRadius: '20px',
-                display: 'inline-block',
-                textDecoration: 'none'
-              }}
-            >
-              Agendar Corte
-            </a>
+              <p className="slider-text">
+                Ofrecemos servicios de barbería clásica con estilos.
+              </p>
+
+              <a
+                href="https://wa.me/573103669753"
+                className="btn btn-agendar"
+              >
+                Agendar Corte
+              </a>
+
+            </div>
 
           </div>
-        </div>
+        ))}
+
       </div>
     </div>
 
