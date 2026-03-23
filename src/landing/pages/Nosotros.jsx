@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Dogmision from '../../assets/img/dogmision.jpg'
 import BarberoNosotros from '../../assets/img/barberoNosotros.jpg'
 import CarouselInfinito from '../../landing/componentes/CarouselInfinito'
@@ -36,10 +36,14 @@ const Nosotros = () => {
 
   window.addEventListener("click", startMusic);
   window.addEventListener("scroll", startMusic);
+
   return (
     <>
       <div className="position-relative w-100 hero-nosotros" style={{ height: "750px" }}>
-
+        {/* audio */}
+        <audio ref={audioRef} loop>
+          <source src={music} type="audio/mp3" />
+        </audio>
         {/* Imagen de fondo */}
         <img
           src={nosotrosBarber}
