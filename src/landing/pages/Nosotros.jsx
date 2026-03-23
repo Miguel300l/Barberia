@@ -22,20 +22,24 @@ import '../../assets/css/card.css'
 const Nosotros = () => {
   const audioRef = useRef(null);
 
-  const startMusic = () => {
+  useEffect(() => {
 
-    if (audioRef.current) {
-      audioRef.current.volume = 0.15;
-      audioRef.current.play().catch(() => { });
-    }
+    const startMusic = () => {
 
-    window.removeEventListener("click", startMusic);
-    window.removeEventListener("scroll", startMusic);
+      if (audioRef.current) {
+        audioRef.current.volume = 0.15;
+        audioRef.current.play().catch(() => { });
+      }
 
-  };
+      window.removeEventListener("click", startMusic);
+      window.removeEventListener("scroll", startMusic);
 
-  window.addEventListener("click", startMusic);
-  window.addEventListener("scroll", startMusic);
+    };
+
+    window.addEventListener("click", startMusic);
+    window.addEventListener("scroll", startMusic);
+
+  }, []);
 
   return (
     <>
