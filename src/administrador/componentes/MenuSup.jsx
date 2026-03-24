@@ -2,7 +2,6 @@ import React from 'react'
 import Horizontal from '../../assets/img/logo_barber.png'
 import gear from '../../assets/img/icons/gear.svg'
 import box_arrow from '../../assets/img/icons/box-arrow-right.svg'
-import plus_circle from '../../assets/img/icons/plus-circle.svg'
 import { Link } from 'react-router-dom';
 // Modales
 import CrearEvento from '../modales/CrearEvento'

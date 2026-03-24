@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import box_arrow_right from "../../assets/img/icons/box-arrow-right.svg";
-import person_circle from "../../assets/img/icons/person-circle.svg";
-import bell2 from "../../assets/img/icons/bell2.svg";
+/* import person_circle from "../../assets/img/icons/person-circle.svg"; */
+/* import bell2 from "../../assets/img/icons/bell2.svg"; */
 import gear from "../../assets/img/icons/gear.svg";
 import { Link } from "react-router-dom";
 import { misNotificaciones } from "../../administrador/data/DataAdmin";
@@ -40,23 +40,23 @@ const BtnInicioSesion = () => {
         </>
       );
     } else if (token) {
-      setTimeout(function() {
+      setTimeout(function () {
         localStorage.clear();
         Swal.fire({
           title: "Por tu seguridad se ha cerrado sesión",
           icon: "success"
         }).then(() => {
           Swal.clickConfirm(location.reload());
-          
+
         });
       }, 3600000);
       const { id } = jwt_decode(token);
-      const notificacionesAbiertas = (id, motivo, nombreProf, apellidoProf, fechaAplazada, titulo, nombreApre, apellidoApre, numeroDocApre, usuarioNom,usuarioApe,contenido) => {
+      const notificacionesAbiertas = (id, motivo, nombreProf, apellidoProf, fechaAplazada, titulo, nombreApre, apellidoApre, numeroDocApre, usuarioNom, usuarioApe, contenido) => {
         (async () => {
           notificacionVista(id);
         })();
         const datos = {
-          motivo, nombreProf, apellidoProf, fechaAplazada, titulo, nombreApre, apellidoApre, numeroDocApre,usuarioNom,usuarioApe,contenido
+          motivo, nombreProf, apellidoProf, fechaAplazada, titulo, nombreApre, apellidoApre, numeroDocApre, usuarioNom, usuarioApe, contenido
         }
         setDatosMotivoNoti(datos)
       };
@@ -143,13 +143,13 @@ const BtnInicioSesion = () => {
                 aria-expanded="false"
               >{dataPro && dataPro.perfil && dataPro.perfil.urlImg ?
                 <img src={dataPro.perfil.urlImg} alt="icon-user" style={{ width: "70px", height: "70px" }} className="rounded-circle" />
-              :
+                :
                 <img src={person_circle} alt="icon-user" style={{ width: "70px", height: "70px" }} className="rounded-circle" />
-            }
+                }
               </Link>
               <ul
                 className="dropdown-menu dropdown-menu-end bg-green border-green"
-                style={{backgroundColor: "#000000" }}
+                style={{ backgroundColor: "#000000" }}
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>

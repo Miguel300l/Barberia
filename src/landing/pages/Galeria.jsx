@@ -1,12 +1,37 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
 import galeriaBar from '../../assets/img/carrusel_galeria.jpeg'
 import Galeria from '../componentes/Galeria';
 import LogoProducto from '../componentes/GaleriaProductos';
+import music from "../../assets/img/videos/musica_fondo.mp3";
 
 const Cuidados = () => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+
+    const startMusic = () => {
+
+      if (audioRef.current) {
+        audioRef.current.volume = 0.15;
+        audioRef.current.play().catch(() => { });
+      }
+
+      window.removeEventListener("click", startMusic);
+      window.removeEventListener("scroll", startMusic);
+
+    };
+
+    window.addEventListener("click", startMusic);
+    window.addEventListener("scroll", startMusic);
+
+  }, []);
   return (
     <>
       <div className="position-relative w-100 hero-galeria" style={{ height: '750px' }}>
+        {/* audio */}
+        <audio ref={audioRef} loop>
+          <source src={music} type="audio/mp3" />
+        </audio>
 
         {/* Imagen de fondo */}
         <img

@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import precios from '../../assets/img/carrusel_precios.jpeg'
 import separador from '../../assets/img/separador.svg';
 import PreciosCortes from '../componentes/PreciosCortes'
 import HorariosAtencion from '../componentes/HorariosAtencion'
 import ServiciosPrecios from '../componentes/ServiciosPrecios'
+import music from "../../assets/img/videos/musica_fondo.mp3"
 
 const Contenido = () => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+
+    const startMusic = () => {
+
+      if (audioRef.current) {
+        audioRef.current.volume = 0.15;
+        audioRef.current.play().catch(() => { });
+      }
+
+      window.removeEventListener("click", startMusic);
+      window.removeEventListener("scroll", startMusic);
+
+    };
+
+    window.addEventListener("click", startMusic);
+    window.addEventListener("scroll", startMusic);
+
+  }, []);
   return (<>
     <div className="position-relative w-100 hero-precios" style={{ height: '750px' }}>
-
+      {/* audio */}
+      <audio ref={audioRef} loop>
+        <source src={music} type="audio/mp3" />
+      </audio>
       {/* Imagen de fondo */}
       <img
         src={precios}

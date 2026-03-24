@@ -1,6 +1,6 @@
 import React from "react";
-import Horizontal from "../../assets/img/Dog3.png";
-import Favicon2 from "../../assets/img/Dog3.png";
+/* import Horizontal from "../../assets/img/Dog3.png";
+import Favicon2 from "../../assets/img/Dog3.png"; */
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../componentes/Footer";
 import BtnInicio from '../../landing/data/BtnInicioSesion'

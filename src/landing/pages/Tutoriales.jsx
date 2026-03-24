@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { datosInicio } from "../data/DataInicioSesion";
 import FechaNotificacion from "../../assets/js/FechaNotificacion";
 import barberTutorial from '../../assets/img/barberTutorial.jpeg'
+import music from "../../assets/img/videos/musica_fondo.mp3";
 
 const Contactanos = () => {
   const [dataInicio, setDataInicio] = useState([]);
+  const audioRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,11 +22,30 @@ const Contactanos = () => {
     };
 
     fetchData();
-  }, []);
 
+    const startMusic = () => {
+
+      if (audioRef.current) {
+        audioRef.current.volume = 0.15;
+        audioRef.current.play().catch(() => { });
+      }
+
+      window.removeEventListener("click", startMusic);
+      window.removeEventListener("scroll", startMusic);
+
+    };
+
+    window.addEventListener("click", startMusic);
+    window.addEventListener("scroll", startMusic);
+
+  }, []);
   return (
     <>
       <div className="position-relative w-100" style={{ height: '750px' }}>
+        {/* audio */}
+        <audio ref={audioRef} loop>
+          <source src={music} type="audio/mp3" />
+        </audio>
         {/* Imagen de fondo */}
         <img
           src={barberTutorial}

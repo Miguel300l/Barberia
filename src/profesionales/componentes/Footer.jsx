@@ -1,18 +1,18 @@
 import React from "react";
-import People from "../../assets/img/icons/people-fill.svg";
-import Clock from "../../assets/img/icons/clock.svg";
-import Arrow from "../../assets/img/icons/arrow-down-right-square.svg";
-import Facebook from "../../assets/img/icons/facebook.svg";
+/* import People from "../../assets/img/icons/people-fill.svg"; */
+/* import Clock from "../../assets/img/icons/clock.svg"; */
+/* import Arrow from "../../assets/img/icons/arrow-down-right-square.svg"; */
+/* import Facebook from "../../assets/img/icons/facebook.svg";
 import Instagram from "../../assets/img/icons/instagram.svg";
 import Twitter from "../../assets/img/icons/twitter.svg";
-import Whatsapp from "../../assets/img/icons/whatsapp.svg";
+import Whatsapp from "../../assets/img/icons/whatsapp.svg"; */
 import { Link } from "react-router-dom";
 
 
 const Fotter = () => {
   return (
     <div>
-    
+
 
       <footer>
         <div className="container-fluid bg-color-blue px-5 pt-5">
@@ -59,7 +59,7 @@ const Fotter = () => {
                   CUIDADOS
                 </Link>
               </div>
-            
+
             </div>
 
             <div className="col-lg-4 mt-0 mt-md-0 mt-5">
@@ -83,7 +83,7 @@ const Fotter = () => {
               </div>
             </div>
           </div>
-          
+
           <hr className="text-white mt-5" />
           <div className="d-flex flex-wrap justify-content-center pb-3">
             <Link

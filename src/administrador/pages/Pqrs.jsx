@@ -1,7 +1,7 @@
-import Imgnav from '../../assets/img/dognosotros.webp'
-import Person from '../../assets/img/icons/person-lines-fill.svg'
-import Pencil from '../../assets/img/icons/pencil-square.svg'
-import {  useState,useEffect } from 'react'
+/* import Imgnav from '../../assets/img/dognosotros.webp' */
+/* import Person from '../../assets/img/icons/person-lines-fill.svg' */
+/* import Pencil from '../../assets/img/icons/pencil-square.svg' */
+import { useState, useEffect } from 'react'
 import { datosPqrs } from '../data/DataAdmin'
 import ResponderPqrs from '../modales/ResponderPqrs'
 
@@ -10,19 +10,19 @@ const Usuarios = () => {
   const [dataModalPqrs, setdataModalPqrs] = useState("")
 
 
-  useEffect( () => {
-    (async()=>{
-      const data = await  datosPqrs()
+  useEffect(() => {
+    (async () => {
+      const data = await datosPqrs()
       setDataPqrs(data.reverse())
     })()
-    
+
   }, [])
 
-  const modalPqrs = (tipo,motivo,id)=>{
-const datos = {
-  tipo,motivo,id
-}
-setdataModalPqrs(datos)
+  const modalPqrs = (tipo, motivo, id) => {
+    const datos = {
+      tipo, motivo, id
+    }
+    setdataModalPqrs(datos)
   }
   return (
     <>
@@ -63,22 +63,22 @@ setdataModalPqrs(datos)
               </tr>
             </thead>
             <tbody>
-              {dataPqrs.map((d,i)=>(
-   <tr key={i}>
-   <th>{i}</th>
-   <td>{d.id_usuario.nombres}{" "}{d.id_usuario.apellidos}</td>
-   <td>{d.id_usuario.programa.ficha}</td>
-   <td>{d.tipo}</td>
-   <td className="d-inline-block text-truncate" style={{ maxWidth: '200px' }}>{d.motivo}
-   </td>
-   <td>
+              {dataPqrs.map((d, i) => (
+                <tr key={i}>
+                  <th>{i}</th>
+                  <td>{d.id_usuario.nombres}{" "}{d.id_usuario.apellidos}</td>
+                  <td>{d.id_usuario.programa.ficha}</td>
+                  <td>{d.tipo}</td>
+                  <td className="d-inline-block text-truncate" style={{ maxWidth: '200px' }}>{d.motivo}
+                  </td>
+                  <td>
 
-     <button type='submit' className='bg-success btn p-1 border-0 link-light text-center' data-bs-toggle="modal" href="" data-bs-target="#modalpqrs" onClick={()=>modalPqrs(d.tipo,d.motivo,d._id)}>Responder</button>
-   </td>
- </tr>
+                    <button type='submit' className='bg-success btn p-1 border-0 link-light text-center' data-bs-toggle="modal" href="" data-bs-target="#modalpqrs" onClick={() => modalPqrs(d.tipo, d.motivo, d._id)}>Responder</button>
+                  </td>
+                </tr>
 
-               ))}  
-           
+              ))}
+
 
             </tbody>
           </table>
@@ -86,7 +86,7 @@ setdataModalPqrs(datos)
 
       </div>
       {/* <!-- Fin Contenido --> */}
-<ResponderPqrs dataModalPqrs={dataModalPqrs}/>
+      <ResponderPqrs dataModalPqrs={dataModalPqrs} />
     </>
   )
 }

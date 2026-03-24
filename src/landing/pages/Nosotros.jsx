@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import Dogmision from '../../assets/img/dogmision.jpg'
 import BarberoNosotros from '../../assets/img/barberoNosotros.jpg'
 import CarouselInfinito from '../../landing/componentes/CarouselInfinito'
 import separador from '../../assets/img/separador.svg';
-import Video from '../../assets/img/videos/dog.mp4'
 import barbero from '../../assets/img/barbero.jpg';
 import barbero2 from '../../assets/img/barbero2.jpg';
 import barbero3 from '../../assets/img/barbero3.jpeg';

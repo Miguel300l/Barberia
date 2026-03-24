@@ -1,9 +1,8 @@
 import React from "react";
-import Users1 from "../../assets/img/user1.png";
-import { aceptarProfesional } from "../data/DataAdmin";
+/* import Users1 from "../../assets/img/user1.png"; */
 import RechazarProfesional from './RechazarProfesional'
 
-const ModalProfesional = ({dataProfesional}) => { 
+const ModalProfesional = ({ dataProfesional }) => {
   return (
     <>
       {/* Modal solicitud profesional */}
@@ -56,7 +55,7 @@ const ModalProfesional = ({dataProfesional}) => {
                     <p className=" fw-bold">Correo: </p>
                     <p className="ms-2">{dataProfesional.correo}</p>
                   </div>
-                  
+
                 </div>
                 <div className="col-6">
                   <div className=" d-flex">
@@ -73,7 +72,7 @@ const ModalProfesional = ({dataProfesional}) => {
           </div>
         </div>
       </div>
-      <RechazarProfesional idProfesional={dataProfesional.id}/>
+      <RechazarProfesional idProfesional={dataProfesional.id} />
     </>
   );
 };

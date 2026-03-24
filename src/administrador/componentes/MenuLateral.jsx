@@ -1,12 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import house1 from '../../assets/img/icons/house1.svg';
-import calendar3 from '../../assets/img/icons/calendar3.svg';
 import MenuSup from './MenuSup';
-import chatdots from '../../assets/img/icons/chat-dotsadm.svg';
-import badgde from '../../assets/img/icons/badge-fill.svg';
-import linesfi from '../../assets/img/icons/person-lines-fill.svg';
-import envelopef from '../../assets/img/icons/envelope-fill.svg';
 import jwt_decode from 'jwt-decode';
 import { verAdmin } from '../data/DataAdmin';
 

@@ -1,11 +1,11 @@
 import React from "react";
-import Users1 from "../../assets/img/user1.png";
+/* import Users1 from "../../assets/img/user1.png"; */
 import { aceptarProfesional } from "../data/DataAdmin";
 import RechazarProfesional from '../modales/RechazarProfesional'
 
-const ModalProfesional = ({dataProfesional}) => { 
-  const btnAceptarProfesional = ()=>{ 
-   aceptarProfesional(dataProfesional.id);
+const ModalProfesional = ({ dataProfesional }) => {
+  const btnAceptarProfesional = () => {
+    aceptarProfesional(dataProfesional.id);
   }
   return (
     <>
@@ -16,7 +16,7 @@ const ModalProfesional = ({dataProfesional}) => {
         id="profesional"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
-       
+
       >
         <div className="modal-dialog modal-dialog modal-lg">
           <div className="modal-content">
@@ -80,7 +80,7 @@ const ModalProfesional = ({dataProfesional}) => {
                 className="btn btn-danger"
                 data-bs-toggle="modal"
                 data-bs-target="#rechazarProfesional"
-                
+
               >
                 Rechazar
               </button>
@@ -88,7 +88,7 @@ const ModalProfesional = ({dataProfesional}) => {
           </div>
         </div>
       </div>
-      <RechazarProfesional idProfesional={dataProfesional.id}/>
+      <RechazarProfesional idProfesional={dataProfesional.id} />
     </>
   );
 };

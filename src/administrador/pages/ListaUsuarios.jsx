@@ -1,5 +1,5 @@
-import Imgnav from "../../assets/img/historia.jpg";
-import Person from '../../assets/img/icons/person-lines-fill.svg'
+/* import Imgnav from "../../assets/img/historia.jpg"; */
+/* import Person from '../../assets/img/icons/person-lines-fill.svg' */
 import { useEffect, useState } from "react";
 import { verUsuarios, inhabilitarUsu, habilitarUsu } from "../data/DataAdmin";
 
@@ -11,15 +11,15 @@ const Solicitudes = () => {
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
-      const fetchUsuarios = async () => {
-        try {
-          const usuarioData = await verUsuarios();
-          setUsuarios(usuarioData.reverse());
-        } catch (error) {
-          console.log(error);
-        }
-      };
-      fetchUsuarios();
+    const fetchUsuarios = async () => {
+      try {
+        const usuarioData = await verUsuarios();
+        setUsuarios(usuarioData.reverse());
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchUsuarios();
   }, []);
 
   const inhabilitar = async (id, checked) => {
@@ -76,9 +76,8 @@ const Solicitudes = () => {
                 <td className="link-light">
                   <div>
                     <p
-                      className={`bg-${
-                        user.estado.habilitado === false ? "danger" : "success"
-                      } rounded-pill text-center w-75`}
+                      className={`bg-${user.estado.habilitado === false ? "danger" : "success"
+                        } rounded-pill text-center w-75`}
                     >
                       {user.estado.habilitado === false
                         ? "Deshabilitado"

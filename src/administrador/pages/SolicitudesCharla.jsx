@@ -1,4 +1,4 @@
-import Imgnav from "../../assets/img/dogcontacto.webp";
+/* import Imgnav from "../../assets/img/dogcontacto.webp"; */
 import ModalCharla from '../modales/ModalCharla';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -16,11 +16,11 @@ const Charlas = () => {
     dataCharlas()
   }, []);
 
-  
-  const handleModal = (nombre, ficha, telefono, correo, motivo, fechaSolicitadaA,apellidos,jornada,nombresProfesional,apellidosProfesional,idCharla,imgPro,imgApre) => {
+
+  const handleModal = (nombre, ficha, telefono, correo, motivo, fechaSolicitadaA, apellidos, jornada, nombresProfesional, apellidosProfesional, idCharla, imgPro, imgApre) => {
     const fechaSolicitada = fechaLocal(fechaSolicitadaA)
-    const datos = { nombre, ficha, telefono, correo, motivo, fechaSolicitada,apellidos,jornada,nombresProfesional,apellidosProfesional,idCharla,imgPro,imgApre }
-   
+    const datos = { nombre, ficha, telefono, correo, motivo, fechaSolicitada, apellidos, jornada, nombresProfesional, apellidosProfesional, idCharla, imgPro, imgApre }
+
     setdataAprendiz(datos)
   }
   return (
@@ -62,7 +62,7 @@ const Charlas = () => {
                     </div>
                   </td>
                   <td data-label="descripcion">
-                    <Link className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#solicitud" style={{ cursor: "pointer" }} onClick={() => handleModal(d.id_aprendiz.nombres, d.id_aprendiz.programa.ficha, d.id_aprendiz.numTelefono, d.id_aprendiz.correo, d.motivo, d.fechaSolicitada,d.id_aprendiz.apellidos,d.id_aprendiz.programa.jornada,d.id_profesional.nombres,d.id_profesional.apellidos,d._id,d.id_profesional.perfil.urlImg,d.id_aprendiz.perfil.urlImg)}> Ver mas...</Link>
+                    <Link className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#solicitud" style={{ cursor: "pointer" }} onClick={() => handleModal(d.id_aprendiz.nombres, d.id_aprendiz.programa.ficha, d.id_aprendiz.numTelefono, d.id_aprendiz.correo, d.motivo, d.fechaSolicitada, d.id_aprendiz.apellidos, d.id_aprendiz.programa.jornada, d.id_profesional.nombres, d.id_profesional.apellidos, d._id, d.id_profesional.perfil.urlImg, d.id_aprendiz.perfil.urlImg)}> Ver mas...</Link>
                   </td>
                 </tr>
 

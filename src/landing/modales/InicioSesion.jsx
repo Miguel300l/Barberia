@@ -5,9 +5,8 @@ import {
   loginAdmin,
 } from "../../landing/data/DataInicioSesion";
 import "../../assets/css/estilos.css";
-import Email from "../../assets/img/icons/email.svg";
-import Lock from "../../assets/img/icons/lock.svg";
-import Pass from "../../assets/img/icons/pass.svg";
+/* import Email from "../../assets/img/icons/email.svg"; */
+/* import Pass from "../../assets/img/icons/pass.svg"; */
 
 
 
@@ -336,7 +335,7 @@ const InicioSesion = () => {
 
                 <div className="form__group" style={{ padding: "0 70px" }}>
                   <span className="icon_login">
-                    <img src={Email} className="mail" alt="" />
+                    {/* <img src={Email} className="mail" alt="" /> */}
                   </span>
                   <input
                     type="email"
@@ -360,11 +359,11 @@ const InicioSesion = () => {
                 </div>
                 <div className="form__group" style={{ padding: "0 70px" }}>
                   <span className="icon_login" onClick={togglePasswordVisibility} style={{ cursor: "pointer" }}>
-                    <img
+                    {/*     <img
                       src={Pass}
                       className="mail"
                       alt="icon"
-                    />
+                    /> */}
                   </span>
                   <input
                     type={isPasswordVisible ? "text" : "password"}

@@ -1,14 +1,13 @@
-import users1 from "../../assets/img/user1.png";
 import { charlaAceptada } from "../data/DataAdmin";
 import AplazarCharla from "./AplazarCharla";
 
- 
-const ModalCharla = (props) => {
-const aceptarCharla=(e)=>{
- e.preventDefault();
-charlaAceptada(props.dataAprendiz.idCharla);
 
-}
+const ModalCharla = (props) => {
+    const aceptarCharla = (e) => {
+        e.preventDefault();
+        charlaAceptada(props.dataAprendiz.idCharla);
+
+    }
 
     return (
         <>
@@ -27,7 +26,7 @@ charlaAceptada(props.dataAprendiz.idCharla);
                         <div className=" modal-body">
                             <div className="row mt-4 ">
                                 <div className="col-2">
-                                    <img className="w-100 rounded-circle" src={props.dataAprendiz.imgApre ? props.dataAprendiz.imgApre :"https://res.cloudinary.com/dvuzzneet/image/upload/v1684280453/sinF_ksqjai.png"} />
+                                    <img className="w-100 rounded-circle" src={props.dataAprendiz.imgApre ? props.dataAprendiz.imgApre : "https://res.cloudinary.com/dvuzzneet/image/upload/v1684280453/sinF_ksqjai.png"} />
                                 </div>
                                 <div className="col-4">
                                     <div className=" d-flex">
@@ -71,10 +70,10 @@ charlaAceptada(props.dataAprendiz.idCharla);
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-success"  onClick={aceptarCharla}>
+                            <button type="button" className="btn btn-success" onClick={aceptarCharla}>
                                 Aceptar
                             </button>
-                            <button type="button" className="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#modalAplazar" >
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAplazar" >
                                 Aplazar
                             </button>
                         </div>
@@ -83,9 +82,9 @@ charlaAceptada(props.dataAprendiz.idCharla);
             </div>
 
             {/* Fin modal Solicitud */}
-            
+
             {/* Modal Aplazar Charla */}
-            <AplazarCharla id={props.dataAprendiz.idCharla}/>
+            <AplazarCharla id={props.dataAprendiz.idCharla} />
 
         </>
     )

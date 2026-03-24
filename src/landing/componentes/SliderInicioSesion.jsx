@@ -78,7 +78,7 @@ const Slider = () => {
               </h2>
 
               <p className="slider-text">
-                Ofrecemos cursos y servicios de barbería con estilo.
+                Ofrecemos cursos y servicios de barbería con estilo y esencia.
               </p>
 
               <a
