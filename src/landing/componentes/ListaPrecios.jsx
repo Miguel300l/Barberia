@@ -1,7 +1,6 @@
 import React from 'react';
 import barberPrecio from '../../assets/img/barberPrecio.jpeg';
 
-// 🔹 Datos centralizados
 const servicios = [
     {
         titulo: 'Corte de cabello clásico',
@@ -35,7 +34,7 @@ const servicios = [
     },
 ];
 
-// 🔹 Componente reutilizable
+// Componente reutilizable
 const ItemPrecio = ({ item, showDots }) => (
     <div className="mb-3 p-3 bg-transparent border rounded">
         <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
@@ -100,21 +99,21 @@ const ListaPrecios = () => {
                     <div className="container" style={{ margin: "-60px" }}>
                         <div className="row justify-content-center">
 
-                            {/* 📱 Mobile */}
+                            {/*Mobile */}
                             <div className="col-12 d-block d-md-none">
                                 {servicios.slice(0, 2).map((item, i) => (
                                     <ItemPrecio key={i} item={item} showDots={false} />
                                 ))}
                             </div>
 
-                            {/* 💻 Tablet */}
+                            {/*Tablet */}
                             <div className="col-12 d-none d-md-block d-lg-none">
                                 {servicios.slice(0, 3).map((item, i) => (
                                     <ItemPrecio key={i} item={item} showDots={false} />
                                 ))}
                             </div>
 
-                            {/* 🖥️ Desktop */}
+                            {/*Desktop */}
                             <div className="col-12 col-md-6 d-none d-lg-block">
                                 {servicios.slice(0, 3).map((item, i) => (
                                     <ItemPrecio key={i} item={item} showDots={true} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import barbero from '../../assets/img/Barbero.jpg';
+import barbero from '../../assets/img/barbero.jpg';
 import '../../assets/css/card.css'
 
 const CardGiro = () => {
