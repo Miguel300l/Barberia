@@ -1,22 +1,60 @@
 import React from 'react';
 import barberPrecio from '../../assets/img/barberPrecio.jpeg';
 
-const estiloTitulo = {
-    fontFamily: 'Bebas Neue',
-    fontSize: '24px',
-    fontSize: 'clamp(16px, 4vw, 24px)',
-    textTransform: 'uppercase',
-    whiteSpace: 'nowrap',
-};
+// 🔹 Datos centralizados
+const servicios = [
+    {
+        titulo: 'Corte de cabello clásico',
+        precio: '18.000',
+        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
+    },
+    {
+        titulo: 'Corte de cabello',
+        precio: '20.000',
+        descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
+    },
+    {
+        titulo: 'Afeitado clásico',
+        precio: '10.000',
+        descripcion: 'Afeitado que deja tu piel fresca y un acabado impecable.',
+    },
+    {
+        titulo: 'Arreglo de la barba',
+        precio: '8.000',
+        descripcion: 'Perfilación de barba con precisión y estilo a tu gusto.',
+    },
+    {
+        titulo: 'Corte de cabello premium',
+        precio: '26.000',
+        descripcion: 'Servicio especializado con perfilado de cejas y mascarilla facial.',
+    },
+    {
+        titulo: 'Líneas con diseños o freestyle libre',
+        precio: '4.000 - 7.000',
+        descripcion: 'Diseños freestyle que resaltan tu estilo con creatividad.',
+    },
+];
 
-const precio = {
-    marginLeft: '10px',
-    fontFamily: 'Lato, sans-serif',
-    fontSize: 'clamp(14px, 2.5vw, 18px)',
-};
+// 🔹 Componente reutilizable
+const ItemPrecio = ({ item, showDots }) => (
+    <div className="mb-3 p-3 bg-transparent border rounded">
+        <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
+            <strong>{item.titulo}</strong>
+            {showDots && (
+                <span className="mx-2">................................</span>
+            )}
+            <span>{item.precio}</span>
+        </div>
+        <div
+            className="text-white"
+            style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}
+        >
+            {item.descripcion}
+        </div>
+    </div>
+);
 
 const ListaPrecios = () => {
-
     return (
         <div className="py-5 position-relative text-white">
             <div className="position-relative">
@@ -26,12 +64,16 @@ const ListaPrecios = () => {
                     alt="barberPrecio"
                     style={{ height: '560px', objectFit: 'cover' }}
                 />
+
+                {/* Overlay */}
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
                 ></div>
 
+                {/* Contenido */}
                 <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center px-3">
+
                     <h2
                         style={{
                             fontFamily: 'Bebas Neue',
@@ -42,6 +84,7 @@ const ListaPrecios = () => {
                     >
                         Lista de precios
                     </h2>
+
                     <p
                         className="mt-2"
                         style={{
@@ -54,136 +97,41 @@ const ListaPrecios = () => {
                         Conoce nuestra lista de precios y elige el servicio ideal para ti. Cada opción está diseñada para resaltar tu estilo, pensando siempre en quienes confían en nosotros. Los precios son los siguientes:
                     </p>
 
-                    <div className="container mt-5 mb-5">
-                        <div className="row justify-content-center" style={{ marginTop: '-80px' }}>
+                    <div className="container" style={{ margin: "-60px" }}>
+                        <div className="row justify-content-center">
 
-                            {/* Móviles: solo 2 servicios sin puntos */}
+                            {/* 📱 Mobile */}
                             <div className="col-12 d-block d-md-none">
-                                {[
-                                    {
-                                        titulo: 'Corte de cabello clásico',
-                                        precio: '18.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
-                                    },
-                                    {
-                                        titulo: 'Corte de cabello',
-                                        precio: '20.000',
-                                        descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
-                                    },
-                                ].map((item, index) => (
-                                    <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
-                                            <strong>{item.titulo}</strong>
-                                            <span className="mx-2"></span>
-                                            <span>{item.precio}</span>
-                                        </div>
-                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>
-                                            {item.descripcion}
-                                        </div>
-                                    </div>
+                                {servicios.slice(0, 2).map((item, i) => (
+                                    <ItemPrecio key={i} item={item} showDots={false} />
                                 ))}
                             </div>
 
-                            {/* Pantallas md: solo 3 servicios */}
+                            {/* 💻 Tablet */}
                             <div className="col-12 d-none d-md-block d-lg-none">
-                                {[
-                                    {
-                                        titulo: 'Corte de cabello clásico',
-                                        precio: '18.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
-                                    },
-                                    {
-                                        titulo: 'Corte de cabello',
-                                        precio: '20.000',
-                                        descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
-                                    },
-                                    {
-                                        titulo: 'Afeitado clásico',
-                                        precio: '10.000',
-                                        descripcion: 'Afeitado que deja tu piel fresca y un acabado impecable..',
-                                    },
-                                ].map((item, index) => (
-                                    <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
-                                            <strong>{item.titulo}</strong>
-                                            <span className="puntosPrecio mx-2 d-none d-lg-inline">................................</span>
-                                            <span>{item.precio}</span>
-                                        </div>
-                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>
-                                            {item.descripcion}
-                                        </div>
-                                    </div>
+                                {servicios.slice(0, 3).map((item, i) => (
+                                    <ItemPrecio key={i} item={item} showDots={false} />
                                 ))}
                             </div>
 
-                            {/* Pantallas grandes: todos los servicios */}
-                            <div className="col-12 col-md-6 d-none d-lg-block mb-4">
-                                {[
-                                    {
-                                        titulo: 'Corte de cabello clásico',
-                                        precio: '18.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
-                                    },
-                                    {
-                                        titulo: 'Corte de cabello',
-                                        precio: '20.000',
-                                        descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
-                                    },
-                                    {
-                                        titulo: 'Afeitado clásico',
-                                        precio: '10.000',
-                                        descripcion: 'Afeitado que deja tu piel fresca y un acabado impecable.',
-                                    },
-                                ].map((item, index) => (
-                                    <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
-                                            <strong>{item.titulo}</strong>
-                                            <span className="puntosPrecio mx-2 d-inline">................................</span>
-                                            <span>{item.precio}</span>
-                                        </div>
-                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>
-                                            {item.descripcion}
-                                        </div>
-                                    </div>
+                            {/* 🖥️ Desktop */}
+                            <div className="col-12 col-md-6 d-none d-lg-block">
+                                {servicios.slice(0, 3).map((item, i) => (
+                                    <ItemPrecio key={i} item={item} showDots={true} />
                                 ))}
                             </div>
 
-                            <div className="col-12 col-md-6 d-none d-lg-block mb-4">
-                                {[
-                                    {
-                                        titulo: 'Arreglo de la barba',
-                                        precio: '8.000',
-                                        descripcion: 'Perfilacion de barba con presicion y estilo a tu gusto.',
-                                    },
-                                    {
-                                        titulo: 'Corte de cabello premium',
-                                        precio: '26.000',
-                                        descripcion: 'Servicio especializado con perfilado de cejas y mascarilla facial.',
-                                    },
-                                    {
-                                        titulo: 'Lineas con diseños o freestyle libre',
-                                        precio: '4.000 - 7.000',
-                                        descripcion: 'Diseños y líneas freestyle que resaltan tu estilo con creatividad, logrando un look auténtico.',
-                                    },
-                                ].map((item, index) => (
-                                    <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(15px, 4vw, 18px)', fontFamily: 'Bebas Neue', margin: "1.5px" }}>
-                                            <strong>{item.titulo}</strong>
-                                            <span className="puntosPrecio mx-2 d-inline">................................</span>
-                                            <span>{item.precio}</span>
-                                        </div>
-                                        <div className="text-white" style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}>
-                                            {item.descripcion}
-                                        </div>
-                                    </div>
+                            <div className="col-12 col-md-6 d-none d-lg-block">
+                                {servicios.slice(3).map((item, i) => (
+                                    <ItemPrecio key={i} item={item} showDots={true} />
                                 ))}
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 
