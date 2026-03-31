@@ -34,16 +34,18 @@ const servicios = [
     },
 ];
 
-// Componente reutilizable
-const ItemPrecio = ({ item, showDots }) => (
+const ItemPrecio = ({ item, dots }) => (
     <div className="mb-3 p-3 bg-transparent border rounded">
         <div style={{ fontSize: 'clamp(15px, 4vw, 20px)', fontFamily: 'Bebas Neue' }}>
             <strong>{item.titulo}</strong>
-            {showDots && (
-                <span className="mx-2">................................</span>
+
+            {dots && (
+                <span className="mx-2">{dots}</span>
             )}
+
             <span>{item.precio}</span>
         </div>
+
         <div
             className="text-white"
             style={{ fontSize: 'clamp(11px, 3.5vw, 16px)', fontFamily: 'Lato' }}
@@ -57,6 +59,7 @@ const ListaPrecios = () => {
     return (
         <div className="py-5 position-relative text-white">
             <div className="position-relative">
+
                 <img
                     src={barberPrecio}
                     className="img-fluid w-100"
@@ -64,13 +67,11 @@ const ListaPrecios = () => {
                     style={{ height: '560px', objectFit: 'cover' }}
                 />
 
-                {/* Overlay */}
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
                 ></div>
 
-                {/* Contenido */}
                 <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center px-3">
 
                     <h2
@@ -99,35 +100,36 @@ const ListaPrecios = () => {
                     <div className="container" style={{ margin: "-60px" }}>
                         <div className="row justify-content-center">
 
-                            {/*Mobile */}
+                            {/* MOBILE */}
                             <div className="col-12 d-block d-md-none">
                                 {servicios.slice(0, 2).map((item, i) => (
-                                    <ItemPrecio key={i} item={item} showDots={false} />
+                                    <ItemPrecio key={i} item={item} dots="......" />
                                 ))}
                             </div>
 
-                            {/*Tablet */}
+                            {/* TABLET */}
                             <div className="col-12 d-none d-md-block d-lg-none">
                                 {servicios.slice(0, 3).map((item, i) => (
-                                    <ItemPrecio key={i} item={item} showDots={false} />
+                                    <ItemPrecio key={i} item={item} dots="......" />
                                 ))}
                             </div>
 
-                            {/*Desktop */}
+                            {/* DESKTOP */}
                             <div className="col-12 col-md-6 d-none d-lg-block">
                                 {servicios.slice(0, 3).map((item, i) => (
-                                    <ItemPrecio key={i} item={item} showDots={true} />
+                                    <ItemPrecio key={i} item={item} dots="................................" />
                                 ))}
                             </div>
 
                             <div className="col-12 col-md-6 d-none d-lg-block">
                                 {servicios.slice(3).map((item, i) => (
-                                    <ItemPrecio key={i} item={item} showDots={true} />
+                                    <ItemPrecio key={i} item={item} dots="................................" />
                                 ))}
                             </div>
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
