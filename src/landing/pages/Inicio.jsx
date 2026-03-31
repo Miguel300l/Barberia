@@ -34,8 +34,7 @@ const Contenido = () => {
               </div>
 
               <p style={{ fontSize: '15px', textAlign: 'center', padding: '10px' }}>
-                Nuestra barbería ofrece servicios clásicos combinados con técnicas<br />
-                elegantes. Nuestros expertos te ayudarán a lucir varonil y mágico.
+                Ofrecemos los mejores estilos con diferentes looks, fusionando técnicas y estructuras para lograr resultados únicos, siempre respetando la perspectiva y esencia de cada cliente.
               </p>
             </div>
           </div>

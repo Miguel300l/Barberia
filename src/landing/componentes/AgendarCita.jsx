@@ -44,7 +44,7 @@ const AgendarCita = () => {
                             </div>
 
                             <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
-                                Programa tu cita de forma rápida y sencilla. Elige el servicio que necesitas, el horario que más te convenga y déjanos cuidar de tu estilo. Tu tiempo es valioso, y nosotros nos encargamos del resto.
+                                Programa tu cita de forma rápida y sencilla. Elige el servicio que necesitas, el horario que más te convenga y deja en nuestras manos tu estilo. Tu tiempo es valioso, y nosotros nos encargamos del resto.
                             </p>
 
                             {/* Botón personalizado */}

@@ -8,22 +8,22 @@ const cardsData = [
     {
         img: tijera,
         title: 'Corte de Cabello',
-        text: 'Servicio pensado para resaltar tu imagen. Técnicas precisas, atención al detalle y estilo personalizado.',
+        text: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.',
     },
     {
         img: maquina,
         title: 'Corte con maquina',
-        text: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un look moderno y fácil de mantener.',
+        text: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.',
     },
     {
         img: bigote,
         title: 'Bigote',
-        text: 'Definimos y perfilamos tu bigote con precisión, cuidando cada detalle para resaltar tu estilo con elegancia y carácter.',
+        text: 'Definimos y perfilamos tu barba con precisión, trabajando la simetría para resaltar tu estilo con elegancia y carácter.',
     },
     {
         img: cuchilla,
         title: 'Afeitar',
-        text: 'Un afeitado clásico con técnica y cuidado. Piel suave, resultado limpio y una experiencia de frescura inigualable.',
+        text: 'Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable.',
     },
 ];
 

@@ -51,7 +51,7 @@ const ListaPrecios = () => {
                             lineHeight: 1.6,
                         }}
                     >
-                        Conoce nuestra lista de precios y elige el servicio que mejor se adapte a tus necesidades. Ofrecemos una variedad de opciones para cortes, estilos y tratamientos. Los precios son los siguientes:
+                        Conoce nuestra lista de precios y elige el servicio ideal para ti. Cada opción está diseñada para resaltar tu estilo, pensando siempre en quienes confían en nosotros. Los precios son los siguientes:
                     </p>
 
                     <div className="container mt-5 mb-5">
@@ -61,13 +61,13 @@ const ListaPrecios = () => {
                             <div className="col-12 d-block d-md-none">
                                 {[
                                     {
-                                        titulo: 'Corte de pelo clásico',
-                                        precio: '20.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión.',
+                                        titulo: 'Corte de cabello clásico',
+                                        precio: '18.000',
+                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
                                     },
                                     {
                                         titulo: 'Corte de cabello',
-                                        precio: '23.000',
+                                        precio: '20.000',
                                         descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
                                     },
                                 ].map((item, index) => (
@@ -88,19 +88,19 @@ const ListaPrecios = () => {
                             <div className="col-12 d-none d-md-block d-lg-none">
                                 {[
                                     {
-                                        titulo: 'Corte de pelo clásico',
-                                        precio: '20.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión.',
+                                        titulo: 'Corte de cabello clásico',
+                                        precio: '18.000',
+                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
                                     },
                                     {
                                         titulo: 'Corte de cabello',
-                                        precio: '23.000',
+                                        precio: '20.000',
                                         descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
                                     },
                                     {
                                         titulo: 'Afeitado clásico',
-                                        precio: '20.000',
-                                        descripcion: 'Afeitado que deja tu piel fresca y perfectamente afeitada.',
+                                        precio: '10.000',
+                                        descripcion: 'Afeitado que deja tu piel fresca y un acabado impecable..',
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
@@ -120,19 +120,19 @@ const ListaPrecios = () => {
                             <div className="col-12 col-md-6 d-none d-lg-block mb-4">
                                 {[
                                     {
-                                        titulo: 'Corte de pelo clásico',
-                                        precio: '20.000',
-                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión.',
+                                        titulo: 'Corte de cabello clásico',
+                                        precio: '18.000',
+                                        descripcion: 'Un estilo tradicional y limpio, ideal para cualquier ocasión especial.',
                                     },
                                     {
                                         titulo: 'Corte de cabello',
-                                        precio: '23.000',
+                                        precio: '20.000',
                                         descripcion: 'Un corte de cabello personalizado para que luzcas fresco.',
                                     },
                                     {
                                         titulo: 'Afeitado clásico',
-                                        precio: '20.000',
-                                        descripcion: 'Afeitado que deja tu piel fresca y perfectamente afeitada.',
+                                        precio: '10.000',
+                                        descripcion: 'Afeitado que deja tu piel fresca y un acabado impecable.',
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
@@ -152,22 +152,22 @@ const ListaPrecios = () => {
                                 {[
                                     {
                                         titulo: 'Arreglo de la barba',
-                                        precio: '12.000',
-                                        descripcion: 'Corte de barba para darle forma y resaltar tu estilo.',
+                                        precio: '8.000',
+                                        descripcion: 'Perfilacion de barba con presicion y estilo a tu gusto.',
                                     },
                                     {
-                                        titulo: 'Corte cabello largo',
-                                        precio: '24.000',
-                                        descripcion: 'Corte especializado para cabellos largos, dándole forma.',
+                                        titulo: 'Corte de cabello premium',
+                                        precio: '26.000',
+                                        descripcion: 'Servicio especializado con perfilado de cejas y mascarilla facial.',
                                     },
                                     {
-                                        titulo: 'Lavado de cabello',
-                                        precio: '12.000',
-                                        descripcion: 'Un lavado refrescante, utilizando productos de calidad.',
+                                        titulo: 'Lineas con diseños o freestyle libre',
+                                        precio: '4.000 - 7.000',
+                                        descripcion: 'Diseños y líneas freestyle que resaltan tu estilo con creatividad, logrando un look auténtico.',
                                     },
                                 ].map((item, index) => (
                                     <div key={index} className="mb-3 p-3 bg-transparent border rounded">
-                                        <div style={{ fontSize: 'clamp(15px, 4vw, 18px)', fontFamily: 'Bebas Neue' }}>
+                                        <div style={{ fontSize: 'clamp(15px, 4vw, 18px)', fontFamily: 'Bebas Neue', margin: "1.5px" }}>
                                             <strong>{item.titulo}</strong>
                                             <span className="puntosPrecio mx-2 d-inline">................................</span>
                                             <span>{item.precio}</span>

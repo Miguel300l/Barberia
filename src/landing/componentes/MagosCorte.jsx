@@ -12,7 +12,7 @@ const MagosCorte = () => {
                             className="fw-bold text-uppercase"
                             style={{ fontSize: 'clamp(16px, 3vw, 40px)', textAlign: 'center' }}
                         >
-                            Conoce a nuestros magos del cabello
+                            Conoce a nuestro mago del cabello
                         </p>
 
                         <div className="d-flex justify-content-center">
@@ -24,7 +24,7 @@ const MagosCorte = () => {
                         </div>
 
                         <p style={{ fontSize: '15px', textAlign: 'center', padding: '10px' }}>
-                            Expertos dedicados a transformar tu look con cortes y estilos personalizados.
+                            Experto dedicado a transformar tu look con cortes y estilos personalizados.
                         </p>
                     </div>
                 </div>
