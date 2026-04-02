@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Horizontal from "../../assets/img/logo_barber.png";
-import Favicon2 from "../../assets/img/logo_barber.png";
+import Horizontal from "../../assets/img/logo_barber.webp";
+import Favicon2 from "../../assets/img/logo_barber.webp";
 import "../../assets/css/navbar.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";

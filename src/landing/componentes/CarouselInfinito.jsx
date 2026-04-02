@@ -1,10 +1,10 @@
 import React from 'react';
-import carousel from '../../assets/img/carrucel.jpeg';
-import carousel2 from '../../assets/img/carrucel2.jpeg';
-import carousel3 from '../../assets/img/carrucel3.jpeg';
-import carousel4 from '../../assets/img/carrucel4.jpeg';
-import carousel5 from '../../assets/img/carrucel5.jpeg';
-import carousel6 from '../../assets/img/carrucel6.jpeg';
+import carousel from '../../assets/img/carrucel.webp';
+import carousel2 from '../../assets/img/carrucel2.webp';
+import carousel3 from '../../assets/img/carrucel3.webp';
+import carousel4 from '../../assets/img/carrucel4.webp';
+import carousel5 from '../../assets/img/carrucel5.webp';
+import carousel6 from '../../assets/img/carrucel6.webp';
 
 const CarouselInfinito = () => {
 

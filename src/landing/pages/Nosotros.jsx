@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import BarberoNosotros from '../../assets/img/barberoNosotros.jpg'
 import CarouselInfinito from '../../landing/componentes/CarouselInfinito'
 import separador from '../../assets/img/separador.svg';
-import barbero from '../../assets/img/barbero.jpg';
+import barbero from '../../assets/img/barbero.webp';
 import barbero2 from '../../assets/img/barbero2.jpg';
 import barbero3 from '../../assets/img/barbero3.jpeg';
 import barbero4 from '../../assets/img/barbero4.jpeg';

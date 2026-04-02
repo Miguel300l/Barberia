@@ -1,5 +1,5 @@
 import React from 'react';
-import sillabarberia2 from '../../assets/img/sillabarberia2.jpg';
+import sillabarberia2 from '../../assets/img/sillabarberia2.webp';
 import separador from '../../assets/img/separador.svg';
 
 const AgendarCita = () => {

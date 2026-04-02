@@ -1,11 +1,10 @@
 import React from "react";
-import Facebook from "../../assets/img/facebook.png";
-import Instagram from "../../assets/img/instagram1.png";
-import Twitter from "../../assets/img/twitter.png";
-import Whatsapp from "../../assets/img/whatsapp.png";
-import barberLogo from "../../assets/img/logo_barber.png";
+import Facebook from "../../assets/img/facebook.webp";
+import Instagram from "../../assets/img/instagram1.webp";
+import Twitter from "../../assets/img/twitter.webp";
+import Whatsapp from "../../assets/img/whatsapp.webp";
+import barberLogo from "../../assets/img/logo_barber.webp";
 import { Link } from "react-router-dom";
-
 
 const Fotter = () => {
 
