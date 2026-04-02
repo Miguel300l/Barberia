@@ -8,11 +8,8 @@ import barbero3 from '../../assets/img/barbero3.jpeg';
 import barbero4 from '../../assets/img/barbero4.jpeg';
 import nosotrosBarber from '../../assets/img/carrusel_nosotros.jpeg'
 import circuloEstadistica from '../../assets/img/circuloEstadistica.jpg'
-import SatisfechoText from '../componentes/SatisfechoText'
-import SatisfechoLorem from '../componentes/SatisfechoLorem'
 import HistoriaBarberia from '../componentes/HistoriaBarberia'
 import CircleStat from '../componentes/CirculoEstadistico'
-import BarberSatisfechoN from '../../assets/img/BarberSatisfechoN.jpg'
 import music from "../../assets/img/videos/musica_fondo.mp3";
 import { Row, Col } from 'react-bootstrap';
 import '../../assets/css/card.css'
@@ -157,7 +154,7 @@ const Nosotros = () => {
       </section>
 
 
-      <div className="container" style={{ marginTop: '-110px' }}>
+      <div className="container" style={{ marginTop: '-100px' }}>
         <div className="row justify-content-center">
           {/* Card 1 */}
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
@@ -199,186 +196,14 @@ const Nosotros = () => {
                 marginBottom: '5px',
               }}
             >
-              John Doe
-            </h5>
-            <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
-            <div className="box-nosotros" style={{ width: '18rem', position: 'relative' }}>
-              <img
-                src={barbero2}
-                alt="barbero2"
-                className="card-img"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              <a
-                href="https://wa.me/573103669753"
-                className="btn-agendar"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  fontFamily: '"Bebas Neue", sans-serif',
-                  fontSize: '16px',
-                  padding: '6px 12px',
-                  color: 'white',
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                  backgroundColor: '#C59D5F',
-                  borderRadius: '20px',
-                }}
-              >
-                Agendar Cita
-              </a>
-            </div>
-            <h5
-              className="card-title mt-2"
-              style={{
-                fontFamily: 'Bebas Neue',
-                fontSize: '28px',
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-                marginBottom: '5px',
-              }}
-            >
-              Carlos
-            </h5>
-            <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
-            <div className="box-nosotros" style={{ width: '18rem', position: 'relative' }}>
-              <img
-                src={barbero3}
-                alt="barbero3"
-                className="card-img"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              <a
-                href="https://wa.me/573103669753"
-                className="btn-agendar"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  fontFamily: '"Bebas Neue", sans-serif',
-                  fontSize: '16px',
-                  padding: '6px 12px',
-                  color: 'white',
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                  backgroundColor: '#C59D5F',
-                  borderRadius: '20px',
-                }}
-              >
-                Agendar Cita
-              </a>
-            </div>
-            <h5
-              className="card-title mt-2"
-              style={{
-                fontFamily: 'Bebas Neue',
-                fontSize: '28px',
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-                marginBottom: '5px',
-              }}
-            >
-              Collie Herb
-            </h5>
-            <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero senior</div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
-            <div className="box-nosotros" style={{ width: '18rem', position: 'relative' }}>
-              <img
-                src={barbero4}
-                alt="barbero4"
-                className="card-img"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              <a
-                href="https://wa.me/573103669753"
-                className="btn-agendar"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  fontFamily: '"Bebas Neue", sans-serif',
-                  fontSize: '16px',
-                  padding: '6px 12px',
-                  color: 'white',
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                  backgroundColor: '#C59D5F',
-                  borderRadius: '20px',
-                }}
-              >
-                Agendar Cita
-              </a>
-            </div>
-            <h5
-              className="card-title mt-2"
-              style={{
-                fontFamily: 'Bebas Neue',
-                fontSize: '28px',
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-                marginBottom: '5px',
-              }}
-            >
-              Gus Fring
+              Jhonatan'S
             </h5>
             <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
           </div>
         </div>
       </div>
 
-
-      <div className="py-3 position-relative">
-        <img
-          src={BarberSatisfechoN}
-          className="d-block w-100 object-fit-cover"
-          alt="BarberSatisfechoN"
-          style={{ height: '660px', objectFit: 'cover' }}
-        />
-        {/* Capa oscura */}
-        <div
-          className="position-absolute start-0 top-0 w-100"
-          style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            height: '660px',
-            marginTop: '16px',
-            zIndex: 1,
-          }}
-        ></div>
-
-        <div
-          className="position-absolute top-50 start-50 translate-middle w-100 text-center"
-          style={{
-            zIndex: 2,
-            color: 'white',
-            padding: '0 15px',
-          }}
-        >
-          <div className="fs-2 fs-md-3 fs-lg-4">
-            <SatisfechoText />
-          </div>
-          <div className="fs-6 fs-md-5 fs-lg-6">
-            <SatisfechoLorem />
-          </div>
-        </div>
-      </div>
-
-
-      <section className="container-fluid p-5">
+      <section className="container-fluid" style={{ marginTop: '-40px' }}>
         <div className="row d-flex flex-wrap justify-content-center align-items-center">
           <div className="col-md-6">
             <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>

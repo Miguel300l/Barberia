@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Carousel } from "bootstrap";
 
-import barbershop from "../../assets/img/barbershop.jpeg";
+import barbershop from "../../assets/img/barbershop.webp";
 import barbershop2 from "../../assets/img/barbershop2.jpeg";
 import barbershop3 from "../../assets/img/barbershop3.jpeg";
 import barbershop4 from "../../assets/img/barbershop4.jpeg";
@@ -67,6 +67,9 @@ const Slider = () => {
               src={img}
               className="carousel-image"
               alt={`barbershop-${index}`}
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "auto"}
+              decoding="async"
             />
 
             <div className="overlay-dark"></div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import barberPrecio from '../../assets/img/barberPrecio.jpeg';
+import barberPrecio from '../../assets/img/barberPrecio.webp';
 
 const servicios = [
     {

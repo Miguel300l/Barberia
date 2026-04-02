@@ -20,61 +20,138 @@ const CarouselInfinito = () => {
             <div className="image-set">
               <img
                 src={carousel}
-                alt="carousel"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel5}
-                alt="carousel5"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel6}
-                alt="carousel6"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel4}
-                alt="carousel4"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel2}
-                alt="carousel2"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel3}
-                alt="carousel3"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
             </div>
             <div className="image-set">
 
               <img
                 src={carousel}
-                alt="carousel"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel4}
-                alt="carousel4"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel5}
-                alt="carousel5"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel2}
-                alt="carousel2"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
               <img
                 src={carousel3}
-                alt="carousel3"
-                style={{ width: '306px', height: 'auto' }}
+                alt="Trabajos de Barbería - Carrusel"
+                width="306"
+                height="408"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: '306px',
+                  height: 'auto',
+                }}
               />
             </div>
           </div>
