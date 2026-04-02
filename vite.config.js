@@ -12,7 +12,13 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ["react", "react-dom"],
-          vendor: ["bootstrap"]
+
+          bootstrap: ["bootstrap"],
+
+          vendor: [
+            "axios"
+          ]
+
         }
       }
     }
