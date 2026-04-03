@@ -49,7 +49,7 @@ const ServiciosBarberia = () => {
               </div>
 
               <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
-                En Barbershop nos dedicamos a ofrecer cortes de cabello y barba personalizados, creando un estilo único para cada cliente. Con un enfoque en calidad, precisión y atención, garantizamos una experiencia relajante.
+                En BarberStyle nos dedicamos a ofrecer cortes de cabello y barba personalizados, creando un estilo único para cada cliente. Con un enfoque en calidad, precisión y atención, garantizamos una experiencia relajante.
               </p>
             </div>
           </div>

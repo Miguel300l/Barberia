@@ -18,7 +18,7 @@ const HistoriaBarberia = () => {
             <div className="card-body text-center" style={{ marginTop: '6px' }}>
               <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2004 - 2012</h5>
               <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                Barbershop nació con la idea de ofrecer una experiencia auténtica y personal. En estos primeros años, construimos confianza.
+                BarberStyle nació con la idea de ofrecer una experiencia auténtica y personal. En estos primeros años, construimos confianza.
               </p>
 
             </div>
@@ -46,7 +46,7 @@ const HistoriaBarberia = () => {
                 textAlign: 'justify',
               }}
             >
-              Desde nuestros primeros días, Barbershop comenzó como un proyecto lleno de pasión y dedicación. Nos propusimos ofrecer algo más que cortes, creando una experiencia auténtica para cada cliente.
+              Desde nuestros primeros días, BarberStyle comenzó como un proyecto lleno de pasión y dedicación. Nos propusimos ofrecer algo más que cortes, creando una experiencia auténtica para cada cliente.
               <br /><br />
               Fuimos creciendo paso a paso, con esfuerzo y compromiso. Nuestro equipo se fortaleció, la clientela confió en nosotros, y cada servicio se convirtió en una oportunidad de marcar la diferencia.
               <br /><br />
@@ -79,7 +79,7 @@ const HistoriaBarberia = () => {
                 textAlign: 'justify',
               }}
             >
-              Durante estos años, Barbershop se consolidó como referente en estilo y atención personalizada. Renovamos nuestra imagen, ampliamos servicios y nos adaptamos a las nuevas tendencias sin perder nuestra esencia.
+              Durante estos años, BarberStyle se consolidó como referente en estilo y atención personalizada. Renovamos nuestra imagen, ampliamos servicios y nos adaptamos a las nuevas tendencias sin perder nuestra esencia.
               <br /><br />
               Nuestro equipo creció con profesionales apasionados y comprometidos. Mejoramos cada detalle para ofrecer experiencias únicas y resultados de alta calidad.
               <br /><br />
@@ -98,7 +98,7 @@ const HistoriaBarberia = () => {
             <div className="card-body text-center" style={{ marginTop: '6px' }}>
               <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2016 - 2024</h5>
               <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-              Crecimos en estilo, equipo y experiencia. Esta etapa marcó nuestra evolución hacia una barbería moderna, sin perder la esencia.
+                Crecimos en estilo, equipo y experiencia. Esta etapa marcó nuestra evolución hacia una barbería moderna, sin perder la esencia.
               </p>
 
             </div>

@@ -94,7 +94,7 @@ const Nosotros = () => {
                   whiteSpace: 'normal',
                 }}
               >
-                Acerca de Barbershop
+                Acerca de BarberStyle
               </p>
 
               <div className="d-flex justify-content-center justify-content-lg-start mb-3">
@@ -112,7 +112,7 @@ const Nosotros = () => {
                   lineHeight: '1.6',
                 }}
               >
-                En Barbershop nos apasiona realzar tu estilo con precisión y autenticidad.
+                En BarberStyle nos apasiona realzar tu estilo con precisión y autenticidad.
                 Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor.
                 Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
                 <br /><br />
@@ -218,7 +218,7 @@ const Nosotros = () => {
               </div>
 
               <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
-                Barbershop nació con la idea de recuperar la esencia de la barbería tradicional, combinándola con un enfoque moderno. Desde nuestros inicios, buscamos crear un espacio donde cada cliente se sienta escuchado, cómodo y bien atendido.
+                BarberStyle nació con la idea de recuperar la esencia de la barbería tradicional, combinándola con un enfoque moderno. Desde nuestros inicios, buscamos crear un espacio donde cada cliente se sienta escuchado, cómodo y bien atendido.
               </p>
             </div>
           </div>
