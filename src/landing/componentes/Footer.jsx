@@ -16,9 +16,9 @@ const Fotter = () => {
             <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
               <div className="box d-flex align-items-center justify-content-center" style={{ width: '18rem', backgroundColor: '#1E1E1E', minHeight: '230px' }}>
                 <div className="card-body text-center">
-                  <h5 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '-40px' }}>
+                  <h3 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '-40px' }}>
                     Ubicación
-                  </h5>
+                  </h3>
                   <p className="card-text text-white mt-3">
                     123 Main Street<br />#4545 00 Chavez Ave,<br />Hernando VA
                   </p>
