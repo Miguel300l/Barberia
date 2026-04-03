@@ -29,9 +29,9 @@ const Fotter = () => {
             <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
               <div className="box d-flex align-items-center justify-content-center" style={{ width: '18rem', backgroundColor: '#1E1E1E', minHeight: '230px' }}>
                 <div className="card-body text-center">
-                  <h5 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '10px' }}>
+                  <h3 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '10px' }}>
                     Horario de atención
-                  </h5>
+                  </h3>
                   <p className="card-text text-white mt-3">
                     Lunes a sábado:<br />9:00 a. m. a 8:00 p. m.<br /><br />Domingo:<br />9:00 a. m. a 5:00 p. m.
                   </p>
@@ -42,9 +42,9 @@ const Fotter = () => {
             <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
               <div className="box d-flex align-items-center justify-content-center" style={{ width: '18rem', backgroundColor: '#1E1E1E', minHeight: '230px' }}>
                 <div className="card-body text-center">
-                  <h5 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '-40px' }}>
+                  <h3 className="card-title text-white" style={{ fontSize: '18px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '-40px' }}>
                     Información de contacto
-                  </h5>
+                  </h3>
                   <p className="card-text text-white mt-3">
                     3208964236<br /><br />barberia@gmail.com
                   </p>
