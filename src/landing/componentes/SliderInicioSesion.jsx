@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { Carousel } from "bootstrap";
 
 const barbershop = "/barbershop.webp";
-import barbershop2 from "../../assets/img/barbershop2.jpeg";
-import barbershop3 from "../../assets/img/barbershop3.jpeg";
-import barbershop4 from "../../assets/img/barbershop4.jpeg";
-import barbershop5 from "../../assets/img/barbershop5.jpeg";
+import barbershop2 from "../../assets/img/barbershop2.webp";
+import barbershop3 from "../../assets/img/barbershop3.webp";
+import barbershop4 from "../../assets/img/barbershop4.webp";
+import barbershop5 from "../../assets/img/barbershop5.webp";
 import music from "../../assets/img/videos/musica_fondo.mp3";
 
 const images = [
