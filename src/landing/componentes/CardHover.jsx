@@ -47,12 +47,12 @@ const CardHover = () => {
                                 style={{ maxWidth: '70px', height: 'auto', margin: '20px auto 0' }}
                             />
                             <div className="card-body d-flex flex-column align-items-center text-center">
-                                <h5
+                                <h3
                                     className="card-title"
                                     style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', marginTop: '16px' }}
                                 >
                                     {card.title}
-                                </h5>
+                                </h3>
                                 <p
                                     className="card-text"
                                     style={{ fontSize: '16px', fontFamily: 'Lato', marginTop: '16px' }}

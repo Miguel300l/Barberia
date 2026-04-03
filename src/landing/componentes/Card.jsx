@@ -28,12 +28,12 @@ const CardGiro = () => {
                 justifyContent: 'center',
                 color: 'white'
               }}>
-                <h5 className="card-title" style={{
+                <h4 className="card-title" style={{
                   fontFamily: 'Bebas Neue',
                   fontSize: '24px',
                   textTransform: 'uppercase',
                   whiteSpace: 'nowrap',
-                }}>Jhonatan'S</h5>
+                }}>Jhonatan'S</h4>
                 <div style={{
                   fontFamily: 'Lato',
                   fontSize: '15px',

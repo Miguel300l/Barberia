@@ -29,49 +29,49 @@ import Adminprofesional from '../administrador/pages/SolicitudesProfesional'
 import { ProtectRoutesAdmin, ProtectRoutesProfesional } from './ProtectRoutes'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import "bootstrap/dist/js/bootstrap.min.js"
-
 
 const App = () => {
   return (
-    <div>
-      <ScrollTop />
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<Inicio />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/servicios" element={<Servicios />} />
-          <Route path="/tutoriales" element={<Tutoriales />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/precios" element={<Precios />} />
-          <Route path="/galeria" element={<Galeria />} />
-        </Route>
-
-        <Route element={<ProtectRoutesProfesional />}>
-
-          <Route path="/profesional" element={<NavbarProfesional />} >
-            <Route index element={<InicioProfesional />} />
-            <Route path="/profesional/nosotros" element={<NosotrosProfesional />} />
-            <Route path="/profesional/charla" element={<CharlaProfesional />} />
-            <Route path="/profesional/evento" element={<EventosProfesional />} />
-            <Route path="/profesional/contactanos" element={<ContactanosProfesional />} />
-            <Route path="/profesional/cuidados" element={<CronogramaProfesional />} />
+    <main>
+      <div>
+        <ScrollTop />
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Inicio />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/tutoriales" element={<Tutoriales />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/precios" element={<Precios />} />
+            <Route path="/galeria" element={<Galeria />} />
           </Route>
-        </Route>
 
+          <Route element={<ProtectRoutesProfesional />}>
 
-        <Route element={<ProtectRoutesAdmin />}>
-          <Route path="/admin" element={<Menulateral />}>
-            <Route index element={<InicioAdmin />} />
-            <Route path="/admin/charlas" element={<Admincharlas />} />
-            <Route path="/admin/solicitudes" element={<Adminsolicitudes />} />
-            <Route path="/admin/usuarios" element={<Adminusuarios />} />
-            <Route path="/admin/cronograma" element={<Admincronograma />} />
-            <Route path="/admin/profesional" element={<Adminprofesional />} />
+            <Route path="/profesional" element={<NavbarProfesional />} >
+              <Route index element={<InicioProfesional />} />
+              <Route path="/profesional/nosotros" element={<NosotrosProfesional />} />
+              <Route path="/profesional/charla" element={<CharlaProfesional />} />
+              <Route path="/profesional/evento" element={<EventosProfesional />} />
+              <Route path="/profesional/contactanos" element={<ContactanosProfesional />} />
+              <Route path="/profesional/cuidados" element={<CronogramaProfesional />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </div>
+
+
+          <Route element={<ProtectRoutesAdmin />}>
+            <Route path="/admin" element={<Menulateral />}>
+              <Route index element={<InicioAdmin />} />
+              <Route path="/admin/charlas" element={<Admincharlas />} />
+              <Route path="/admin/solicitudes" element={<Adminsolicitudes />} />
+              <Route path="/admin/usuarios" element={<Adminusuarios />} />
+              <Route path="/admin/cronograma" element={<Admincronograma />} />
+              <Route path="/admin/profesional" element={<Adminprofesional />} />
+            </Route>
+          </Route>
+        </Routes>
+      </div>
+    </main>
   );
 };
 
