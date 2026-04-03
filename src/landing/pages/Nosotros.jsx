@@ -186,7 +186,7 @@ const Nosotros = () => {
                 Agendar Cita
               </a>
             </div>
-            <h4
+            <h3
               className="card-title mt-2"
               style={{
                 fontFamily: 'Bebas Neue',
@@ -197,7 +197,7 @@ const Nosotros = () => {
               }}
             >
               Jhonatan'S
-            </h4>
+            </h3>
             <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
           </div>
         </div>
