@@ -77,7 +77,7 @@ const Slider = () => {
             <div className="slider-content text-white text-center">
 
               <h2 className="fw-bold beb-font slider-title">
-                BARBERSTYLE
+                ACADEMY JHONATAN'S BARBERSTYLE
               </h2>
 
               <p className="slider-text">
@@ -88,7 +88,7 @@ const Slider = () => {
                 href="https://wa.me/573103669753"
                 className="btn btn-agendar"
               >
-                Agendar Corte
+                Contactanos
               </a>
 
             </div>

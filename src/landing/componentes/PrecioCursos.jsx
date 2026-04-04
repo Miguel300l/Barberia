@@ -1,34 +1,13 @@
 import React from 'react';
-import tijera from '../../assets/img/tijera.svg';
-import maquina from '../../assets/img/maquina.svg';
 import estiloCorte from '../../assets/img/estiloCorte.svg';
-import cuchilla from '../../assets/img/cuchilla.svg';
 import '../../assets/css/circuloEstadistica.css'
 
 const services = [
   {
-    icon: tijera,
-    title: 'CORTE DE PELO',
-    price: '20.000',
-    description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.',
-  },
-  {
-    icon: maquina,
-    title: 'CORTE MAQUINA',
-    price: '20.000',
-    description: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.',
-  },
-  {
-    icon: cuchilla,
-    title: 'AFEITAR',
-    price: '10.000',
-    description: 'Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable.',
-  },
-  {
     icon: estiloCorte,
-    title: 'RECORTE DE BARBA',
-    price: '8.000',
-    description: 'Definimos y perfilamos tu barba con precisión, trabajando la simetría para resaltar tu estilo con elegancia y carácter.',
+    title: 'Curso',
+    price: '1.150.000',
+    description: 'Aprende técnicas modernas de barbería en 18 clases teóricas y prácticas. Incluye certificado al finalizar el curso.',
   },
 ];
 

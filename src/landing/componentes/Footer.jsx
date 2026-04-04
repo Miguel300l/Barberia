@@ -46,7 +46,7 @@ const Fotter = () => {
                     Información de contacto
                   </h3>
                   <p className="card-text text-white mt-3">
-                    3208964236<br /><br />barberia@gmail.com
+                    3103669753<br /><br />barberia@gmail.com
                   </p>
                 </div>
               </div>
@@ -127,13 +127,6 @@ const Fotter = () => {
               href="https://www.facebook.com/share/1DzUMZFeFo/"
             >
               <img src={Facebook} className="me-2 icon" alt="logofacebook" style={{ width: '24px', height: '24px' }} />
-            </a>
-
-            <a
-              href="https://x.com/hashtag/barbershopcolombia?src=hashtag_click" target="_blank"
-              className="ms-4 text-decoration-none"
-            >
-              <img src={Twitter} className="me-2 icon" alt="logotwiter" style={{ width: '24px', height: '24px' }} />
             </a>
 
             <a
