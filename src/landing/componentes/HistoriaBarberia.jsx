@@ -39,7 +39,7 @@ const HistoriaBarberia = () => {
             >
               2025
             </h5>
-            <p
+            <div
               style={{
                 fontSize: '16px',
                 fontFamily: 'Lato, sans-serif',
@@ -52,7 +52,7 @@ const HistoriaBarberia = () => {
               <p>
                 Nos especializamos en estructura de corte, técnicas modernas, difuminados precisos, líneas definidas, diseños y cejas, siempre enfocados en la atención personalizada y en que cada cliente viva una experiencia de calidad.
               </p>
-            </p>
+            </div>
           </div>
         </div>
       </div>

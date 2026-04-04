@@ -76,7 +76,10 @@ const Slider = () => {
 
             <div className="slider-content text-white text-center">
 
-              <h2 className="fw-bold beb-font slider-title">
+              <h2
+                className="fw-bold beb-font slider-title"
+                style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)" }}
+              >
                 ACADEMY JHONATAN'S BARBERSTYLE
               </h2>
 

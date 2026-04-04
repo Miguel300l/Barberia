@@ -102,7 +102,7 @@ const Nosotros = () => {
                 />
               </div>
 
-              <p
+              <div
                 style={{
                   fontSize: 'clamp(14px, 4vw, 16px)',
                   fontFamily: 'Lato, sans-serif',
@@ -119,7 +119,7 @@ const Nosotros = () => {
                 <p>
                   Además, ofrecemos un servicio de barbería de alta calidad, con atención personalizada, cuidando cada detalle en estilo, técnica y creatividad para que cada cliente viva una experiencia única.
                 </p>
-              </p>
+              </div>
             </div>
           </div>
         </div>

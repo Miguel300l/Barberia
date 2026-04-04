@@ -38,6 +38,7 @@ const Cuidados = () => {
           src={galeriaBar}
           className="position-absolute top-0 start-0 w-100 h-100 img-galeria-zoom"
           alt="galeriaBar"
+          decoding="async"
         />
 
         {/* Capa oscura */}
