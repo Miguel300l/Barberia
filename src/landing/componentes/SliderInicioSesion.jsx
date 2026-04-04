@@ -87,6 +87,9 @@ const Slider = () => {
               <a
                 href="https://wa.me/573103669753"
                 className="btn btn-agendar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="contactar por whatsApp para solicitar una pagina web"
               >
                 Contactanos
               </a>

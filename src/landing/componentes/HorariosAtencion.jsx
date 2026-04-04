@@ -78,6 +78,9 @@ export default function Schedule() {
                                 <a
                                     href="https://wa.me/573103669753"
                                     className="btn"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="contactar por whatsApp para solicitar una pagina web"
                                     style={{
                                         marginTop: '-6px',
                                         fontFamily: 'Lato',

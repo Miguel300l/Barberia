@@ -35,7 +35,11 @@
   </noscript>
 
   <!-- OPTIMIZACIÓN DE RENDIMIENTO -->
-  <link rel="stylesheet" href="/src/assets/css/slider.css">
+  <link rel="preload" href="/src/assets/css/slider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="/src/assets/css/slider.css">
+  </noscript>
 
   <script type="module" src="/src/main.jsx" defer></script>
   <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript" defer></script>

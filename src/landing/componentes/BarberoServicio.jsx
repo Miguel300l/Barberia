@@ -58,36 +58,49 @@ const BarberoServicio = () => {
           alignItems: 'center',
         }}
       >
-        <div className="row w-100 align-items-center justify-content-end text-white">
-          <div className="col-12 col-md-6 text-center text-md-start px-3 px-md-0">
-            <h1 className="display-5 fw-bold"
+        <div className="row w-100 justify-content-center text-white">
+          <div className="col-12 col-md-8 col-lg-6 text-center px-3">
+
+            <h1
+              className="fw-bold"
               style={{
-                fontSize: 'clamp(18px, 4vw, 30px)',
+                fontSize: "clamp(22px, 5vw, 36px)",
                 fontFamily: '"Bebas Neue", sans-serif'
-              }}>MAGO DEL CABELLO</h1>
-            <div className="d-flex justify-content-center justify-content-md-start">
+              }}
+            >
+              MAGO DEL CABELLO
+            </h1>
+
+            <div className="d-flex justify-content-center">
               <img
                 src={separador}
                 alt="separador"
-                style={{ width: '100px', height: 'auto', margin: '10px 0', marginLeft: "130px" }}
+                className="img-fluid"
+                style={{
+                  width: "clamp(70px, 12vw, 120px)",
+                  margin: "10px 0"
+                }}
               />
             </div>
-            <p className="lead"
+
+            <p
               style={{
-                fontSize: '15px',
+                fontSize: "clamp(13px, 2.5vw, 16px)",
                 fontFamily: '"Lato", sans-serif'
-              }}>
+              }}
+            >
               Transformamos cada corte en una experiencia única.<br />
               Con precisión, técnica y estilo, creamos más que un look.
             </p>
             <p
               style={{
-                fontSize: '15px',
+                fontSize: "clamp(13px, 2.5vw, 16px)",
                 fontFamily: '"Lato", sans-serif'
-              }}>
+              }}
+            >
               Cada trazo refleja dedicación y pasión por el detalle.<br />
               No se trata solo de cambiar tu imagen, sino de realzar tu esencia.<br />
-              La magia está en entender lo que necesitas y superarlo.<br />
+              La magia está en entender lo que necesitas y superarlo.
             </p>
           </div>
         </div>

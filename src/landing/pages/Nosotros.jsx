@@ -165,6 +165,9 @@ const Nosotros = () => {
               <a
                 href="https://wa.me/573103669753"
                 className="btn-agendar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="contactar por whatsApp para solicitar una pagina web"
                 style={{
                   position: 'absolute',
                   top: '50%',
@@ -211,6 +214,9 @@ const Nosotros = () => {
               <a
                 href="https://wa.me/573234470181"
                 className="btn-agendar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="contactar por whatsApp para solicitar una pagina web"
                 style={{
                   position: 'absolute',
                   top: '50%',
