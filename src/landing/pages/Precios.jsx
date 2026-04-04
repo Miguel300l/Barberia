@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import precios from '../../assets/img/carrusel_precios.jpeg'
 import separador from '../../assets/img/separador.svg';
 import PreciosCortes from '../componentes/PreciosCortes'
 import HorariosAtencion from '../componentes/HorariosAtencion'
 import ServiciosPrecios from '../componentes/ServiciosPrecios'
 import music from "../../assets/img/videos/musica_fondo.mp3"
+
+const precios = "/carrusel_precios.webp";
 
 const Contenido = () => {
   const audioRef = useRef(null);

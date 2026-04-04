@@ -43,7 +43,7 @@ const Services = () => (
         <img src={separador} alt="separador" style={{ width: '120px', height: 'auto' }} />
       </div>
       <p className="mx-auto" style={{ maxWidth: '600px', fontSize: '15px' }}>
-      Ofrecemos una variedad de cortes adaptados a tus necesidades y estilo. Consulta nuestros precios y elige el servicio que más se ajuste a ti, con la garantía de calidad y atención personalizada.
+        Ofrecemos una variedad de cortes adaptados a tus necesidades y estilo. Consulta nuestros precios y elige el servicio que más se ajuste a ti, con la garantía de calidad y atención personalizada.
       </p>
     </section>
 
@@ -52,7 +52,7 @@ const Services = () => (
       icon={tijera}
       title="Corte de tijera"
       price="20.000"
-      description="Un corte preciso y detallado realizado con tijera, ideal para un look natural y elegante que se adapta a tu estilo."
+      description="Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado."
       image={servicioCorte1}
     />
 
@@ -60,7 +60,7 @@ const Services = () => (
       icon={cuchilla}
       title="Corte de Navaja"
       price="10.000"
-      description="Un corte de precisión con navaja para un acabado suave y definido. Ideal para un estilo moderno, limpio y de fácil mantenimiento."
+      description="Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable."
       image={servicioCorte4}
       reverse
     />
@@ -68,8 +68,8 @@ const Services = () => (
     <ServiceItem
       icon={maquina}
       title="Corte de Maquina"
-      price="21.000"
-      description="Estilo limpio y definido con máquina. Perfecto para un look moderno y de bajo mantenimiento, ideal para todos los días."
+      price="20.000"
+      description="Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener."
       image={servicioCorte2}
     />
   </div>

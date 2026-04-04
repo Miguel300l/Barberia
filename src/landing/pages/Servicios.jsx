@@ -3,9 +3,10 @@ import ServiciosBarberia from '../componentes/Servicios';
 import VideoSection from '../componentes/VideoSeccion';
 import ServicesSection from '../componentes/ServicioCorte';
 import BarberoServicio from '../componentes/BarberoServicio';
-import servicioBarberia from '../../assets/img/carrusel_servicios.jpeg'
 import music from "../../assets/img/videos/musica_fondo.mp3";
 import '../../assets/css/charla.css'
+
+const servicioBarberia = "/carrusel_servicios.webp";
 
 const Profesionales = () => {
   const audioRef = useRef(null);

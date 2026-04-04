@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import galeriaBar from '../../assets/img/carrusel_galeria.jpeg'
 import Galeria from '../componentes/Galeria';
 import LogoProducto from '../componentes/GaleriaProductos';
 import music from "../../assets/img/videos/musica_fondo.mp3";
 
+const galeriaBar = "/carrusel_galeria.webp";
 const Cuidados = () => {
   const audioRef = useRef(null);
 

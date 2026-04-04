@@ -5,7 +5,7 @@ import historiaBarber2 from '../../assets/img/historiaBarber2.jpeg';
 const HistoriaBarberia = () => {
 
   return (
-    <div className="container-fluid px-3 px-md-5" style={{ marginTop: '-30px' }}>
+    <div className="container-fluid px-3 px-md-5">
       {/* Sección 1 */}
       <div className="row justify-content-center align-items-center mb-5">
         <div className="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
@@ -16,9 +16,9 @@ const HistoriaBarberia = () => {
               style={{ objectFit: 'cover', height: '240px', width: '100%' }}
             />
             <div className="card-body text-center" style={{ marginTop: '6px' }}>
-              <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2004 - 2012</h5>
+              <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2025</h5>
               <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                BarberStyle nació con la idea de ofrecer una experiencia auténtica y personal. En estos primeros años, construimos confianza.
+                Comenzamos nuestro proceso formando estudiantes y adquiriendo experiencia en el área educativa, certificando talento y fortaleciendo bases sólidas en barbería profesional.
               </p>
 
             </div>
@@ -37,7 +37,7 @@ const HistoriaBarberia = () => {
                 padding: '20px',
               }}
             >
-              2004 - 2012
+              2025
             </h5>
             <p
               style={{
@@ -46,11 +46,12 @@ const HistoriaBarberia = () => {
                 textAlign: 'justify',
               }}
             >
-              Desde nuestros primeros días, BarberStyle comenzó como un proyecto lleno de pasión y dedicación. Nos propusimos ofrecer algo más que cortes, creando una experiencia auténtica para cada cliente.
-              <br /><br />
-              Fuimos creciendo paso a paso, con esfuerzo y compromiso. Nuestro equipo se fortaleció, la clientela confió en nosotros, y cada servicio se convirtió en una oportunidad de marcar la diferencia.
-              <br /><br />
-              Durante estos años, sentamos las bases de lo que somos hoy. Cada corte y sonrisa fue parte esencial de este recorrido. Aquí nació el estilo que nos define.
+              <p>
+                Decidimos dar el paso y crear nuestro propio proyecto: ACADEMY JHONATAN’S BARBERSTYLE, un espacio donde la formación y el servicio se unen para brindar oportunidades reales.
+              </p>
+              <p>
+                Nos especializamos en estructura de corte, técnicas modernas, difuminados precisos, líneas definidas, diseños y cejas, siempre enfocados en la atención personalizada y en que cada cliente viva una experiencia de calidad.
+              </p>
             </p>
           </div>
         </div>
@@ -70,7 +71,7 @@ const HistoriaBarberia = () => {
                 padding: '20px',
               }}
             >
-              2016 - 2024
+              2026
             </h5>
             <p
               style={{
@@ -79,11 +80,8 @@ const HistoriaBarberia = () => {
                 textAlign: 'justify',
               }}
             >
-              Durante estos años, BarberStyle se consolidó como referente en estilo y atención personalizada. Renovamos nuestra imagen, ampliamos servicios y nos adaptamos a las nuevas tendencias sin perder nuestra esencia.
-              <br /><br />
-              Nuestro equipo creció con profesionales apasionados y comprometidos. Mejoramos cada detalle para ofrecer experiencias únicas y resultados de alta calidad.
-              <br /><br />
-              Seguimos avanzando con el mismo objetivo: que cada cliente se sienta valorado, seguro y bien atendido en cada visita.
+
+              Hoy seguimos creciendo con un propósito claro: formar profesionales y cambiar vidas. Más que enseñar barbería, buscamos enfocar a cada estudiante en un camino de disciplina, trabajo y superación personal.
             </p>
           </div>
         </div>
@@ -96,9 +94,9 @@ const HistoriaBarberia = () => {
               style={{ objectFit: 'cover', height: '240px', width: '100%' }}
             />
             <div className="card-body text-center" style={{ marginTop: '6px' }}>
-              <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2016 - 2024</h5>
+              <h5 className="card-title" style={{ fontSize: '20px', fontFamily: 'Bebas Neue', textTransform: 'uppercase', padding: '16px' }}>2026</h5>
               <p className="card-text" style={{ fontSize: '16px', fontFamily: 'Lato' }}>
-                Crecimos en estilo, equipo y experiencia. Esta etapa marcó nuestra evolución hacia una barbería moderna, sin perder la esencia.
+                Además de formar barberos, también ofrecemos servicios de alta calidad. Si buscas un corte con estilo, precisión y buen trato, este es tu lugar. Agenda tu cita y vive la experiencia.
               </p>
 
             </div>

@@ -69,7 +69,7 @@ const BarberoServicio = () => {
               <img
                 src={separador}
                 alt="separador"
-                style={{ width: '100px', height: 'auto', margin: '10px 0' }}
+                style={{ width: '100px', height: 'auto', margin: '10px 0', marginLeft: "130px" }}
               />
             </div>
             <p className="lead"
@@ -85,9 +85,9 @@ const BarberoServicio = () => {
                 fontSize: '15px',
                 fontFamily: '"Lato", sans-serif'
               }}>
-              Cada trazo refleja dedicación y pasión por el detalle.<br/>
-              No se trata solo de cambiar tu imagen, sino de realzar tu esencia.<br/>
-              La magia está en entender lo que necesitas y superarlo.<br/>
+              Cada trazo refleja dedicación y pasión por el detalle.<br />
+              No se trata solo de cambiar tu imagen, sino de realzar tu esencia.<br />
+              La magia está en entender lo que necesitas y superarlo.<br />
             </p>
           </div>
         </div>

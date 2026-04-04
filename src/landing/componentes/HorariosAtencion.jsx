@@ -4,13 +4,13 @@ import separador from '../../assets/img/separador.svg';
 import '../../assets/css/estiloPrecio.css'
 
 const horarios = [
-    { dia: 'LUNES', hora: '7 am  -  10 pm' },
-    { dia: 'MARTES', hora: '7 am  -  10 pm' },
-    { dia: 'MIÉRCOLES', hora: '7 am  -  10 pm' },
-    { dia: 'JUEVES', hora: '7 am  -  10 pm' },
-    { dia: 'VIERNES', hora: '7 am  -  10 pm' },
-    { dia: 'SABADO', hora: '8 a.m. a 6 p.m' },
-    { dia: 'DOMINGO', hora: '8 a.m. a 6 p.m' },
+    { dia: 'LUNES', hora: '8 am  - 8 pm' },
+    { dia: 'MARTES', hora: '8 am  - 8 pm' },
+    { dia: 'MIÉRCOLES', hora: '8 am  - 8 pm' },
+    { dia: 'JUEVES', hora: '8 am  - 8 pm' },
+    { dia: 'VIERNES', hora: '8 am  - 8 pm' },
+    { dia: 'SABADO', hora: '8 am - 8 pm' },
+    { dia: 'DOMINGO', hora: '8 am - 5 pm' },
 ];
 
 export default function Schedule() {

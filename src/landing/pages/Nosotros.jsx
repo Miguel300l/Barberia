@@ -1,19 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import BarberoNosotros from '../../assets/img/barberoNosotros.jpg'
+import BarberoNosotros from '../../assets/img/barberoNosotros.webp'
 import CarouselInfinito from '../../landing/componentes/CarouselInfinito'
 import separador from '../../assets/img/separador.svg';
 import barbero from '../../assets/img/barbero.webp';
-import barbero2 from '../../assets/img/barbero2.jpg';
-import barbero3 from '../../assets/img/barbero3.jpeg';
-import barbero4 from '../../assets/img/barbero4.jpeg';
-import nosotrosBarber from '../../assets/img/carrusel_nosotros.jpeg'
+import barbero2 from '../../assets/img/mago2.webp';
 import circuloEstadistica from '../../assets/img/circuloEstadistica.jpg'
 import HistoriaBarberia from '../componentes/HistoriaBarberia'
 import CircleStat from '../componentes/CirculoEstadistico'
 import music from "../../assets/img/videos/musica_fondo.mp3";
 import { Row, Col } from 'react-bootstrap';
 import '../../assets/css/card.css'
-
+const nosotrosBarber = "/carrusel_nosotros.webp";
 const Nosotros = () => {
   const audioRef = useRef(null);
 
@@ -86,7 +83,7 @@ const Nosotros = () => {
               <p
                 className="fw-bold"
                 style={{
-                  fontSize: 'clamp(20px, 5vw, 35px)',
+                  fontSize: 'clamp(20px, 5vw, 26px)',
                   textTransform: 'uppercase',
                   fontFamily: '"Bebas Neue", sans-serif',
                   margin: 0,
@@ -94,14 +91,14 @@ const Nosotros = () => {
                   whiteSpace: 'normal',
                 }}
               >
-                Acerca de BarberStyle
+                Acerca de Academy BarberStyle
               </p>
 
-              <div className="d-flex justify-content-center justify-content-lg-start mb-3">
+              <div className="d-flex justify-content-center">
                 <img
                   src={separador}
                   alt="separador"
-                  style={{ width: '120px', height: 'auto' }}
+                  style={{ width: '120px', height: 'auto', margin: '10px 0' }}
                 />
               </div>
 
@@ -110,18 +107,18 @@ const Nosotros = () => {
                   fontSize: 'clamp(14px, 4vw, 16px)',
                   fontFamily: 'Lato, sans-serif',
                   lineHeight: '1.6',
+                  textAlign: 'justify'
                 }}
               >
-                En BarberStyle nos apasiona realzar tu estilo con precisión y autenticidad.
-                Cada corte y perfilado es una experiencia diseñada para que te sientas y te veas mejor.
-                Nuestro compromiso es ofrecer calidad, detalle y un ambiente único.
-                <br /><br />
-                Contamos con un equipo de profesionales dedicados a brindar un servicio excepcional.
-                Desde el primer saludo hasta el toque final del peine, cada paso importa.
-                Tu imagen es nuestra prioridad.
-                <br /><br />
-                Inspirados en la barbería clásica y moderna, fusionamos técnica, creatividad y atención personalizada.
-                Ven, relájate y déjanos cuidar de tu estilo con pasión y experiencia.
+                <p>
+                  Creemos en el talento de cada joven que busca una nueva oportunidad y un mejor camino. En ACADEMY BARBERSTYLE JHONATAN’S formamos personas con disciplina, visión y propósito a través de la barbería profesional.
+                </p>
+                <p>
+                  Nuestros cursos combinan técnica, práctica y enfoque real en el mundo laboral, brindando herramientas para crecer y emprender en el Cauca.
+                </p>
+                <p>
+                  Además, ofrecemos un servicio de barbería de alta calidad, con atención personalizada, cuidando cada detalle en estilo, técnica y creatividad para que cada cliente viva una experiencia única.
+                </p>
               </p>
             </div>
           </div>
@@ -146,7 +143,7 @@ const Nosotros = () => {
               </div>
 
               <p style={{ fontSize: '15px', textAlign: 'center', padding: '10px' }}>
-                Nuestro equipo está formado por barberos apasionados y expertos en estilo. Cada uno aporta su talento, dedicación y creatividad para ofrecerte una experiencia única y personalizada. Conoce a las manos detrás de cada transformación.
+                Nuestro equipo está formado por barberos apasionados y expertos en cuidar tu estilo. Cada uno aporta su talento, dedicación y creatividad para ofrecerte una experiencia única y personalizada. Conoce a los magos detrás de cada transformación.
               </p>
             </div>
           </div>
@@ -200,6 +197,52 @@ const Nosotros = () => {
             </h3>
             <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
           </div>
+
+
+          {/* Card 2 */}
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
+            <div className="box-nosotros" style={{ width: '18rem', position: 'relative' }}>
+              <img
+                src={barbero2}
+                alt="barbero2"
+                className="card-img"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+              <a
+                href="https://wa.me/573234470181"
+                className="btn-agendar"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  fontFamily: '"Bebas Neue", sans-serif',
+                  fontSize: '16px',
+                  padding: '6px 12px',
+                  color: 'white',
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                  backgroundColor: '#C59D5F',
+                  borderRadius: '20px',
+                }}
+              >
+                Agendar Cita
+              </a>
+            </div>
+            <h3
+              className="card-title mt-2"
+              style={{
+                fontFamily: 'Bebas Neue',
+                fontSize: '28px',
+                textTransform: 'uppercase',
+                whiteSpace: 'nowrap',
+                marginBottom: '5px',
+              }}
+            >
+              Carlos
+            </h3>
+            <div style={{ fontFamily: 'Lato', fontSize: '16px' }}>Barbero.</div>
+          </div>
         </div>
       </div>
 
@@ -218,7 +261,7 @@ const Nosotros = () => {
               </div>
 
               <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
-                BarberStyle nació con la idea de recuperar la esencia de la barbería tradicional, combinándola con un enfoque moderno. Desde nuestros inicios, buscamos crear un espacio donde cada cliente se sienta escuchado, cómodo y bien atendido.
+                Creemos en los jóvenes que buscan un mejor camino y una oportunidad real para crecer. Nos apasiona la barbería, el servicio al cliente y el poder transformar la imagen y la vida de cada persona que pasa por nuestras manos. Aquí no solo hacemos cortes, creamos confianza, estilo y enfoque.
               </p>
             </div>
           </div>

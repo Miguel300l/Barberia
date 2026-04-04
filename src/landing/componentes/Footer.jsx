@@ -20,7 +20,7 @@ const Fotter = () => {
                     Ubicación
                   </h3>
                   <p className="card-text text-white mt-3">
-                    123 Main Street<br />#4545 00 Chavez Ave,<br />Hernando VA
+                    Cra. 12 # 68 NORTE-11 <br />Popayán, Cauca
                   </p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ const Fotter = () => {
                     Horario de atención
                   </h3>
                   <p className="card-text text-white mt-3">
-                    Lunes a sábado:<br />9:00 a. m. a 8:00 p. m.<br /><br />Domingo:<br />9:00 a. m. a 5:00 p. m.
+                    Lunes a sábado:<br />8:00 a. m. a 8:00 p. m.<br /><br />Domingo:<br />8:00 a. m. a 5:00 p. m.
                   </p>
                 </div>
               </div>
@@ -86,6 +86,18 @@ const Fotter = () => {
                 PRECIOS
               </Link>
             </div>
+
+            <div className="col-auto my-2">
+              <Link className="nav-link text-white" to="/tutoriales">
+                TUTORIALES
+              </Link>
+            </div>
+
+            <div className="col-auto my-2">
+              <Link className="nav-link text-white" to="/productos">
+                PRODUCTOS
+              </Link>
+            </div>
             <div className="col-12 my-2 d-flex justify-content-center">
               <a
                 className="btn"
@@ -112,8 +124,7 @@ const Fotter = () => {
           <hr className="text-white mt-4" />
           <div className="d-flex flex-wrap justify-content-center pb-3">
             <a
-              href="https://www.facebook.com/p/Blesseds-Barber-shop-61556304573102/" target="_blank"
-              className="text-decoration-none"
+              href="https://www.facebook.com/share/1DzUMZFeFo/"
             >
               <img src={Facebook} className="me-2 icon" alt="logofacebook" style={{ width: '24px', height: '24px' }} />
             </a>
@@ -126,7 +137,7 @@ const Fotter = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/elitebarbershop8/?hl=es"
+              href="https://www.instagram.com/barberstyle_jhonatan?igsh=Z2c4NGFyNDJ3YnF4"
               target="_blank"
               className="ms-4 text-decoration-none"
             >

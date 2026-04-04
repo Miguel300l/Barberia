@@ -1,5 +1,6 @@
 import React from 'react';
 import barbero from '../../assets/img/barbero.webp';
+import barbero2 from '../../assets/img/mago2.webp';
 import '../../assets/css/card.css'
 
 const CardGiro = () => {
@@ -48,6 +49,43 @@ const CardGiro = () => {
         </div>
 
 
+        {/* Card 2 */}
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center my-3">
+          <div className="card flip-card" style={{ width: '18rem' }}>
+            <div className="card-front">
+              <img
+                src={barbero2}
+                alt="barbero2"
+                className="card-img"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
+            <div className="card-back">
+              <div className="card-body text-center" style={{
+                marginTop: '60px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <h3 className="card-title" style={{
+                  fontFamily: 'Bebas Neue',
+                  fontSize: '24px',
+                  textTransform: 'uppercase',
+                  whiteSpace: 'nowrap',
+                }}>Carlos</h3>
+                <div style={{
+                  fontFamily: 'Lato',
+                  fontSize: '15px',
+                  whiteSpace: 'normal',
+                }}>
+                  Especialista en cabello rizado, aplicando técnicas precisas para lograr cortes definidos y adaptados a cada estilo.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

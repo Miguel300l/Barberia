@@ -24,7 +24,7 @@ const MagosCorte = () => {
                         </div>
 
                         <p style={{ fontSize: '15px', textAlign: 'center', padding: '10px' }}>
-                            Experto dedicado a transformar tu look con cortes y estilos personalizados.
+                            Nuestro equipo está formado por barberos apasionados y expertos en cuidar tu estilo. Cada uno aporta su talento, dedicación y creatividad para ofrecerte una experiencia única y personalizada. Conoce a los magos detrás de cada transformación.
                         </p>
                     </div>
                 </div>

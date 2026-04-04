@@ -10,17 +10,17 @@ const servicios = [
   {
     icon: tijera,
     titulo: 'CORTE DE PELO',
-    descripcion: 'Corte de pelo personalizado, adaptado a tu estilo y forma de rostro, para un look siempre fresco y definido.'
+    descripcion: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.'
   },
   {
     icon: maquina,
     titulo: 'CORTE MAQUINA',
-    descripcion: 'Corte con máquina para un acabado preciso y moderno. Adaptado a tus preferencias, este estilo garantiza un look limpio.'
+    descripcion: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.'
   },
   {
     icon: cuchilla,
     titulo: 'AFEITADO',
-    descripcion: 'Afeitado clásico, con precisión y cuidado, para un acabado suave y perfecto.'
+    descripcion: 'Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable.'
   },
   {
     icon: estiloCorte,

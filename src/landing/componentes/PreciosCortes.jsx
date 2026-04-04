@@ -3,45 +3,38 @@ import tijera from '../../assets/img/tijera.svg';
 import maquina from '../../assets/img/maquina.svg';
 import estiloCorte from '../../assets/img/estiloCorte.svg';
 import cuchilla from '../../assets/img/cuchilla.svg';
-import sillaIcon from '../../assets/img/sillaIcon.svg';
 import '../../assets/css/circuloEstadistica.css'
 
 const services = [
   {
     icon: tijera,
     title: 'CORTE DE PELO',
-    price: '18.000',
-    description: 'Un corte preciso y personalizado que realza tu estilo y se adapta a tu personalidad.',
+    price: '20.000',
+    description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.',
   },
   {
     icon: maquina,
     title: 'CORTE MAQUINA',
-    price: '21.000',
-    description: 'Estilo limpio y definido con máquina, ideal para un look moderno y de fácil mantenimiento.',
+    price: '20.000',
+    description: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.',
   },
   {
     icon: cuchilla,
     title: 'AFEITAR',
-    price: '11.000',
-    description: 'Afeitado clásico y preciso que cuida tu piel y ofrece una sensación de frescura duradera.',
+    price: '10.000',
+    description: 'Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable.',
   },
   {
     icon: estiloCorte,
     title: 'RECORTE DE BARBA',
-    price: '10.000',
-    description: 'Perfilado y recorte de barba para un look limpio y elegante, resaltando tu estilo personal.',
-  },
-  {
-    icon: sillaIcon,
-    title: 'MASAJE DE CABEZA',
-    price: '12.000',
-    description: 'Disfruta de un masaje relajante que alivia las tensiones acumuladas en el cuello y cabeza.',
+    price: '8.000',
+    description: 'Definimos y perfilamos tu barba con precisión, trabajando la simetría para resaltar tu estilo con elegancia y carácter.',
   },
 ];
 
 export default function ServicesList() {
   return (
-    <div className="container-md" style={{marginTop:'-167px'}}>
+    <div className="container-md" style={{ marginTop: '-167px' }}>
       <div className="services-wrapper">
         <ul className="list-unstyled services-list">
           {services.map((service, idx) => (
