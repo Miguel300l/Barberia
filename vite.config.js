@@ -10,15 +10,26 @@ export default defineConfig({
 
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ["react", "react-dom"],
+        manualChunks(id) {
+          if (id.includes("react")) {
+            return "react";
+          }
 
-          bootstrap: ["bootstrap"],
+          if (id.includes("react-big-calendar")) {
+            return "calendar";
+          }
 
-          vendor: [
-            "axios"
-          ]
+          if (id.includes("moment")) {
+            return "date";
+          }
 
+          if (id.includes("bootstrap")) {
+            return "bootstrap";
+          }
+
+          if (id.includes("axios")) {
+            return "vendor";
+          }
         }
       }
     }

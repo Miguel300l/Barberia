@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { datosInicio } from "../data/DataInicioSesion";
 import FechaNotificacion from "../../assets/js/FechaNotificacion";
-import barberTutorial from '../../assets/img/barberTutorial.jpeg'
+import barberTutorial from '../../assets/img/barberTutorial.webp'
 import music from "../../assets/img/videos/musica_fondo.mp3";
 
 const Contactanos = () => {
