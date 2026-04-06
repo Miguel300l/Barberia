@@ -67,9 +67,9 @@ const Slider = () => {
               src={img}
               className="carousel-image"
               alt={`barbershop-${index}`}
-              loading="eager"
-              fetchpriority="high"
-              decoding="sync"
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchpriority={index === 0 ? "high" : "low"}
+              decoding="async"
             />
 
             <div className="overlay-dark"></div>
