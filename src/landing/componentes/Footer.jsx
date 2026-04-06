@@ -46,7 +46,7 @@ const Fotter = () => {
                     Información de contacto
                   </h3>
                   <p className="card-text text-white mt-3">
-                    3103669753<br /><br />barberia@gmail.com
+                    3103669753<br /><br />academyjhonatans@gmail.com
                   </p>
                 </div>
               </div>

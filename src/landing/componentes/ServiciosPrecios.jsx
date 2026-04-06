@@ -2,9 +2,9 @@ import React from 'react';
 import tijera from '../../assets/img/tijera.svg';
 import cuchilla from '../../assets/img/cuchilla.svg';
 import maquina from '../../assets/img/maquina.svg';
-import servicioCorte1 from '../../assets/img/servicioCorte.jpeg';
+import servicioCorte1 from '../../assets/img/barberPrecio.webp';
 import servicioCorte4 from '../../assets/img/servicioCorte4.jpeg';
-import servicioCorte2 from '../../assets/img/servicioCorte2.jpeg';
+import servicioCorte2 from '../../assets/img/servicioCorte2.webp';
 import separador from '../../assets/img/separador.svg';
 
 const ServiceItem = ({ icon, title, price, description, image, reverse }) => (

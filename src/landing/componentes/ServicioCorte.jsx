@@ -1,6 +1,6 @@
 import React from 'react';
-import servicioCorte from '../../assets/img/servicioCorte.jpeg';
-import servicioCorte2 from '../../assets/img/servicioCorte2.jpeg';
+import barberPrecio from '../../assets/img/barberPrecio.webp';
+import servicioCorte2 from '../../assets/img/servicioCorte2.webp';
 import servicioCorte3 from '../../assets/img/servicioCorte3.jpeg';
 import servicioCorte4 from '../../assets/img/servicioCorte4.jpeg';
 import tijera from '../../assets/img/tijera.svg';
@@ -11,7 +11,7 @@ import separador from '../../assets/img/separador.svg';
 import '../../assets/css/videoSection.css'
 
 const services = [
-    { id: 1, title: 'Corte de Pelo', img: servicioCorte, icon: tijera, description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.' },
+    { id: 1, title: 'Corte de Pelo', img: barberPrecio, icon: tijera, description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.' },
     { id: 2, title: 'Corte maquina', img: servicioCorte2, icon: maquina, description: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.' },
     { id: 3, title: 'Estilo Personalizado', img: servicioCorte3, icon: estiloCorte, description: 'Diseños únicos adaptados a tu personalidad y estilo. Nuestro barbero creará un corte que refleje quién eres.' },
     { id: 4, title: 'Perfilado y Detalles', img: servicioCorte4, icon: cuchilla, description: 'Un afeitado clásico con técnica y estilo, dejando tu piel suave, con un acabado impecable y una frescura inigualable.' }
