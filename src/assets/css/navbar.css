@@ -34,7 +34,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: left 0.4s ease-in-out;
-    z-index: 5;
+    z-index: 1001;
     overflow: hidden;
   }
 
@@ -42,6 +42,7 @@
     left: 0;
   }
 
+  /* CAPA DE DESENFOQUE */
   .menu-overlay {
     position: fixed;
     top: 0;
@@ -50,9 +51,10 @@
     height: 100vh;
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
+    z-index: 1000;
   }
 
+  /* NAVBAR DETRÁS DEL OVERLAY */
   .navbar {
     z-index: 999;
   }
