@@ -10,6 +10,7 @@ import DatosAjustes from '../modales/Ajustes'
 import NotificacionAseptar from '../modales/AceptarRechazarCharla'
 import RegistroAprendiz from '../modales/RegistroAprendiz'
 import RegistroProfesional from '../modales/RegistroProfesional'
+import WhatsappFloat from "../componentes/WhatsappFloat";
 
 const Navbar = () => {
 
@@ -148,6 +149,7 @@ const Navbar = () => {
       <RegistroProfesional />
 
       <Outlet />
+      <WhatsappFloat />
       <Footer />
     </>
   );
