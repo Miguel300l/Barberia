@@ -10,7 +10,7 @@ import cuchilla from '../../assets/img/cuchilla.svg';
 import separador from '../../assets/img/separador.svg';
 import '../../assets/css/videoSection.css'
 
-const images = [
+const services = [
     { id: 1, title: 'Corte de Pelo', img: barberPrecio, icon: tijera, description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.' },
     { id: 2, title: 'Corte maquina', img: servicioCorte2, icon: maquina, description: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.' },
     { id: 3, title: 'Estilo Personalizado', img: servicioCorte3, icon: estiloCorte, description: 'Diseños únicos adaptados a tu personalidad y estilo. Nuestro barbero creará un corte que refleje quién eres.' },
@@ -20,9 +20,9 @@ const images = [
 const ServicesSection = () => (
     <section className="container py-5 services-section" style={{ marginTop: '-180px' }}>
 
-        {/* Sección título */}
+        {/* Título y descripción */}
         <section className="container-fluid p-5">
-            <div className="row d-flex flex-wrap justify-content-center align-items-center">
+            <div className="row justify-content-center">
                 <div className="col-md-6">
                     <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
                         <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 5vw, 40px)', textTransform: 'uppercase' }}>
@@ -30,11 +30,7 @@ const ServicesSection = () => (
                         </p>
 
                         <div className="d-flex justify-content-center">
-                            <img
-                                src={separador}
-                                alt="separador"
-                                style={{ width: '120px', height: 'auto', margin: '10px 0' }}
-                            />
+                            <img src={separador} alt="separador" style={{ width: '120px', height: 'auto', margin: '10px 0' }} />
                         </div>
 
                         <p style={{ fontSize: '16px', textAlign: 'center', padding: '10px' }}>
@@ -45,48 +41,30 @@ const ServicesSection = () => (
             </div>
         </section>
 
-        {/* Servicios */}
-        <div className="container px-4">
-            {images.map((service, idx) => (
-                <div key={service.id} className="row align-items-center mb-5 service-row">
-
-                    {/* Imagen */}
-                    <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                        <img
-                            src={service.img}
-                            alt={service.title}
-                            className="service-img rounded"
-                            style={{ maxWidth: '100%', height: 'auto' }}
-                        />
-                    </div>
-
-                    {/* Contenido */}
-                    <div className="col-lg-6 d-flex flex-column justify-content-center">
-                        <img
-                            src={service.icon}
-                            alt="icon"
-                            className="service-icon mb-2"
-                            style={{ width: '60px', height: '60px', margin: '0 auto 15px auto' }}
-                        />
-
-                        <h3 className="service-title mb-3 text-center justify-content-center">
-                            {service.title}
-                        </h3>
-
-                        <p className="service-desc text-center text-lg-start">
-                            {service.description}
-                        </p>
-                    </div>
-
+        {/* Servicios con separación central */}
+        {services.map((service) => (
+            <div key={service.id} className="row align-items-center mb-5">
+                {/* Imagen - 5 columnas */}
+                <div className="col-12 col-lg-5 d-flex justify-content-center">
+                    <img src={service.img} alt={service.title} className="service-img rounded" style={{ width: '100%', height: 'auto' }} />
                 </div>
-            ))}
-        </div>
+
+                {/* Columna vacía - 2 columnas */}
+                <div className="d-none d-lg-block col-lg-2"></div>
+
+                {/* Contenido - 5 columnas */}
+                <div className="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
+                    <div className="service-content text-center">
+                        <img src={service.icon} alt="icon" className="service-icon mb-2" />
+                        <h3 className="service-title mb-3">{service.title}</h3>
+                        <p className="service-desc">{service.description}</p>
+                    </div>
+                </div>
+            </div>
+        ))}
 
         {/* Ubicación */}
-        <h3 className="text-center mb-5">
-            UBICACIÓN
-        </h3>
-
+        <h3 className="text-center mb-5">UBICACIÓN</h3>
         <div className="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.068607544737!2d-76.56854582527227!3d2.484243097494466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30041156f8329d%3A0xa235acbb8460fd11!2sCra.%2012%20%23%2068%20NORTE-11%2C%20Popay%C3%A1n%2C%20Cauca!5e0!3m2!1ses!2sco!4v1775265009000!5m2!1ses!2sco"
