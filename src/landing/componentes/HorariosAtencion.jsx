@@ -1,5 +1,5 @@
 import React from 'react';
-import preciosCortesBarberia from '../../assets/img/preciosCortesBarberia.webp';
+import preciosCortesBarberia from '../../assets/img/preciosCortesBarberia.jpeg';
 import separador from '../../assets/img/separador.svg';
 import '../../assets/css/estiloPrecio.css'
 
