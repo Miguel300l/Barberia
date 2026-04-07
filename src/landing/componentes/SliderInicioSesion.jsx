@@ -72,7 +72,7 @@ const Slider = () => {
               decoding="async"
             />
 
-            <div className="position-absolute top-0 start-0 w-100 h-100 overlay-dark"></div>
+            <div className="overlay-dark"></div>
 
             <div className="slider-content text-white text-center">
 
