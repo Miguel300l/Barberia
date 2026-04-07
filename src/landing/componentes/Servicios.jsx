@@ -63,15 +63,35 @@ const ServiciosBarberia = () => {
         </div>
 
         {/* Servicios */}
-        <div className="col-md-8">
+        <div className="col-md-8 px-4 px-md-3">
           {servicios.map((servicio, idx) => (
             <div className="d-flex align-items-start mb-4" key={idx}>
-              <img src={servicio.icon} alt={servicio.titulo} className="me-3 mx-4" style={{ width: '50px', height: '50px' }} />
+              <img
+                src={servicio.icon}
+                alt={servicio.titulo}
+                className="me-3"
+                style={{ width: '50px', height: '50px' }}
+              />
+
               <div>
-                <h5 style={{ fontSize: 'clamp(18px, 4vw, 20px)', fontFamily: 'Bebas Neue', marginBottom: '4px' }}>
+                <h5
+                  style={{
+                    fontSize: 'clamp(18px, 4vw, 20px)',
+                    fontFamily: 'Bebas Neue',
+                    marginBottom: '4px'
+                  }}
+                >
                   {servicio.titulo}
                 </h5>
-                <p style={{ fontSize: '14px', fontFamily: 'Lato', margin: 0 }} className="text-muted">
+
+                <p
+                  style={{
+                    fontSize: '14px',
+                    fontFamily: 'Lato',
+                    margin: 0
+                  }}
+                  className="text-muted"
+                >
                   {servicio.descripcion}
                 </p>
               </div>
