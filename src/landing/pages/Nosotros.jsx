@@ -154,7 +154,7 @@ const Nosotros = () => {
       <div className="container" style={{ marginTop: '-100px' }}>
         <div className="row justify-content-center">
           {/* Card 1 */}
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex flex-column align-items-center">
+          <div className="col-12 col-sm-6 col-md-8 col-lg-3 my-3 d-flex flex-column align-items-center">
             <div className="box-nosotros" style={{ width: '18rem', position: 'relative' }}>
               <img
                 src={barbero}
