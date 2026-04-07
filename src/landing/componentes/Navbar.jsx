@@ -74,7 +74,7 @@ const Navbar = () => {
           >
             {/* BOTÓN X */}
             <button
-              className="btn-close-menu"
+              className="btn-close-menu overlay-dark"
               onClick={handleCloseMenu}
             >
               &times;
