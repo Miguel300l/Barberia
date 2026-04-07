@@ -20,11 +20,14 @@ const images = [
 const ServicesSection = () => (
     <section className="container py-5 services-section" style={{ marginTop: '-180px' }}>
 
+        {/* Sección título */}
         <section className="container-fluid p-5">
             <div className="row d-flex flex-wrap justify-content-center align-items-center">
                 <div className="col-md-6">
                     <div className="d-flex flex-column fs-5 nosotros" style={{ textAlign: 'justify' }}>
-                        <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 5vw, 40px)', textTransform: 'uppercase', }}>Nuestro servicio</p>
+                        <p className="fw-bold text-center" style={{ fontSize: 'clamp(20px, 5vw, 40px)', textTransform: 'uppercase' }}>
+                            Nuestro servicio
+                        </p>
 
                         <div className="d-flex justify-content-center">
                             <img
@@ -42,40 +45,44 @@ const ServicesSection = () => (
             </div>
         </section>
 
+        {/* Servicios */}
         <div className="container px-4">
-            {images.map((service) => (
-                <div key={service.id} className="row align-items-start mb-5 service-row">
+            {images.map((service, idx) => (
+                <div key={service.id} className="row align-items-center mb-5 service-row">
 
-                    <div className="col-lg-5 d-flex justify-content-center justify-content-lg-start">
+                    {/* Imagen */}
+                    <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start mb-3 mb-lg-0">
                         <img
                             src={service.img}
                             alt={service.title}
-                            className="service-img rounded mb-3 mb-lg-0"
+                            className="service-img rounded"
+                            style={{ maxWidth: '100%', height: 'auto' }}
                         />
                     </div>
 
-                    <div className="col-lg-6">
-                        <div className="service-content">
-                            <img
-                                src={service.icon}
-                                alt="icon"
-                                className="service-icon mb-2 d-block mx-auto"
-                            />
+                    {/* Contenido */}
+                    <div className="col-lg-6 d-flex flex-column justify-content-center">
+                        <img
+                            src={service.icon}
+                            alt="icon"
+                            className="service-icon mb-2"
+                            style={{ width: '60px', height: '60px', margin: '0 auto 15px auto' }}
+                        />
 
-                            <h3 className="service-title mb-3 text-center">
-                                {service.title}
-                            </h3>
+                        <h3 className="service-title mb-3 text-center justify-content-center">
+                            {service.title}
+                        </h3>
 
-                            <p className="service-desc">
-                                {service.description}
-                            </p>
-                        </div>
+                        <p className="service-desc text-center text-lg-start">
+                            {service.description}
+                        </p>
                     </div>
 
                 </div>
             ))}
         </div>
 
+        {/* Ubicación */}
         <h3 className="text-center mb-5">
             UBICACIÓN
         </h3>
@@ -92,9 +99,7 @@ const ServicesSection = () => (
                 title="Ubicación BarberStyle"
             ></iframe>
         </div>
-    </section >
-
-
+    </section>
 );
 
 export default ServicesSection;
