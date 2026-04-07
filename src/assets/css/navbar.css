@@ -30,7 +30,7 @@
     height: 100vh;
     align-items: center;
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     transition: left 0.4s ease-in-out;
     z-index: 1002;
     overflow: hidden;
@@ -54,7 +54,7 @@
 
   /* NAVBAR DETRÁS DEL OVERLAY */
   .navbar {
-    z-index: 1000;
+    z-index: 1003;
   }
 
   .navbar-collapse::before {
