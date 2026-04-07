@@ -10,7 +10,7 @@ import cuchilla from '../../assets/img/cuchilla.svg';
 import separador from '../../assets/img/separador.svg';
 import '../../assets/css/videoSection.css'
 
-const services = [
+const images = [
     { id: 1, title: 'Corte de Pelo', img: barberPrecio, icon: tijera, description: 'Servicios espléndidos que realzan tu imagen, combinando estructuras precisas con un estilo totalmente personalizado.' },
     { id: 2, title: 'Corte maquina', img: servicioCorte2, icon: maquina, description: 'Ideal para un estilo limpio y definido. Precisión y rapidez para lograr un fade en tendencia y fácil de mantener.' },
     { id: 3, title: 'Estilo Personalizado', img: servicioCorte3, icon: estiloCorte, description: 'Diseños únicos adaptados a tu personalidad y estilo. Nuestro barbero creará un corte que refleje quién eres.' },
@@ -42,20 +42,39 @@ const ServicesSection = () => (
             </div>
         </section>
 
-        {services.map((service) => (
-            <div key={service.id} className="row align-items-start mb-5 service-row">
-                <div className="col-lg-5 d-flex justify-content-center justify-content-lg-start">
-                    <img src={service.img} alt={service.title} className="service-img rounded mb-3 mb-lg-0" />
-                </div>
-                <div className="col-lg-6">
-                    <div className="service-content">
-                        <img src={service.icon} alt="icon" className="service-icon mb-2 d-block mx-auto" />
-                        <h3 className="service-title mb-3 text-center">{service.title}</h3>
-                        <p className="service-desc">{service.description}</p>
+        <div className="container px-4">
+            {images.map((service) => (
+                <div key={service.id} className="row align-items-start mb-5 service-row">
+
+                    <div className="col-lg-5 d-flex justify-content-center justify-content-lg-start">
+                        <img
+                            src={service.img}
+                            alt={service.title}
+                            className="service-img rounded mb-3 mb-lg-0"
+                        />
                     </div>
+
+                    <div className="col-lg-6">
+                        <div className="service-content">
+                            <img
+                                src={service.icon}
+                                alt="icon"
+                                className="service-icon mb-2 d-block mx-auto"
+                            />
+
+                            <h3 className="service-title mb-3 text-center">
+                                {service.title}
+                            </h3>
+
+                            <p className="service-desc">
+                                {service.description}
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        ))}
+            ))}
+        </div>
 
         <h3 className="text-center mb-5">
             UBICACIÓN
