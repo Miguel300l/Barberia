@@ -391,24 +391,25 @@ body {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  width: 60px;
-  height: 60px;
-
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: #098034;
-
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 2000;
-
   transition: transform .3s ease;
 }
 
 .whatsapp-float img {
   width: 35px;
+}
+
+.whatsapp-float img {
+  width: 120px;
+  height: 80px;
 }
 
 .whatsapp-float:hover {

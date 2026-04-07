@@ -1,5 +1,5 @@
 import React from "react";
-import iconWhatsapp from "../../assets/img/whatsapp.webp";
+import iconWhatsapp from "../../assets/img/whatsapp_flotante.webp";
 
 const WhatsappFloat = () => {
 

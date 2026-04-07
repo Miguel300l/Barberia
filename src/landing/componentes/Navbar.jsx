@@ -149,7 +149,7 @@ const Navbar = () => {
       <RegistroProfesional />
 
       <Outlet />
-      <WhatsappFloat />
+      {!menuOpen && <WhatsappFloat />}
       <Footer />
     </>
   );
