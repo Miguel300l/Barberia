@@ -20,7 +20,7 @@ const Fotter = () => {
                     Ubicación
                   </h3>
                   <p className="card-text text-white mt-3">
-                    Cra. 12 # 68 NORTE-11 <br />Popayán, Cauca
+                    Cl. 68 Nte. #15-46 <br />Popayán, Cauca
                   </p>
                 </div>
               </div>
